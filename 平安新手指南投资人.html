@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css"/>-->
+		<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css"/>
+		<link rel="stylesheet" type="text/css" href="css/css.css"/>
+		<link rel="stylesheet" type="text/css" href="css/beginner_guide.css"/>
+		<style type="text/css">
+			/*.fp-slides {
+			    z-index: 1;
+			    height: 57%;
+			    overflow: hidden;
+			    position: relative;
+			    -webkit-transition: all 0.3s ease-out;
+			    transition: all 0.3s ease-out;
+			}*/
+		</style>
+	</head>
+	<body>
+		
+		<div id="fullpage">
+		    <div class="section" style="background: url(img/new_page_bg.png)no-repeat;background-size: 100% 100%;">
+		    	<img src="img/new_page1.png" class="new_page1 animi" style="height: 70%;top: -4%;"/>
+		    	<img src="img/new_page_btn.png" class="new_page1_1 animi_disnone" />
+		    </div>
+		    <div class="section" style="background-color: #e5e5e5;">
+		    	<div class="img_box">
+		    		<img src="img/new_page2-3.png" class="new_page3 animi3"/>
+		    		<img src="img/new_page2-1.png" class="new_page4"/>
+		    		<img src="img/new_page2-2.png" class="new_page2 animi2"/>
+		    	</div>
+		    </div>
+		    <div class="section" style="background: url(img/new_page_bg.png)no-repeat;background-size: 100% 100%;">
+		    	<div class="img_box box_size">
+		    		
+		    		<img src="img/new_page3-1.png" class="new_page3_1 "/>
+		    		<img src="img/new_page3-2.png" class="new_page3_2 "/>
+		    		<img src="img/new_page3-3.png" class="new_page3_3 "/>
+		    		<img src="img/new_page3-4.png" class="new_page3_4 "/>
+		    		<img src="img/new_page3.png" class="new_page4 animi2"/>
+		    	</div>
+		    </div>
+		    <div class="section" style="background-color: #e5e5e5;">
+		    	<div class="img_box">
+		    		<img src="img/new_page4-2.png" class="new_page4_2 animi3"/>
+		    		<img src="img/new_page4-3.png" class="new_page4_3 animi3"/>
+		    		<img src="img/new_page4-4.png" class="new_page4_4 animi3"/>
+		    		<img src="img/new_page4-1.png" class="new_page4_1 animi3"/>
+		    		<img src="img/new_page4.png" class="new_page5"/>
+		    	</div>
+		    </div>
+		    <div class="section" style="background: url(img/new_page_bg.png)no-repeat;background-size: 100% 100%;">
+		        <div id="slidepic" class="fullSlide">
+		        	<p class="he_title">注册后河财富   开启轻松投资之旅</p>
+				    <div class="bd">
+				        <ul>
+				            <li _src="url(img/bt_new11.png)" style="background:#fff center no-repeat;"></li>
+				            <li _src="url(img/bt_new21.png)" ></li>
+				            <li _src="url(img/bt_new22.png)"><a  href="javascript:void(0);"></a></li>
+				            <li _src="url(img/bt_new23.png)"><a  href="javascript:void(0);"></a></li>
+				            <li _src="url(img/bt_new41.png)"><a  href="javascript:void(0);"></a></li>
+				            <li _src="url(img/bt_new31.png)"><a  href="javascript:void(0);"></a></li>
+				            <li _src="url(img/bt_new51.png)"><a  href="javascript:void(0);"></a></li>
+				            <li _src="url(img/bt_new52.png)"><a  href="javascript:void(0);"></a></li>
+				            <li _src="url(img/bt_new61.png)"><a  href="javascript:void(0);"></a></li>
+				            <li _src="url(img/bt_new71.png)"><a  href="javascript:void(0);"></a></li>
+				            <!--<li _src="url(img/1.jpg)"><a  href="javascript:void(0);"></a></li>-->
+				        </ul>
+				    </div>
+				
+				    <div class="hd"><ul class="banner-navigation"></ul></div>
+				    <span class="prev"></span>
+				    <span class="next"></span>
+				    <a class="btn_sre" href="javascript:void(0);">立即注册</a>
+				</div>
+		    </div>
+			   
+		</div>
+		
+		
+		
+		
+		
+		
+		
+	</body>
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<!--<script src="js/jquery.easing.js"></script>-->
+	<script src="js/jquery.fullPage.min.js"></script>
+	<!--时间：2018-01-23  描述：一滚一屏-->
+
+	<script src="js/jquery.honhe.js"></script>
+	<!--首页的 导航 选项卡 轮播图需引入-->
+	<script>
+		
+		
+		//翻页
+	    $('#fullpage').fullpage({
+			navigation: true,
+//				scrollBar:true,
+//				setAutoScrolling(false)
+			afterLoad: function(anchorLink, index){
+				var loadedSection = $(this);
+				//using index
+				if(index == 5){
+					scrollBar:true
+				}
+				//using anchorLink
+//				if(anchorLink == 'secondSlide'){
+//					alert("Section 2 ended loading");
+//				}
+			}
+	    });
+		
+		
+		//轮播
+		jQuery(".fullSlide").slide({
+	        titCell:".hd ul", mainCell:".bd ul", effect:"fold",  autoPlay:false, autoPage:true, trigger:"click",delayTime:"800",interTime:"4000",
+	        startFun:function(i){
+	            var curLi = jQuery(".fullSlide .bd li").eq(i); /* 当前大图的li */
+	            if( !!curLi.attr("_src") ){
+	                curLi.css("background-image",curLi.attr("_src")).removeAttr("_src") /* 将_src地址赋予li背景，然后删除_src */
+	            }
+	        }
+	    });
+	    
+	    
+//	    $(".hd").find("li").unbind("mouseover",function(){
+//	    	console.log(21)
+//	    })
+   		$(".hd").find("li").eq(0).text("注册").css({"left":"6%","z-index":"2"});
+ 		$(".hd").find("li").eq(1).text("开通存管账户").css({"left":"17.6%","z-index":"3"});
+ 		$(".hd").find("li").eq(2).text("开通存管账户").css({"left":"17.6%","z-index":"2"});
+ 		$(".hd").find("li").eq(3).text("开通存管账户").css({"left":"17.6%","z-index":"1"});
+ 		$(".hd").find("li").eq(4).text("完成风险测评").css("left","30.2%");
+ 		$(".hd").find("li").eq(5).text("充值").css("left","43.8%");
+ 		$(".hd").find("li").eq(6).text("开通自动授权").css({"left":"57.4%","z-index":"2"});
+ 		$(".hd").find("li").eq(7).text("开通自动授权").css({"left":"57.4%","z-index":"1"});
+ 		$(".hd").find("li").eq(8).text("投资").css("left","71%");
+ 		$(".hd").find("li").eq(9).text("提现").css("left","83%");
+		
+		//移除原点href属性
+		$("#fp-nav ul li>a").removeAttr("href")
+	</script>
+</html>

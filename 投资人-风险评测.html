@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>风险测评</title>
+		<link type="text/css" rel="stylesheet" href="css/css.css">
+		<!--我的css-->
+		<link rel="stylesheet" type="text/css" href="css/zcm.css" />
+		<link rel="stylesheet" type="text/css" href="css/safety.css" />
+		<style>
+			.txt_type{display: none;}
+			.txt_show{display: block;}
+		</style>
+	</head>
+
+	<body>
+
+		<!--以下是公共头部-->
+		<!--以下是公共头部-->
+		<!--以下是公共头部-->
+		<!--以下是公共头部-->
+
+		<!--<div id="home_top_little_nav">
+			<div class="div_center">
+				<div class="l">客服热线 400-833-6898</div>
+
+				<ul class="r">
+					<li>
+						<a href="#">免费注册</a>
+					</li>
+					<li>
+						<a href="#">登录</a>
+					</li>
+					<li>
+						<a href="#">帮助中心</a>
+					</li>
+					<li>
+						<a href="#">关于我们</a>
+					</li>
+				</ul>
+			</div>
+		</div>-->
+
+		<div id="logo_nav">
+			<div class="div_center">
+				<a class="l" href="#"><img src="img/logo_bg.png"> </a>
+
+				<ul id="nav" class="nav clearfix">
+					<li class="nLi">
+						<h3><a href="#" target="_blank">首页</a></h3>
+					</li>
+					<li class="nLi">
+						<h3><a href="#" target="_blank">我要投资</a></h3>
+						<ul class="sub">
+							<li>
+								<a href="#">新闻首页</a>
+							</li>
+							<li>
+								<a href="#">新闻人物</a>
+							</li>
+							<li>
+								<a href="#">新闻电视</a>
+							</li>
+							<li>
+								<a href="#">新闻图片</a>
+							</li>
+							<li>
+								<a href="#">新闻视频</a>
+							</li>
+							<li>
+								<a href="# ">新闻专题</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nLi">
+						<h3><a href="#" target="_blank">我要借款</a></h3>
+						<ul class="sub">
+							<li>
+								<a href="#">新闻首页</a>
+							</li>
+							<li>
+								<a href="#">新闻人物</a>
+							</li>
+							<li>
+								<a href="#">新闻电视</a>
+							</li>
+							<li>
+								<a href="#">新闻图片</a>
+							</li>
+							<li>
+								<a href="#">新闻视频</a>
+							</li>
+							<li>
+								<a href="# ">新闻专题</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nLi ">
+						<h3><a href="#" target="_blank">信息披露</a></h3>
+						<ul class="sub">
+							<li>
+								<a href="#">新闻首页</a>
+							</li>
+							<li>
+								<a href="#">新闻人物</a>
+							</li>
+							<li>
+								<a href="#">新闻电视</a>
+							</li>
+							<li>
+								<a href="#">新闻图片</a>
+							</li>
+							<li>
+								<a href="#">新闻视频</a>
+							</li>
+							<li>
+								<a href="# ">新闻专题</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nLi">
+						<h3><a href="#" target="_blank">我的账户</a></h3>
+						<ul class="sub">
+							<li>
+								<a href="#">新闻首页</a>
+							</li>
+							<li>
+								<a href="#">新闻人物</a>
+							</li>
+							<li>
+								<a href="#">新闻电视</a>
+							</li>
+							<li>
+								<a href="#">新闻图片</a>
+							</li>
+							<li>
+								<a href="#">新闻视频</a>
+							</li>
+							<li>
+								<a href="# ">新闻专题</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="clear_div"></div>
+		</div>
+
+		<!--以上是公共头部-->
+		<!--以上是公共头部-->
+		<!--以上是公共头部-->
+		<!--以上是公共头部-->
+		<div class="main_box w1200">
+			<div class="main_l float_l">
+				<div class="main_l_top">
+					<img src="img/portrait_03.png" />
+					<p class="user_name">HONHE</p>
+					<ul class="user_icon ">
+						<li>
+							<a class="icon1 public_img hover"></a>
+						</li>
+						<li>
+							<a class="icon2 public_img hover"></a>
+						</li>
+						<li>
+							<a class="icon3 public_img "></a>
+						</li>
+						<li>
+							<a class="icon4 public_img "></a>
+						</li>
+						<li>
+							<a class="icon5 public_img "></a>
+						</li>
+					</ul>
+					<div id="safe_load">
+						<div class="inner_load"></div>
+					</div>
+
+					<p class="safe_txt">安全等级 <span>高</span></p>
+				</div>
+				<div class="item_box">
+					<div class="item_header cli">资金管理<i class="arrows_btom "></i></div>
+					<div class="item_content_box" style="display: none;">
+						<div class="account ">账户概览</div>
+						<div class="money_draw">交易记录</div>
+						<div class="money_record">回款记录</div>
+					</div>
+				</div>
+				<div class="item_box">
+					<div class="item_header cli">投资管理<i class="arrows_btom"></i></div>
+					<div class="item_content_box" style="display: none;">
+						<div class="account ">我的投资</div>
+						<div class="draw_money ">自动投资</div>
+					</div>
+				</div>
+				<div class="item_box">
+					<div class="item_header cli">我的账户<i class="arrows_btom rotate90"></i></div>
+					<div class="item_content_box" style="display: block;">
+						<div class="account">个人信息</div>
+						<div class="draw_money hover">安全中心</div>
+						<div class="money_record">消息中心</div>
+					</div>
+				</div>
+				
+			</div>
+
+			<!--右边的内容框-->
+			<div class="main_r float_r ">
+				
+				
+				<div class="safety_header ">
+					<p>风险测评</p>
+				</div>
+				<div class="none_box ">
+					<div class="txt_tip">
+						风险提示：投资可能获得比较高的投资收益，但也存在比较大的投资风险，请您根据自身的风险承受能力，审慎作出投资决定。
+					</div>
+					<img class="p_img" src="img/wcp_03.png"></img>
+					<a class="sub_sure">立即评测</a>
+				</div>
+				
+				
+				<div class="safety_header ">
+					<p>风险测评</p>
+				</div>
+				<div class="txt_tip1">
+						风险提示：投资可能获得比较高的投资收益，但也存在比较大的投资风险，请您根据自身的风险承受能力，审慎作出投资决定。 本测评
+共包含10个问题，请根据自己的实际情况进行回答。
+				</div>
+				<div class="content_box">
+					<div class="form_box">
+						<form action="">
+							<div class="radio_box">
+								<p class="radio_heder">1.你的年龄介于</p>
+								<label>
+									A.高于65岁<span class="pay_list_c1 ">
+										<input type="radio"  name="paylist" value="1" class="radioclass">
+									</span>
+								</label><br />
+								<label>
+									<span class="pay_list_c1 ">
+										<input type="radio"  name="paylist" value="1" class="radioclass">
+									</span>B.51-64岁（含）
+								</label><br />
+								<label>
+									<span class="pay_list_c1 ">
+										<input type="radio"  name="paylist" value="1" class="radioclass">
+									</span>C.18-30岁（含）
+								</label><br />
+								<label>
+									<span class="pay_list_c1 ">
+										<input type="radio"  name="paylist" value="1" class="radioclass">
+									</span>D.31-50岁（含）
+								</label>
+								
+							</div>
+							<div class="radio_box">
+								<p class="radio_heder">2.你的学历？</p>
+								<label>
+									<span class="pay_list_c1 ">
+										<input type="radio"  name="paylist1" value="1" class="radioclass">
+									</span>A.高中及以下
+								</label><br />
+								<label>
+									<span class="pay_list_c1 ">
+										<input type="radio"  name="paylist1" value="1" class="radioclass">
+									</span>B.中专或大专
+								</label><br />
+								<label>
+									<span class="pay_list_c1 ">
+										<input type="radio"  name="paylist1" value="1" class="radioclass">
+									</span>C.本科
+								</label><br />
+								<label>
+									<span class="pay_list_c1 ">
+										<input type="radio"  name="paylist1" value="1" class="radioclass">
+									</span>D.硕士及以上
+								</label>
+								
+							</div>
+							<div class="radio_box">
+								<p class="radio_heder">3. 你的家庭可支配年收入为（折合人民币）？</p>
+								<label>
+									<span class="pay_list_c1 ">
+										<input type="radio"  name="paylist2" value="1" class="radioclass">
+									</span>A.10万元以下（含）
+								</label><br />
+								<label>
+									<span class="pay_list_c1 ">
+										<input type="radio"  name="paylist2" value="1" class="radioclass">
+									</span>B.10-30万元（含）
+								</label><br />
+								<label>
+									<span class="pay_list_c1 ">
+										<input type="radio"  name="paylist2" value="1" class="radioclass">
+									</span>C.30-100万元（含）
+								</label><br />
+								<label>
+									<span class="pay_list_c1 ">
+										<input type="radio"  name="paylist2" value="1" class="radioclass">
+									</span>D.高于100万元
+								</label>
+								
+							</div>
+							<div class="radio_box">
+								<p class="radio_heder">4. 在你每年的家庭可支配收入中，可用于金融投资（储蓄存款除外）的比例为？</p>
+								<label>
+									<span class="pay_list_c1 ">
+										<input type="radio"  name="paylist3" value="1" class="radioclass">
+									</span>A.10%以下（含）
+								</label><br />
+								<label>
+									<span class="pay_list_c1 ">
+										<input type="radio"  name="paylist3" value="1" class="radioclass">
+									</span>B.10%至25% （含）
+								</label><br />
+								<label>
+									<span class="pay_list_c1 ">
+										<input type="radio"  name="paylist3" value="1" class="radioclass">
+									</span>C.25%至50%（含）
+								</label><br />
+								<label>
+									<span class="pay_list_c1 ">
+										<input type="radio"  name="paylist3" value="1" class="radioclass">
+									</span>D.大于50%
+								</label>
+								
+							</div>
+							<div class="radio_box">
+								<p class="radio_heder">5. 你的投资知识可描述为：</p>
+								<label>
+									<span class="pay_list_c1 ">
+										<input type="radio"  name="paylist4" value="1" class="radioclass">
+									</span>A.有限：基本没有金融产品方面的知识
+
+
+								</label><br />
+								<label>
+									<span class="pay_list_c1 ">
+										<input type="radio"  name="paylist4" value="1" class="radioclass">
+									</span>B.一般：对金融产品及其相关风险具有基本的知识和理解
+								</label><br />
+								<label>
+									<span class="pay_list_c1 ">
+										<input type="radio"  name="paylist4" value="1" class="radioclass">
+									</span>C.丰富：对金融产品及其相关风险具有丰富的知识和理解
+								</label>
+								
+							</div>
+							<div class="radio_box">
+								<p class="radio_heder">6. 你的投资经验可描述为：</p>
+								<label>
+									<span class="pay_list_c1 ">
+										<input type="radio"  name="paylist5" value="1" class="radioclass">
+									</span>A.除银行储蓄外，基本没有其他投资经验
+								</label><br />
+								<label>
+									<span class="pay_list_c1 ">
+										<input type="radio"  name="paylist5" value="1" class="radioclass">
+									</span>B.投资过货币市场基金、债券型基金和银行保本型理财产品等低风险金融产品
+								</label><br />
+								<label>
+									<span class="pay_list_c1 ">
+										<input type="radio"  name="paylist5" value="1" class="radioclass">
+									</span>C.投资过混合型基金、信托融资类银行理财产品等中等风险的金融产品
+								</label><br />
+								<label>
+									<span class="pay_list_c1 ">
+										<input type="radio"  name="paylist5" value="1" class="radioclass">
+									</span>D.投资过外汇、股票、股票型基金等较高风险的金融产品
+								</label>
+								
+							</div>
+							<div class="radio_box">
+								<p class="radio_heder">7. 你有多少年投资基金、股票、信托、私募证券或金融衍生产品等风险投资品的经验？</p>
+								<label>
+									<span class="pay_list_c1 ">
+										<input type="radio"  name="paylist6" value="1" class="radioclass">
+									</span>A.没有经验
+								</label><br />
+								<label>
+									<span class="pay_list_c1 ">
+										<input type="radio"  name="paylist6" value="1" class="radioclass">
+									</span>B.2年以下（含）
+								</label><br />
+								<label>
+									<span class="pay_list_c1 ">
+										<input type="radio"  name="paylist6" value="1" class="radioclass">
+									</span>C.2至5年（含）
+								</label><br />
+								<label>
+									<span class="pay_list_c1 ">
+										<input type="radio"  name="paylist6" value="1" class="radioclass">
+									</span>D.大于5年
+								</label>
+								
+							</div>
+							<div class="radio_box">
+								<p class="radio_heder">8. 你的计划投资期限是多久？</p>
+								<label>
+									<span class="pay_list_c1 ">
+										<input type="radio"  name="paylist7" value="1" class="radioclass">
+									</span>A.3个月以下（含）
+								</label><br />
+								<label>
+									<span class="pay_list_c1 ">
+										<input type="radio"  name="paylist7" value="1" class="radioclass">
+									</span>B.3-6个月（含）
+								</label><br />
+								<label>
+									<span class="pay_list_c1 ">
+										<input type="radio"  name="paylist7" value="1" class="radioclass">
+									</span>C.6-12个月（含）
+								</label><br />
+								<label>
+									<span class="pay_list_c1 ">
+										<input type="radio"  name="paylist7" value="1" class="radioclass">
+									</span>D.大于12个月
+								</label>
+								
+							</div>
+							<div class="radio_box">
+								<p class="radio_heder">9. 你的投资目的是？</p>
+								<label>
+									<span class="pay_list_c1 ">
+										<input type="radio"  name="paylist8" value="1" class="radioclass">
+									</span>A.资产保值，同时获得固定收益
+								</label><br />
+								<label>
+									<span class="pay_list_c1 ">
+										<input type="radio"  name="paylist8" value="1" class="radioclass">
+									</span>B.资产稳健增长，同时获得波动适度的年投资回报
+								</label><br />
+								<label>
+									<span class="pay_list_c1 ">
+										<input type="radio"  name="paylist8" value="1" class="radioclass">
+									</span>C.资产高回报，能接受短期的资产价值高波动
+								</label>
+								
+							</div>
+							<div class="radio_box">
+								<p class="radio_heder">10.以下哪项描述最符合你的投资态度？</p>
+								<label>
+									<span class="pay_list_c1 ">
+										<input type="radio"  name="paylist9" value="1" class="radioclass">
+									</span>A.厌恶风险，不希望本金损失，希望获得稳定回报
+								</label><br />
+								<label>
+									<span class="pay_list_c1 ">
+										<input type="radio"  name="paylist9" value="1" class="radioclass">
+									</span>B.保守投资，不希望本金损失，愿意承担一定幅度的收益波动
+								</label><br />
+								<label>
+									<span class="pay_list_c1 ">
+										<input type="radio"  name="paylist9" value="1" class="radioclass">
+									</span>C.寻求资金的较高收益和成长性，愿意为此承担有限本金损失
+								</label><br />
+								<label>
+									<span class="pay_list_c1 ">
+										<input type="radio"  name="paylist9" value="1" class="radioclass">
+									</span>D.希望赚取高回报，愿意为此承担较大本金损失
+								</label>
+								
+							</div>
+							
+							<div class="sub_box">
+								<p class="erroe_tip">错错错</p>
+								<a class="sure_btn">提交评测</a>
+							</div>
+						</form>
+					</div>
+				</div>
+				
+				
+				
+				<div class="safety_header ">
+					<p>测评结果</p>
+				</div>
+				<div class="result_box">
+					<div class="show_type  ">
+						<img src="img/type_bs_icon.png"/>
+						<p class="u_type">保守型</p>
+					</div>
+					
+					<div class="show_type ">
+						<img src="img/type_jj_icon.png"/>
+						<p class="u_type">积极型</p>
+					</div>
+					
+					<div class="show_type show">
+						<img src="img/type_wj_icon.png"/>
+						<p class="u_type">稳健型</p>
+					</div>
+					
+					<div class="show_type">
+						<img src="img/type_ph_icon.png"/>
+						<p class="u_type">平衡型</p>
+					</div>
+					
+					<div class="show_type">
+						<img src="img/type_jq_icon.png"/>
+						<p class="u_type">进取型</p>
+					</div>
+					
+					<!--保守-->
+					<p class="txt_type  ">低风险级别：投资本金没有风险，投资收益具有一定的不确定性；或者投资本金遭受损失的可能性极低，在本金未遭受损失的前提下，实现投资收益的可能性很高。
+						<br /><br /><span style="color:#313339;font-weight: 600;">遵循“市场有风险，出借需谨慎”的投资准则，依据您的风险等级评估结果为保守型，我们不建议您投资具有风险的项目，请理性管理个人财富。</span>
+					</p>
+					<!--积极-->
+					<p class="txt_type">
+						较高风险级别：投资本金和投资收益都面临较大的不确定性。
+					</p>
+					<!--稳健-->
+					<p class="txt_type txt_show ">
+						较低风险级别：投资本金遭受损失的可能性较低，在本金未遭受损失的前提下，实现投资收益的可能性较高。
+					</p>
+					<!--平衡-->
+					<p class="txt_type">
+						中等风险级别：投资本金的安全具有一定的不确定性，投资收益具有较大的不确定性。
+					</p>
+					<!--进取型-->
+					<p class="txt_type">
+						高风险级别：投资本金和投资收益都面临极大的不确定性。
+					</p>
+					<p class="txt_type"></p>
+					<a href="借款人-安全中心.html" class="go_safety">返回安全中心</a>
+					<a href="#" class="o_again">重新测评</a>
+					<p class="p_txt">您今年还可以测评2次</p>
+					
+				</div>
+			</div>
+		</div>
+
+		<!--以下是底部公共部分-->
+		<!--以下是底部公共部分-->
+		<!--以下是底部公共部分-->
+		<div class="clear_div"></div>
+
+		<div id="foot" style="background:#fff;height:340px;width:100%;">
+		     <div class="div_center">
+		         <div class="l">
+		            <ul>
+		                <span class="tit">关于后河</span>
+		                <span><a href="#">后河简介</a></span>
+		                <span><a href="#">组织信息</a></span>
+		                <span><a href="#">最新公告</a></span>
+		                <span><a href="#">联系我们</a></span>
+		            </ul>
+		             <ul>
+		                 <span class="tit">信息披露</span>
+		                 <span><a href="#">数据统计</a></span>
+		                 <span><a href="#">运营报告</a></span>
+		                 <span><a href="#">企业资质</a></span>
+		                 <span><a href="#">安全保障</a></span>
+		             </ul>
+		
+		
+		             <ul>
+		                 <span class="tit">帮助中心</span>
+		                 <span><a href="#">注册登录</a></span>
+		                 <span><a href="#">资金存管</a></span>
+		                 <span><a href="#">充值提现</a></span>
+		                 <span><a href="#">收费标准</a></span>
+		                 <!--<span><a href="#">更多>></a></span>-->
+		             </ul>
+		
+		
+		
+		             <p class="bottom-img">
+		                 <a href="https://seal.wosign.com/details/www.honhe.com" target="_blank" class="logo1"></a>
+		                 <a href="http://szcert.ebs.org.cn/e8369191-dc98-4072-ad44-e02027ae725f" target="_blank" class="logo2"></a>
+		             </p>
+		
+		             <div class="clear_div"></div>
+		
+		             <p class="foot_1">温馨提示：市场有风险  出借需谨慎</p>
+		             <p class="foot_2">Copyright © 2011-2018 HONHE Corporation All Rights Reserved. 版权所有 ©深圳市后河网互联网金融服务有限公司  粤ICP备13075040号</p>
+		
+		
+		
+		
+		         </div>
+				
+		
+		         <div class="r">
+		              <img src="img/webapp.png">
+		              <p class="phone_num">400-833-6898</p>
+		             <p class="time"> <span>工作日 09:00-21:00</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>周末 09:00-17:30</span> </p>
+		         </div>
+		     </div>
+		</div>
+
+		<!--以上是底部公共部分-->
+		<!--以上是底部公共部分-->
+		<!--以上是底部公共部分-->
+
+	</body>
+	<script src="js/jquery-1.11.3.min.js"></script>
+
+	<script src="js/jquery.honhe.js"></script>
+	<!--首页的 导航 选项卡 轮播图需引入-->
+	<script src="js/zcm.js"></script>
+	<script>
+		//导航
+		jQuery("#nav").slide({
+			type: "menu", // 效果类型，针对菜单/导航而引入的参数（默认slide）
+			titCell: ".nLi", //鼠标触发对象
+			targetCell: ".sub", //titCell里面包含的要显示/消失的对象
+			effect: "slideDown", //targetCell下拉效果
+			delayTime: 300, //效果时间
+			triggerTime: 0, //鼠标延迟触发时间（默认150）
+			returnDefault: true //鼠标移走后返回默认状态，例如默认频道是“预告片”，鼠标移走后会返回“预告片”（默认false）
+		});
+		
+		
+//		$(window).scroll(function(){
+//			console.log($('#foot').offset().top-$(document).scrollTop())
+//			if($('#foot').offset().top-$(document).scrollTop()<=950){
+//				console.log(1)
+//			}
+//		})
+//		单选
+		$(".pay_list_c1").on("click",function(){
+		  $(this).addClass("on").parent().siblings().children("span").removeClass("on");
+		})
+	</script>
+
+</html>

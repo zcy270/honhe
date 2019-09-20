@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>SZCA数字证书授权协议</title>
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
+		<link type="text/css" rel="stylesheet" href="css/css.css">
+		<!--我的css-->
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
+		<link rel="stylesheet" type="text/css" href="css/zcm.css" />
+		<link rel="stylesheet" type="text/css" href="css/retrieve_password.css" />
+	</head>
+
+	<body>
+
+		<!--以下是公共头部-->
+
+		<!--<div id="home_top_little_nav">
+			<div class="div_center">
+				<div class="l">客服热线 400-833-6898</div>
+
+				<ul class="r">
+					<li>
+						<a href="#">免费注册</a>
+					</li>
+					<li>
+						<a href="#">登录</a>
+					</li>
+					<li>
+						<a href="#">帮助中心</a>
+					</li>
+				</ul>
+			</div>
+		</div>-->
+
+		<!--未登录状态nav-->
+		<!--<div id="logo_nav">
+		    <div class="div_center">
+		                <a class="l" href="index.html"><img src="img/logo_bg.png"> </a>
+		                <ul id="nav" class="nav clearfix">
+		                    <li class="nLi">
+		                        <h3><a href="index.html" target="_blank">首页</a></h3>
+		                    </li>
+		                    <li class="nLi">
+		                        <h3><a href="项目页.html" target="_blank">我要投资</a></h3>
+		                        <ul class="sub box-shadow">
+		                            <li><a href="项目页.html">全部项目</a></li>
+		                            <li><a href="项目页.html">新手专享</a></li>
+		                            <li><a href="项目页.html">精选项目</a></li>
+		                        </ul>
+		                    </li>
+		                    <li class="nLi">
+		                        <h3><a href="http://chedai.honhe.com/" target="_blank">我要借款</a></h3>
+		                    </li>
+		                    <li class="nLi ">
+		                        <h3><a href="#" target="_blank">信息披露</a></h3>
+		                        <ul class="sub box-shadow">
+		                            <li><a href="#">安全保障</a></li>
+		                            <li><a href="#">运营披露</a></li>
+		                            <li><a href="#">关于后河</a></li>
+		                            <li><a href="信息披露-公司动态.html">公司动态</a></li>
+		                            <li><a href="信息披露-监管部门.html">监管法规</a></li>
+		                        </ul>
+		                    </li>
+		                    <li class="nLi login_li">
+		                        <h3><a href="#" target="_blank" style="">&nbsp;登陆&nbsp;<span class="arrow_nav"></span></a></h3>
+		                        <ul class="sub box-shadow" style="">
+		                            <li><a href="#">投资人登录</a></li>
+		                            <li><a href="#">借款人登录</a></li>
+		                        </ul>
+		                    </li>
+		                    <li class="nLi register_li">
+		                        <h3><a href="#" target="_blank" style="">&nbsp;注册&nbsp;<span class="arrow_nav"></span></a></h3>
+		                        <ul class="sub box-shadow" style="left:10px;">
+		                            <li><a href="#">投资人注册</a></li>
+		                            <li><a href="#">借款人注册</a></li>
+		                        </ul>
+		                    </li>
+		                </ul>
+		    </div>
+		    <div class="clear_div"></div>
+		</div>-->
+		
+		<!--投资人已登录nav-->
+		<div id="logo_nav1">
+		    <div class="div_center">
+		                <a class="l" href="index.html"><img src="img/logo_bg.png"> </a>
+		                <ul id="nav1" class="nav clearfix">
+		                    <li class="nLi">
+		                        <h3><a href="index.html" target="_blank">首页</a></h3>
+		                    </li>
+		                    <li class="nLi">
+		                        <h3><a href="项目页.html" target="_blank">我要投资</a></h3>
+		                        <ul class="sub box-shadow">
+		                            <li><a href="项目页.html">全部项目</a></li>
+		                            <li><a href="项目页.html">新手专享</a></li>
+		                            <li><a href="项目页.html">精选项目</a></li>
+		                           
+		                        </ul>
+		                    </li>
+		                    <li class="nLi ">
+		                        <h3><a href="#" target="_blank">信息披露</a></h3>
+		                        <ul class="sub box-shadow">
+		                            <li><a href="#">安全保障</a></li>
+		                            <li><a href="#">运营披露</a></li>
+		                            <li><a href="#">关于后河</a></li>
+		                            <li><a href="信息披露-公司动态.html">公司动态</a></li>
+		                            <li><a href="信息披露-监管部门.html">监管法规</a></li>
+		                        </ul>
+		                    </li>
+		                    <li class="nLi">
+								<h3><a href="#" target="_blank">我的账户</a></h3>
+							</li>
+		                    <li class="nLi register_li">
+		                        <h3><a href="#" target="_blank">&nbsp;&nbsp;退出&nbsp;</a></h3>
+		                    </li>
+		                </ul>
+		    </div>
+		    <div class="clear_div"></div>
+		</div>
+		
+		<!--借款人已登录nav-->
+		<!--<div id="logo_nav2">
+		    <div class="div_center">
+		                <a class="l" href="index.html"><img src="img/logo_bg.png"> </a>
+		                <ul id="nav2" class="nav clearfix">
+		                    <li class="nLi ">
+		                        <h3><a href="后河财富-帮助中心.html" target="_blank">帮助中心</a></h3>
+		                    </li>
+		                    <li class="nLi ">
+		                        <h3><a href="#" target="_blank">我的账户</a></h3>
+		                    </li>
+		                    <li class="nLi register_li">
+		                        <h3><a href="#" target="_blank">&nbsp;&nbsp;退出&nbsp;</a></h3>
+		                    </li>
+		                </ul>
+		    </div>
+		    <div class="clear_div"></div>
+		</div>-->
+
+		<!--以上是公共头部-->
+		<div class="text_box">
+			<div class="header_top1">SZCA数字证书授权协议</div>
+			<div class="text_content">
+				<p style="text-align: center;font-weight: bold;color: #18284b">保证合同</p>
+				<p>尊敬的用户：</p>
+				<p>深圳市电子商务安全证书管理有限公司（简称SZCA）是经国家工业和信息化部审批设立的电子认证服务机构，作为金融行业权威的第三方安全认证机构，通过发放数字证书为网上交易提供信息安全保障。本协议构成数字证书持有人（即电子签名人，下称用户）与中金金融认证中心有限公司之间的权利义务约定，以及杭州安存网络科技有限公司（下称安存）与用户及关联方（包括互联网金融平台方及其用户）之间的权利义务约定。若同意本协议全部条款，即可申请并授权于安存生成和使用SZCA数字证书（下称数字证书）。</p>
+				<p>“数字证书”指由国家认可的，具有权威性、可信性和公正性的第三方电子认证服务机构对包含公开密钥拥有者信息、公开密钥等在内的一些信息进行签名后形成的一个电子文件，是符合《电子签名法》规定的电子签名认证证书。该证书由SZCA预先生成，由用户向发证机构（安存）申领，经由用户所在且指定的互联网金融平台方鉴别用户身份的真实性后，由发证机构（安存）将用户的身份信息与证书绑定后方生效的数字证书，用于签约网上交易的电子合同。</p>
+				<p>
+					一、SZCA数字证书提供的服务和SZCA的权利、义务
+				</p>
+				<p>
+					1、SZCA确保数字证书私钥是唯一的。
+				</p>
+				<p>
+					2、当数字证书与用户身份信息的绑定经发证机构和SZCA数字签名确认后，该数字证书即可生效。
+				</p>
+				<p>
+					3、SZCA向相关依赖方提供数字证书绑定信息的查询。
+				</p><p>
+					4、SZCA依法制定《电子认证业务规则》（简称CPS）、《数字证书策略》（简称CP）并公布于SZCA网站（www.SZCA.com.cn），明确SZCA数字证书的功能、使用证书各方的权利、义务以及SZCA的责任范围。
+				</p><p>
+					5、在用户通过数字证书对交易信息进行加密和签名的条件下，SZCA保证交易信息的保密性、完整性、不可抵赖性。如果发生纠纷，SZCA将依据不同情况承担下述义务：
+				</p>
+				<p>
+					（1）提供签发数字证书的CA证书；
+				</p>
+				<p>
+					（2）提供数字证书在交易发生时，在或不在SZCA发布的数字证书废止列表内的证明；
+				</p><p>
+					（3）对数字证书、数字签名、时间戳的真实性、有效性进行技术确认。
+				</p>
+				<p>
+					6、对于下列情况之一，SZCA有权吊销所签发的数字证书：
+				</p>
+				<p>
+					（1）用户申领数字证书时，提供的资料不真实；
+				</p>
+				<p>
+					（2）用户未履行本协议约定的义务；
+				</p>
+				<p>
+					（3）用户书面申请吊销数字证书；
+				</p>
+				<p>
+					（4）证书的安全性不能得到保证；
+				</p>
+				<p>
+					（5）法律、行政法规规定的其他情况。
+				</p><p>
+					二、 数字证书用户的权利和义务
+				</p>
+				<p>
+					1、用户享受SZCA作为合法的第三方电子认证服务机构提供的数字证书服务。
+				</p><p>
+					2、用户应遵循诚实、信用原则，申领数字证书时，应当提供真实、完整和准确的信息和资料，并在这些信息、资料发生改变时及时通知所在且指定的互联网金融平台方及发证机构（安存）。如因用户故意或过失提供的资料不真实或资料改变后未及时通知，造成的损失由用户自己承担。
+				</p>
+				<p>
+					3、用户须使用经合法途径获得的相关软件。
+				</p><p>
+					4、用户应合法使用SZCA数字证书，并对使用数字证书的行为负责。
+				</p>
+				<p>
+					5、用户应当妥善保管含有数字证书的载体。如因故意或过失导致他人盗用、冒用数字证书时，用户应承担由此产生的责任。
+				</p>
+				<p>
+					6、如用户使用的数字证书的载体丢失或密码泄漏，或者用户不希望继续使用数字证书，或者用户主体不存在，用户或法定权利人应当立即申请吊销该数字证书。
+				</p>
+				<p>
+					7、用户应在发证机构或指定网站进行证书更换或展期。
+				</p>
+				<p>
+					三、用户授权安存生成及使用电子签章
+				</p>
+				<p>
+					1、用户在登录后，经过实名认证的前提下，同意并授权安存为其申请SZCA数字证书。
+				</p>
+				<p>
+					2、安存经过用户授权，使用用户真实身份信息为其申请数字证书私钥唯一的SZCA数字证书。
+				</p><p>
+					3、申请SZCA数字证书后，用户在所在且指定的互联网金融平台上进行的交易，将使用数字证书进行实名盖章。
+				</p><p>
+					4、SZCA数字证书盖章的电子合同或协议，等同于手写签名/盖章的纸质版合同或协议的法律效力。
+				</p>
+				<p>
+					5、在用户授权安存使用其电子签章后的责任义务：
+				</p>
+				<p>
+					（1）用户不得私自使用电子合同/协议上的签章图片于其他任何用途；
+				</p>
+				<p>
+					（2）用户在所在且指定的互联网金融平台进行交易产生的电子合同/协议，未经安存授权确认，自行打印无效。
+				</p>
+				<p>
+					6、安存对于用户授权SZCA数字证书的责任义务：
+				</p>
+				<p>
+					（1）安存仅对用户在所在且指定的互联网金融平台上进行的交易所需签约的电子合同/协议进行SZCA数字证书盖章，不得私自在其他情况下使用用户SZCA数字证书；
+				</p>
+				<p>
+					（2）SZCA数字证书用户在其他非指定平台上授权或使用的，安存对此不承担任何责任义务；
+				</p>
+				<p>
+					（3） 用户使用电子合同/协议上电子签章图片于其他用途的，此签章图片无效，安存对此不承担任何责任义务。
+				</p>
+				<p>
+					四、 其他 
+				</p>
+				<p>
+					1、建议用户经常浏览SZCA网站，以便及时了解SZCA有关证书管理、CPS、数字证书CP和本协议变更公示等方面的信息。
+				</p><p>
+					2、建议用户经常登录安存网站（www.ancun.com），以便及时了解安存与SZCA合作的即时动态。
+				</p>
+				<p>
+					3、安存有权对本协议进行修订，修订后的本协议将公布于安存网站（www.ancun.com）。如用户在公布修订的一周后继续授权使用 SZCA提供的数字证书服务，即表明同意接受此等修订的约束。如果用户不予接受本协议中的约束，用户可以在上述期限内申请停止使用数字证书。
+				</p>
+				<p style="text-align: center;">
+					场景证书
+				</p>
+				<p>
+					尊敬的用户：
+				</p>
+				<p>
+					深圳市电子商务安全证书管理有限公司（简称SZCA）是经国家工业和信息化部审批设立的电子认证服务机构，作为金融行业权威的第三方安全认证机构，通过发放数字证书为网上交易提供信息安全保障。本协议构成数字证书持有人（即电子签名人，下称用户）与中金金融认证中心有限公司之间的权利义务约定，以及杭州安存网络科技有限公司（下称安存）与用户及关联方（包括互联网金融平台方及其用户）之间的权利义务约定。若同意本协议全部条款，即可申请并授权于安存生成和使用SZCA数字证书（下称数字证书）。
+				</p>
+				<p>
+					“数字证书”指由国家认可的，具有权威性、可信性和公正性的第三方电子认证服务机构对包含公开密钥拥有者信息、公开密钥等在内的一些信息进行签名后形成的一个电子文件，是符合《电子签名法》规定的电子签名认证证书。该证书由SZCA预先生成，由用户向发证机构（安存）申领，经由用户所在且指定的互联网金融平台方鉴别用户身份的真实性后，由发证机构（安存）将用户的身份信息与证书绑定后方生效的数字证书，用于签约网上交易的电子合同。
+				</p>
+				<p>
+					一、SZCA数字证书提供的服务和SZCA的权利、义务
+				</p>
+				<p>
+					1、SZCA确保数字证书私钥是唯一的。
+				</p>
+				<p>
+					2、当数字证书与用户身份信息的绑定经发证机构和SZCA数字签名确认后，该数字证书即可生效。该数字证书为场景证书，仅适用于特定的场景，为一次性有效证书。
+				</p>
+				<p>
+					3、SZCA向相关依赖方提供数字证书绑定信息的查询。
+				</p>
+				<p>
+					4、SZCA依法制定《电子认证业务规则》（简称CPS）、《数字证书策略》（简称CP）并公布于SZCA网站（www.SZCA.com.cn），明确SZCA数字证书的功能、使用证书各方的权利、义务以及SZCA的责任范围。
+				</p>
+				<p>
+					5、在用户通过数字证书对交易信息进行加密和签名的条件下，SZCA保证交易信息的保密性、完整性、不可抵赖性。如果发生纠纷，SZCA将依据不同情况承担下述义务：
+				</p>
+				<p>
+					（1）对数字证书及绑定、数字签名、时间戳的真实性、有效性进行技术确认。
+				</p>
+				<p>
+					（2）针对场景证书，SZCA应确认签发的数字证书符合相关标准规范，并确认签发的数字证书为场景证书，仅使用于特定场景。
+				</p>
+				<p>
+					6、对于下列情况之一，SZCA有权吊销所签发的数字证书：
+				</p>
+				<p>
+					（1）用户申领数字证书时，提供的资料不真实；
+				</p>
+				<p>
+					（2）用户未履行本协议约定的义务；
+				</p>
+				<p>
+					（3）用户书面申请吊销数字证书；
+				</p>
+				<p>
+					（4）证书的安全性不能得到保证；
+				</p>
+				<p>
+					（5）法律、行政法规规定的其他情况。
+				</p>
+				<p>
+					二、 数字证书用户的权利和义务
+				</p>
+				<p>
+					1、用户享受SZCA作为合法的第三方电子认证服务机构提供的数字证书服务。
+				</p>
+				<p>
+					2、用户应遵循诚实、信用原则，申领数字证书时，应当提供真实、完整和准确的信息和资料，并在这些信息、资料发生改变时及时通知所在且指定的互联网金融平台方及发证机构（安存）。如因用户故意或过失提供的资料不真实或资料改变后未及时通知，造成的损失由用户自己承担。
+				</p>
+				<p>
+					3、用户须使用经合法途径获得的相关软件。
+				</p>
+				<p>
+					4、用户应合法使用SZCA数字证书，并对使用数字证书的行为负责。场景证书仅适用于特定的场景，在特定场景对该证书使用完毕后，用户保证不将该证书及私钥用于其他场合
+				</p>
+				<p>
+					5、用户应当妥善保管含有数字证书的载体。如因故意或过失导致他人盗用、冒用数字证书时，用户应承担由此产生的责任。
+				</p>
+				<p>
+					6、如用户使用的数字证书的载体丢失或密码泄漏，或者用户不希望继续使用数字证书，或者用户主体不存在，用户或法定权利人应当立即申请吊销该数字证书。
+				</p>
+				<p>
+					三、用户授权安存生成及使用电子签章
+				</p>
+				<p>
+					1、用户在登录后，经过实名认证的前提下，同意并授权安存为其申请SZCA数字证书。
+				</p>
+				<p>
+					2、安存经过用户授权，使用用户真实身份信息为其申请数字证书私钥唯一的SZCA数字证书。
+				</p>
+				<p>
+					3、申请SZCA数字证书后，用户在所在且指定的互联网金融平台上进行的交易，将使用数字证书进行实名盖章。
+				</p>
+				<p>
+					4、SZCA数字证书盖章的电子合同或协议，等同于手写签名/盖章的纸质版合同或协议的法律效力。
+				</p>
+				<p>
+					5、在用户授权安存使用其电子签章后的责任义务：
+				</p>
+				<p>
+					（1）用户不得私自使用电子合同/协议上的签章图片于其他任何用途；
+				</p>
+				<p>
+					（2）用户在所在且指定的互联网金融平台进行交易产生的电子合同/协议，未经安存授权确认，自行打印无效。
+				</p>
+				<p>
+					6、安存对于用户授权SZCA数字证书的责任义务：
+				</p>
+				<p>
+					（1）安存仅对用户在所在且指定的互联网金融平台上进行的交易所需签约的电子合同/协议进行SZCA数字证书盖章，不得私自在其他情况下使用用户SZCA数字证书；
+				</p>
+				<p>
+					（2）SZCA数字证书用户在其他非指定平台上授权或使用的，安存对此不承担任何责任义务；
+				</p>
+				<p>
+					（3）用户使用电子合同/协议上电子签章图片于其他用途的，此签章图片无效，安存对此不承担任何责任义务。
+				</p>
+				<p>
+					四、 其他 
+				</p>
+				<p>
+					1、建议用户经常浏览SZCA网站，以便及时了解SZCA有关证书管理、CPS、数字证书CP和本协议变更公示等方面的信息。
+				</p>
+				<p>
+					2、建议用户经常登录安存网站，以便及时了解安存与SZCA合作的即时动态。
+				</p>
+				<p>
+					3、安存有权对本协议进行修订，修订后的本协议将公布于安存网站（www.ancun.com）。如用户在公布修订的一周后继续授权使用 SZCA提供的数字证书服务，即表明同意接受此等修订的约束。如果用户不予接受本协议中的约束，用户可以在上述期限内申请停止使用数字证书。
+				</p>
+			</div>
+		</div>
+		<div id="help_number">
+				<div class="float_l">
+					<p style="color: #2a2a2a; font-size: 14px;">
+						还没解决？联系
+						<a style="color: #2ba8ff; font-size: 14px;" href="http://cs.honhe.com/" target="_blank">在线客服</a>
+					</p>
+					<p style="color: #848484; font-size: 12px;">(工作日 09:00-21:00 周六日 09:00-17:30)
+					</p>
+				</div>
+				<div class="float_r">
+					<p style="color: #848484;">全国统一服务热线</p>
+					<p style="color: #f77b20; font-size: 24px;">400-833-6898</p>
+				</div>
+				<div class="clear0"></div>
+			</div>
+		<!--以下是底部公共部分-->
+		<!--以下是底部公共部分-->
+		<!--以下是底部公共部分-->
+		<div class="clear_div"></div>
+
+		<div id="foot" style="height:340px;width:100%;">
+		     <div class="div_center">
+		         <div class="l">
+		            <ul>
+		                <span class="tit">关于后河</span>
+		                <span><a href="#">后河简介</a></span>
+		                <span><a href="#">组织信息</a></span>
+		                <span><a href="#">最新公告</a></span>
+		                <span><a href="#">联系我们</a></span>
+		            </ul>
+		             <ul>
+		                 <span class="tit">信息披露</span>
+		                 <span><a href="#">数据统计</a></span>
+		                 <span><a href="#">运营报告</a></span>
+		                 <span><a href="#">企业资质</a></span>
+		                 <span><a href="#">安全保障</a></span>
+		             </ul>
+		
+		
+		             <ul>
+		                 <span class="tit">帮助中心</span>
+		                 <span><a href="#">注册登录</a></span>
+		                 <span><a href="#">资金存管</a></span>
+		                 <span><a href="#">充值提现</a></span>
+		                 <span><a href="#">收费标准</a></span>
+		                 <!--<span><a href="#">更多>></a></span>-->
+		             </ul>
+		             <p class="bottom-img">
+		                 <a href="http://webscan.360.cn/index/checkwebsite/url/www.honhe.com" name="19fe75e9f6557cdf26a3af658889ab7c" class="logo1" target="_blank"></a> 
+		                 <a href="http://v.pinpaibao.com.cn/authenticate/cert/?site=www.honhe.com&amp;at=business" target="_blank" class="logo2"></a>
+		                 <!--<a href="https://seal.wosign.com/details/www.honhe.com" target="_blank" class="logo3"></a>-->
+		                 <!--<a href="http://szcert.ebs.org.cn/e8369191-dc98-4072-ad44-e02027ae725f" target="_blank" class="logo4"></a>-->
+		                 <!--<a href="https://search.szfw.org/cert/l/CX20140928005203005271" id="___szfw_logo___" target="_blank" class="logo5"></a>-->
+		               <!--<script type="text/javascript">(function(){document.getElementById('___szfw_logo___').oncontextmenu = function(){return false;}})();</script>-->
+		             </p>
+		             <div class="clear_div"></div>
+		             <p class="foot_1">温馨提示：市场有风险  出借需谨慎</p>
+		             <p class="foot_2">Copyright © 2011-2018 HONHE Corporation All Rights Reserved. 版权所有 ©深圳市后河网互联网金融服务有限公司  粤ICP备13075040号</p>
+		         </div>
+		
+		
+		         <div class="r">
+		              <img src="img/webapp.png">
+		              <p class="phone_num">400-833-6898</p>
+		             <p class="time"> <span>工作日 09:00-21:00</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>周末 09:00-17:30</span> </p>
+		         </div>
+		     </div>
+		</div>		
+
+		<!--以上是底部公共部分-->
+		<!--以上是底部公共部分-->
+		<!--以上是底部公共部分-->
+
+	</body>
+	<script src="js/account.js"></script>
+	<script src="js/jquery-1.11.3.min.js"></script>
+
+	<script src="js/jquery.honhe.js"></script>
+	<!--首页的 导航 选项卡 轮播图需引入-->
+	<script src="js/zcm.js"></script>
+
+	<script>
+		//导航
+		jQuery("#nav").slide({
+			type: "menu", // 效果类型，针对菜单/导航而引入的参数（默认slide）
+			titCell: ".nLi", //鼠标触发对象
+			targetCell: ".sub", //titCell里面包含的要显示/消失的对象
+			effect: "slideDown", //targetCell下拉效果
+			delayTime: 300, //效果时间
+			triggerTime: 0, //鼠标延迟触发时间（默认150）
+			returnDefault: true //鼠标移走后返回默认状态，例如默认频道是“预告片”，鼠标移走后会返回“预告片”（默认false）
+		});
+	</script>
+</html>

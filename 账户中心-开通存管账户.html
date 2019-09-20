@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+		<title>开通存管账户</title>
+
+		<link type="text/css" rel="stylesheet" href="css/css.css">
+		<link type="text/css" rel="stylesheet" href="css/layer.css">
+		<style>
+			select {
+				border: solid 1px #000;
+				appearance: none;
+				-moz-appearance: none;
+				-webkit-appearance: none;
+				background: url("img/selet_xl.png") no-repeat scroll 315px center transparent;
+				padding-right: 14px;
+			}
+			
+			select::-ms-expand {
+				display: none;
+			}
+			select:focus{
+				border: solid 1px #607ee2;
+			}
+			html {
+				background: #002fd1 url("img/account_bg.jpg") no-repeat center;
+				background-size: 100% 100%;
+			}
+			
+			#body_inner {
+				background: #002fd1 url("img/account_bg.jpg") no-repeat center;
+				height: 1040px;
+			}
+			
+			.layui-layer-page .layui-layer-content {
+				overflow: inherit;
+			}
+			
+			.input {
+				display: inline-block;
+			}
+			
+			.input1:last-child {
+				border-right: 1px solid #999;
+			}
+			
+			.input1 {
+				border-top: 1px solid #999;
+				border-bottom: 1px solid #999;
+				border-left: 1px solid #999;
+				width: 46px;
+				height: 46px;
+				outline: none;
+				font-family: inherit;
+				font-size: 28px;
+				font-weight: inherit;
+				text-align: center;
+				line-height: 45px;
+				color: #c2c2c2;
+				background: rgba(255, 255, 255, 0);
+			}
+		</style>
+
+	</head>
+
+	<body>
+
+		<div id="body_inner">
+
+			<div id="active_account">
+				<div class="div_center">
+					<div class="l">客服热线 400-833-6898</div>
+					<div class="r">
+						<a href="#">帮助中心</a>
+					</div>
+				</div>
+			</div>
+
+			<div id="logo_account" class="div_center">
+				<img src="img/logo_bg2.png">
+				<div id="account_main">
+
+					<div id="account_main_tab" class="slideTxtBox">
+						<div class="hd">
+							<div style="left: -10px;width: 540px;height: 45px;position: absolute;z-index: 1;opacity: 0.1;background:url('img/account_tit_bg.png') no-repeat;"></div>
+							<ul>
+								<li class="on">1. 完善个人信息</li>
+								<li>2. 确认个人信息</li>
+								<li>3. 开户成功</li>
+							</ul>
+						</div>
+						<div class="bd" style="margin-left: 20px;">
+							<ul>
+
+								<div class="inner">
+									<table id="table_1" border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tr>
+											<td class="tit" valign="middle">真实姓名</td>
+											<td>
+												<input class="style_input" type="text" value="">
+											</td>
+										</tr>
+
+										<tr>
+											<td class="tit" valign="middle">身份证号</td>
+											<td>
+												<input class="style_input" type="text" value="">
+											</td>
+										</tr>
+
+										<tr>
+											<td class="tit" valign="middle">开户银行</td>
+											<td valign="middle">
+
+												<select class="style_input" style="width: 341px;display: block;">
+													<option>平安银行</option>
+												</select>
+											</td>
+										</tr>
+
+										<tr>
+											<td class="tit" valign="middle">银行卡号</td>
+											<td>
+												<input class="style_input" type="text" value="" placeholder="该卡预留手机号需与注册手机号一致">
+											</td>
+										</tr>
+
+										<tr>
+											<td class="tit" valign="middle">预留手机号</td>
+											<td>
+												<input class="style_input" type="text" value="135****2104" placeholder="" disabled="true" style="background: #f6f8fc;">
+											</td>
+										</tr>
+
+										<tr>
+											<td class="tit" valign="middle" nowrap="nowrap">短信验证码</td>
+											<td valign="middle">
+												<div class="style_input2">
+													<input class="code_input" type="text" value="" placeholder="短信验证码">
+
+													<a id="code_num">发送验证码</a>
+													<!--<a id="code_num" class="hover">60s</a>-->
+												</div>
+											</td>
+										</tr>
+
+										<tr>
+											<td class="tit" valign="middle" nowrap="nowrap">&nbsp;</td>
+											<td>
+												<div class="error">xxxxxxxx</div>
+												<a style="margin-top: 20px;width: 341px;" class="active_start_bt disabled" onclick="$('#account_main_tab .hd ul li:eq(1)').click()">下一步</a>
+												<input type="checkbox" id="checked_box" checked="checked" />
+												<p class="agree">同意开通
+													<a href="#">《平安银行网络借贷资金存管三方协议》</a>
+													<a class="disclaimer" href="#">免责声明</a>
+												</p>
+											</td>
+										</tr>
+									</table>
+								</div>
+
+							</ul>
+							<ul>
+
+								<div class="people">
+									<table width="460" bgcolor="#f6f8fc" border="0" cellpadding="0" cellspacing="0">
+										<tr>
+											<td class="title">真实姓名</td>
+											<td>后*河</td>
+										</tr>
+
+										<tr>
+											<td class="title">身份证号</td>
+											<td>21548974****5141</td>
+										</tr>
+
+										<tr>
+											<td class="title">开户银行</td>
+											<td>建设银行</td>
+										</tr>
+
+										<tr>
+											<td class="title">银行卡号</td>
+											<td>66405****7415</td>
+										</tr>
+
+										<tr>
+											<td class="title">手机号码</td>
+											<td>151****5475</td>
+										</tr>
+									</table>
+
+								</div>
+
+								<div class="input_code2">
+									<div class="style_input2">
+										<input class="code_input" type="text" value="" placeholder="短信验证码">
+										<a class="code_num_s">发送验证码</a>
+										<!--<a id="code_num_s" class="hover">60s</a>-->
+									</div>
+									<div class="active_start_bt_box">
+										<div class="error">验证码错误</div>
+										<a class="active_start_bt" onclick="$('#account_main_tab .hd ul li:eq(2)').click()">开通银行存管</a>
+										<input type="checkbox" id="checked_box" checked="checked" />
+										<p class="agree">同意开通
+											<a class="age_a" href="#">授权</a>
+										</p>
+									</div>
+								</div>
+
+							</ul>
+							<ul style="padding-bottom: 50px;">
+								<div class="active_success">
+									<div class="success_img">
+										<img src="img/success_img2.jpg">
+										<a class="active_start_bt">账户中心</a>
+										<a class="public_bt2">回到首页</a>
+									</div>
+
+								</div>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div id="foot" class="login_reg">
+
+			<div class="div_center">
+				<div class="l">
+
+					<p class="bottom-img">
+						<!-- <a href="http://webscan.360.cn/index/checkwebsite/url/www.honhe.com" name="19fe75e9f6557cdf26a3af658889ab7c" class="logo1" target="_blank"></a> -->
+						<!--<a href="http://v.pinpaibao.com.cn/authenticate/cert/?site=www.honhe.com&amp;at=business" target="_blank" class="logo2"></a>-->
+						<a href="https://seal.wosign.com/details/www.honhe.com" target="_blank" class="logo3"></a>
+						<a href="http://szcert.ebs.org.cn/e8369191-dc98-4072-ad44-e02027ae725f" target="_blank" class="logo4"></a>
+						<!--<a href="https://search.szfw.org/cert/l/CX20140928005203005271" id="___szfw_logo___" target="_blank" class="logo5"></a>
+						<script type="text/javascript">
+							(function() {
+								document.getElementById('___szfw_logo___').oncontextmenu = function() {
+									return false;
+								}
+							})();
+						</script>-->
+					</p>
+
+					<div class="clear_div"></div>
+
+					<p class="foot_2">Copyright © 2011-2018 HONHE Corporation All Rights Reserved. 版权所有 ©深圳市后河网互联网金融服务有限公司 粤ICP备13075040号</p>
+
+				</div>
+
+				<div class="r">
+					<p class="phone_num">400-833-6898</p>
+					<p class="time"> <span>工作日 09:00-21:00</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>周末 09:00-17:30</span> </p>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="set_pass layui-layer-content" ms-controller="avalon" style="display: none;">
+			<div class="title">
+				设置交易密码
+				<span class="close"></span>
+			</div>
+			<p class="y_tip">为了您的账户资金安全，银行卡认证、充值、提现前需设置交易密码。</p>
+			<form class="cc">
+
+				<table class="set_pass_wrap" border="0" cellpadding="0" cellspacing="0" width="371px">
+					<tr>
+						<td class="tit pa_td" width="" valign="middle" nowrap="nowrap">交易密码&nbsp;</td>
+						<td class="pa_td">
+							<div class="input">
+								<input class="input1" type="password" placeholder="" maxlength="1"><!-
+							  -><input class="input1" type="password" placeholder="" maxlength="1"><!-
+							  -><input class="input1" type="password" placeholder="" maxlength="1"><!-
+							  -><input class="input1" type="password" placeholder="" maxlength="1"><!-
+							  -><input class="input1" type="password" placeholder="" maxlength="1"><!-
+							  -><input class="input1" type="password" placeholder="" maxlength="1">
+							</div>
+							<!--<input placeholder="设置6位数密码" class="style_input" type="password" name="pass_table style_input" onkeyup="var v=this.value||'';v=v.replace(/[^\d]/g,'');this.value=v.substr(0,6);">-->
+						</td>
+					</tr>
+
+					<tr>
+						<td class="tit pa_td" width="" valign="middle" nowrap="nowrap">确认密码&nbsp;</td>
+						<td class="pa_td">
+							<div class="input">
+								<input class="input1" type="password" placeholder="" maxlength="1"><!-
+							  -><input class="input1" type="password" placeholder="" maxlength="1"><!-
+							  -><input class="input1" type="password" placeholder="" maxlength="1"><!-
+							  -><input class="input1" type="password" placeholder="" maxlength="1"><!-
+							  -><input class="input1" type="password" placeholder="" maxlength="1"><!-
+							  -><input class="input1" type="password" placeholder="" maxlength="1">
+							</div>
+							<!--<input placeholder="再次确认6位数密码" class="style_input" type="password" name="confirm_pass_table" onkeyup="var v=this.value||'';v=v.replace(/[^\d]/g,'');this.value=v.substr(0,6);">-->
+							<p class="error">两次输入的密码不一致</p>
+						</td>
+					</tr>
+
+					<tr>
+						<td class="tit pa_td" width="76">&nbsp;</td>
+						<td>
+							<a class="active_start_bt">下一步</a>
+						</td>
+					</tr>
+
+				</table>
+			</form>
+
+		</div>
+
+		<!--描述：免责声明-->
+		<div class="disclaimer_tip layui-layer-content" ms-controller="avalon" style="display: none;">
+			<div class="title">
+				免责声明
+				<span class="close"></span>
+			</div>
+			<p class="disclaimer_txt">平安银行不对网络借贷交易行为提供保证或担保，不承担借贷违约责任，不对网络借贷资金本金及收益予以保证或承诺，不承担资金运用风险，不承担借款项目及借贷交易信息真实性的审核责任，不对网络借贷信息数据的真实性、准确性和完整性负责。</p>
+
+		</div>
+		<!--授权-->
+		<div class="agree_box layui-layer-content" ms-controller="avalon" style="display: none;">
+			<div class="title">
+				同意开通授权
+				<span class="close"></span>
+			</div>
+			<p class="disclaimer_txt">开通授权代表您知晓并同意存管系统（平安银行）有权根据后河财富平台代发起的划扣指令（比如经您同意发起的投标、债权转让、债权转让还款、提现等业务指令），进行相应款项的划扣、支付、冻结及行使其他权利，这些代发起指令将视为您的真实意思表示，相关风险由您自行承担，您对此予以接受和认可。授权后，后河财富将有权代发起您的业务指令——《网站服务协议》中与您有约定的业务授权范围（包括但不限于投标、授权债权转让、授权还款、授权提现），由存管系统（平安银行）操作您的账户资金进行相关自动业务操作，需要您自行承担相应的资金风险和责任，请您谨慎操作。</p>
+
+		</div>
+
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/jquery.honhe.js"></script>
+		<script src="js/layer.js"></script>
+		<!--弹窗-->
+		<script src="js/zcm.js"></script>
+		<script>
+			layer.open({
+				type: 1,
+				shade: [0.4, '#393D49'],
+				scrollbar: false,
+				closeBtn: 0,
+				title: false,
+				area: ['620px', '390px'],
+				content: $('.set_pass'), //这里content是一个DOM，注意：最好该元素要存放在body最外层，否则可能被其它的相对元素所影响
+				success: function(layero, index) {
+//					$("html").css("overflow","visible");
+				}
+			});
+
+			$('.agree .age_a').click(function() {
+				$(this).css("color", "#002FD1")
+				layer.open({
+					type: 1,
+					shade: [0.4, '#393D49'],
+					scrollbar: false,
+					closeBtn: 0,
+					title: false,
+					area: ['620px', '330px'],
+					content: $('.agree_box'), //这里content是一个DOM，注意：最好该元素要存放在body最外层，否则可能被其它的相对元素所影响
+					success: function(layero, index) {
+
+					}
+				});
+			});
+			$('.agree .disclaimer').click(function() {
+				layer.open({
+					type: 1,
+					shade: [0.4, '#393D49'],
+					scrollbar: false,
+					closeBtn: 0,
+					title: false,
+					area: ['620px', '220px'],
+					content: $('.disclaimer_tip'), //这里content是一个DOM，注意：最好该元素要存放在body最外层，否则可能被其它的相对元素所影响
+					success: function(layero, index) {
+
+					}
+				});
+			});
+
+			//关闭弹窗
+			$('.set_pass .close').click(function() {
+				$(this).css("color", "#3a4762")
+				layer.closeAll();
+			});
+			$('.disclaimer_tip .close').click(function() {
+				$(this).css("color", "#3a4762")
+				layer.closeAll();
+			});
+			$('.agree_box .close').click(function() {
+				$(this).css("color", "#3a4762")
+				layer.closeAll();
+			});
+
+			//新手切换
+			jQuery("#account_main_tab").slide({
+				trigger: "click",
+				delayTime: 0
+			});
+			
+		</script>
+
+	</body>
+
+</html>

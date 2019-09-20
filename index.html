@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>首页</title>
+	<!--<meta http-equiv="X-UA-Compatible" content="IE=edge" />；-->
+    <meta charset="UTF-8">
+    <!--兼容ie9和ie10文档模式，浏览器级别低于9的就以浏览器本身最高的方式打开-->
+	<meta http-equiv=X-UA-Compatible content="IE=EmulateIE9,EmulateIE10">；
+    <meta http-equiv=X-UA-Compatible content="IE=Edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
+    <link type="text/css" rel="stylesheet" href="css/css.css">
+      
+	<style>
+	 	
+		/*合作伙伴 */
+		#fir_list{background: #fff;overflow: hidden;margin-bottom: 50px;box-shadow: none;}
+		#fir_list img{display: block;margin: 0 auto;width:100%;
+		  height:auto;
+		  -webkit-transform:none;
+		  transform:none;
+		  top:0;
+		  
+		}
+		#fir_list td{width: 200px;height: 105px;text-align: center;border:1px solid #f0f3f8;}
+		#fir_list td:hover{background: #f9f9f9;}
+		/*精选项目广告*/
+		#project .inner .l p{margin-top: 650px;text-align: center;color:#fffdfa;}
+		#project .inner .l p>span{border:1px solid #fff;padding:0px 3px;border-radius: 4px;font-size: 10px;}
+		/*新手指南左侧活动加息*/
+		#new_player .p_t1{width:340px;}
+		#new_player .p_t1 a{color: #ee3030; border: 1px solid #ee3030;position: relative;left: 10px;top: -15px;display: inline-block;line-height: 18px;border-radius: 10px; padding: 0px 4px;}
+			
+		/*更多公告超出宽度部分...表示*/
+		#home_path_2 .news .infoList li a{overflow:hidden;display: block;text-overflow:ellipsis;white-space:nowrap;width:312px;}
+		
+		/*banner*/
+		.new_banner{
+			position: fixed;
+			bottom: 0;
+			width: 100%;
+			height: 100px;
+			background:url("img/new_banner.png") no-repeat center 100%;
+		}
+		.new_banner a{
+		    color: #fff;
+		    width: 157px;
+		    height: 40px;
+		    border-radius: 20px;
+		    background-color: #294395;
+		    text-align: center;
+		    line-height: 40px;
+		    margin-top: 30px;
+		    margin-left: 65%;
+		    font-size: 18px;
+		    float: left;
+		}
+		.new_banner span{
+		    width: 15px;
+		    height: 15px;
+		    background: url("img/new_banner_close.png")no-repeat;
+		    display: block;
+		    float: left;
+		    margin-top: 13px;
+		    margin-left: 115px;
+		}
+		.old_banner{
+			position: fixed;
+			bottom: 0;
+			width: 100%;
+			height: 100px;
+			background:url("img/new_banner_bg1.png") no-repeat center 100%;
+		}
+		.old_banner a{
+		    color: #fff;
+		    width: 157px;
+		    height: 40px;
+		    border-radius: 20px;
+		    background-color: #294395;
+		    text-align: center;
+		    line-height: 40px;
+		    margin-top: 30px;
+		    margin-left: 65%;
+		    font-size: 18px;
+		    float: left;
+		}
+		.old_banner span{
+			width: 15px;
+			height: 15px;
+			background: url("img/new_banner_close.png")no-repeat;
+			display: block;
+		    float: left;
+		    margin-top: 13px;
+		    margin-left: 115px;
+		}
+		
+		/*20180801*/
+		#new_player,#new_player .slideTxtBox,#new_player .l{width:1200px;}
+		#new_player .slideTxtBox .hd ul li{width:599px;}
+	</style>
+</head>
+<body>
+<!--
+<div id="home_top_little_nav">
+    <div class="div_center">
+           <div class="l">客服热线  400-833-6898</div>
+           <ul class="r">
+               <li><a href="#">免费注册</a></li>
+               <li><a href="#">登录</a></li>
+               <li><a href="#">帮助中心</a></li>
+               <li><a href="#">关于我们</a></li>
+           </ul>
+    </div>
+</div>
+-->
+
+
+
+
+<!--未登录状态nav-->
+<div id="logo_nav">
+    <div class="div_center">
+                <a class="l" href="index.html"><img src="img/logo_bg.png"> </a>
+                <ul id="nav" class="nav clearfix">
+                    <li class="nLi">
+                        <h3><a  href="index.html" target="_blank">首页</a></h3>
+                    </li>
+                    <li class="nLi">
+                        <h3><a href="项目页.html" target="_blank">我要投资</a></h3>
+                        <ul class="sub box-shadow">
+                            <li><a href="项目页.html">全部项目</a></li>
+                            <li><a href="项目页.html">新手专享</a></li>
+                            <li><a href="项目页.html">精选项目</a></li>
+                        </ul>
+                    </li>
+                    <li class="nLi">
+                        <h3><a href="http://chedai.honhe.com/" target="_blank">我要借款</a></h3>
+                    </li>
+                    <li class="nLi">
+                        <h3><a target="_blank">信息披露</a></h3>
+                        <ul class="sub box-shadow">
+                            <li><a href="#">安全保障</a></li>
+                            <li><a href="#">运营披露</a></li>
+                            <li><a href="#">关于后河</a></li>
+                            <li><a href="信息披露-公司动态.html">公司动态</a></li>
+                            <li><a href="信息披露-监管部门.html">监管法规</a></li>
+                        </ul>
+                    </li>
+                    <li class="nLi login_li">
+                        <h3><a href="#" target="_blank" style="">&nbsp;登录&nbsp;<span class="arrow_nav"></span></a></h3>
+                        <ul class="sub box-shadow" style="">
+                            <li><a href="#">投资人登录</a></li>
+                            <li><a href="#">借款人登录</a></li>
+                        </ul>
+                    </li>
+                    <li class="nLi register_li">
+                        <h3><a href="#" target="_blank" style="">&nbsp;注册&nbsp;<span class="arrow_nav"></span></a></h3>
+                        <ul class="sub box-shadow" style="left:10px;">
+                            <li><a href="#">投资人注册</a></li>
+                            <li><a href="#">借款人注册</a></li>
+                        </ul>
+                    </li>
+                </ul>
+    </div>
+    <div class="clear_div"></div>
+</div>
+
+<!--投资人已登录nav-->
+<!--<div id="logo_nav1">
+    <div class="div_center">
+                <a class="l" href="index.html"><img src="img/logo_bg.png"> </a>
+                <ul id="nav1" class="nav clearfix">
+                    <li class="nLi">
+                        <h3><a href="index.html" target="_blank">首页</a></h3>
+                    </li>
+                    <li class="nLi">
+                        <h3><a href="项目页.html" target="_blank">我要投资</a></h3>
+                        <ul class="sub box-shadow">
+                            <li><a href="项目页.html">全部项目</a></li>
+                            <li><a href="项目页.html">新手专享</a></li>
+                            <li><a href="项目页.html">精选项目</a></li>
+                           
+                        </ul>
+                    </li>
+                    <li class="nLi ">
+                        <h3><a href="#" target="_blank">信息披露</a></h3>
+                        <ul class="sub box-shadow">
+                            <li><a href="#">安全保障</a></li>
+                            <li><a href="#">运营披露</a></li>
+                            <li><a href="#">关于后河</a></li>
+                            <li><a href="信息披露-公司动态.html">公司动态</a></li>
+                            <li><a href="信息披露-监管部门.html">监管法规</a></li>
+                        </ul>
+                    </li>
+                    <li class="nLi">
+						<h3><a href="#" target="_blank">我的账户</a></h3>
+					</li>
+                    <li class="nLi register_li">
+                        <h3><a href="#" target="_blank">&nbsp;&nbsp;退出&nbsp;</a></h3>
+                    </li>
+                </ul>
+    </div>
+    <div class="clear_div"></div>
+</div>-->
+
+<!--借款人已登录nav-->
+<!--<div id="logo_nav2">
+    <div class="div_center">
+                <a class="l" href="index.html"><img src="img/logo_bg.png"> </a>
+                <ul id="nav2" class="nav clearfix">
+                    <li class="nLi ">
+                        <h3><a href="后河财富-帮助中心.html" target="_blank">帮助中心</a></h3>
+                    </li>
+                    <li class="nLi ">
+                        <h3><a href="#" target="_blank">我的账户</a></h3>
+                    </li>
+                    <li class="nLi register_li">
+                        <h3><a href="#" target="_blank">&nbsp;&nbsp;退出&nbsp;</a></h3>
+                    </li>
+                </ul>
+    </div>
+    <div class="clear_div"></div>
+</div>-->
+
+
+
+
+
+<div id="slidepic" class="fullSlide">
+    <div class="bd">
+        <ul>
+            <li _src="url(img/1.jpg)" style="background:#fff center no-repeat;"><a target="_blank" href="#"></a></li>
+            <li _src="url(img/slide_yiche.jpg)"><a target="_blank" href="#"></a></li>
+            <li _src="url(https://img.honhe.com/upload/ad/201610/20161018181101_gy9mz.jpg)"><a target="_blank" href="#"></a></li>
+        </ul>
+    </div>
+    <div class="hd"><ul class="banner-navigation"></ul></div>
+    <span class="prev"></span>
+    <span class="next"></span>
+</div>
+
+<div id="home_path_1">
+     <div class="div_center">
+             <table border="0" width="100%" cellpadding="0" cellspacing="0">
+                 <tr>
+                     <!--<td width="300" valign="middle">
+                         <table border="0" cellpadding="0" cellspacing="0" style="margin: 0 auto;height: 100%;">
+                             <tr>
+                                 <td valign="middle"><img src="img/home_path_1_img1.png"></td>
+                                 <td valign="middle">
+                                     <p class="tit">银行资金存管</p>
+                                     <p>交易资金通过平安银行流转</p>
+                                     <p>平台无法触碰资金</p>
+                                 </td>
+                             </tr>
+                         </table>
+                     </td>-->
+
+                     <td width="400" valign="middle">
+                         <table border="0" cellpadding="0" cellspacing="0" style="margin: 0 auto;height: 100%;">
+                             <tr>
+                                 <td valign="middle"><img src="img/home_path_1_img2.png"></td>
+                                 <td valign="middle">
+                                     <p class="tit">专注借贷</p>
+                                     <p>专注于网络借贷</p>
+                                     <p>以优质资产为依托</p>
+                                 </td>
+                             </tr>
+                         </table>
+
+                     </td>
+
+                     <td width="400" valign="middle">
+                         <table border="0" cellpadding="0" cellspacing="0" style="margin: 0 auto;height: 100%;">
+                             <tr>
+                                 <td valign="middle"><img src="img/fenkong.png"></td>
+                                 <td valign="middle">
+                                     <p class="tit">风控管理</p>
+                                     <p>小微贷风控技术</p>
+                                     <p>风险控制领先同行</p>
+                                 </td>
+                             </tr>
+                         </table>
+                     </td>
+
+                     <td width="400" valign="middle">
+                         <table border="0" cellpadding="0" cellspacing="0" style="margin: 0 auto;height: 100%;">
+                             <tr>
+                                 <td valign="middle"><img src="img/anquan.png"></td>
+                                 <td valign="middle">
+                                     <p class="tit">安全保障</p>
+                                     <p>资深网贷平台</p>
+                                     <p>4年平稳运行</p>
+                                 </td>
+                             </tr>
+                         </table>
+                     </td>
+                 </tr>
+             </table>
+     </div>
+</div>
+
+
+
+
+
+<div id="home_path_2">
+    <div class="div_center">
+            <div class="wrap" style="position: relative;">
+            	<!--公告banner部分-->
+                <div class="txtScroll-top news">  
+				    <div class="bd scrollNews" style="width:312px;" >  
+				        <ul class="infoList">  
+				            <li><a href="#" title="中国打破了世界软件巨头规则中国打破了世界软件巨头规则中国打破了世界软件巨头规则11">中国打破了世界软件巨头规则中国打破了世界软件巨头规则中国打破了世界软件巨头规则11</a></li>  
+				            <li><a href="#" title="口语：会说中文就能说英语！222">口语：会说中文就能说英语！222</a></li>  
+				            <li><a href="#" title="农场摘菜不如在线学外语好玩33">农场摘菜不如在线学外语好玩33</a></li>  
+				            <li><a href="#" title="数理化老师竟也看学习资料？44">数理化老师竟也看学习资料？44</a></li>  
+				            <li><a href="#" title="学英语送ipad2,45天突破听说55">学英语送ipad2,45天突破听说55</a></li>  
+				            <li><a href="#" title="学外语，上北外！66">学外语，上北外！66</a></li>  
+				            <li><a href="#" title="那些无法理解的荒唐事77">那些无法理解的荒唐事77</a></li>  
+				        </ul>  
+				    </div>  
+				</div>  
+
+                <a href="" class="more_a" style="position: absolute;right: 200px;">更多公告 ></a>
+
+            </div>
+
+
+
+
+
+        <div id="show_data">
+        	累计交易 28.86亿 注册人数 24,930人  <span>(数据截止至2018.05.13)</span>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+<div class="div_center">
+
+
+      <div class="home_project_tit">
+          <span class="l">新手专享</span>   <span class="r">新手独享  利率+2%</span>
+      </div>
+
+
+      <div id="new_player" class="box_shadow transition_box_shadow">
+          <div class="l">
+              <div class="slideTxtBox">
+                  <div class="hd">
+                      <ul>
+                          <li style="border-left: 0px solid red;">
+                              <span class="li_l">车贷宝-H597105486</span>   <span class="li_m">先息后本</span>   <span class="li_r">先息后本</span>
+                           </li>
+                          <li style="border-left: 1px solid #e9edf4;">
+                              <span class="li_l">车贷宝-H597105486</span>   <span class="li_m">先息后本</span>   <span class="li_r">先息后本</span>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="bd">
+                      <ul>
+                          <table border="0" width="100%" cellpadding="0" cellspacing="0">
+                              <tr>
+                                  <td class="p1">
+                                      <p class="p_t1">10.8+1.2<a>活动加息</a> </p>
+                                      <p class="p_b">历史年化收益(%)</p>
+                                  </td>
+                                  <td class="p2">
+                                      <p class="p_t">98</p>
+                                      <p class="p_b">期限(天)</p>
+                                  </td>
+                                  <td class="p3">
+                                      <p class="p_t">2,000,000</p>
+                                      <p class="p_b">剩余金额(元)</p>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td colspan="3">
+
+
+                                      <table border="0" width="740" cellpadding="0" cellspacing="0" style="margin: 0 auto;">
+                                            <tr>
+                                                <td>
+                                                    <div class="new_player_load">
+                                                        <div class="load_inner load" style="width:0%;"></div>
+                                                    </div>
+                                                </td>
+                                                <td class="load_num" valign="middle">&nbsp;100%</td>
+                                            </tr>
+                                      </table>
+
+
+
+                                  </td>
+                              </tr>
+                          </table>
+                      </ul>
+                      <ul>
+                          <table border="0" width="100%" cellpadding="0" cellspacing="0">
+                              <tr>
+                                  <td class="p1">
+                                      <p class="p_t1">10.8+2<a>活动加息</a></p>
+                                      <p class="p_b">历史年化收益(%)</p>
+                                  </td>
+                                  <td class="p2">
+                                      <p class="p_t">198</p>
+                                      <p class="p_b">期限(天)</p>
+                                  </td>
+                                  <td class="p3">
+                                      <p class="p_t">200,000</p>
+                                      <p class="p_b">剩余金额(元)</p>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td colspan="3">
+
+
+                                      <table border="0" width="740" cellpadding="0" cellspacing="0" style="margin: 0 auto;">
+                                          <tr>
+                                              <td>
+                                                  <div class="new_player_load">
+                                                      <div class="load_inner load" style="width: 0%;"></div>
+                                                  </div>
+                                              </td>
+                                              <td class="load_num" valign="middle">&nbsp;100%</td>
+                                          </tr>
+                                      </table>
+
+
+
+                                  </td>
+                              </tr>
+                          </table>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <!--<div id="home_video" class="r box_shadow transition_box_shadow">
+      		<img src="img/1219-new.jpg" alt="新手指南" id="new_hide"/>
+      </div>-->
+
+
+    <div class="clear_div"></div>
+</div>
+
+<div id="project" class="div_center">
+
+        <div class="home_project_tit">
+            <span class="l">精选项目</span>   <span class="r">优质资产 安心理财</span>
+        </div>
+
+        <div class="inner">
+            <div class="l top box_shadow" style="" id="wxgif_show">
+            	<p>
+            		<span>广告</span>
+            		市场有风险，投资需谨慎
+            	</p>
+            	<div class="clear_div"></div>
+            </div>
+
+
+                            <div class="r">
+                                   <div class="list">
+                                       <div class="path_1">
+                                           <p class="p1">  <span>10.8+2<a>活动加息</a></span>  </p>
+                                           <p class="p2">历史年化收益(%)</p>
+                                       </div>
+
+                                       <div class="path_2">
+                                           <p class="p1">702</p>
+                                           <p class="p2">投资期限(天)</p>
+                                       </div>
+
+
+                                       <div class="path_3">
+                                           <p class="p1">200,000</p>
+                                           <p class="p2">可投金额(元)</p>
+                                       </div>
+
+
+                                       <div class="path_4">
+                                           <div class="load_wrap">
+                                                <div class="load_inner" id="load_1" style="width:0%;"></div>
+                                               <span class="num">100%</span>
+                                           </div>
+
+                                           <div class="project_style">
+                                               <span class="s_l">还款方式</span>
+                                               <span class="s_r">等本等息</span>
+                                           </div>
+                                       </div>
+
+
+                                       <div class="path_5">
+                                           <a class="inve_bt">投资</a>
+                                       </div>
+
+                                   </div>
+
+                                <div class="list">
+                                    <div class="path_1">
+                                        <p class="p1">  <span>10.8+2<a>活动加息</a></span>  </p>
+                                        <p class="p2">历史年化收益(%)</p>
+                                    </div>
+
+                                    <div class="path_2">
+                                        <p class="p1">702</p>
+                                        <p class="p2">投资期限(天)</p>
+                                    </div>
+
+
+                                    <div class="path_3">
+                                        <p class="p1">200,000</p>
+                                        <p class="p2">可投金额(元)</p>
+                                    </div>
+
+
+                                    <div class="path_4">
+                                        <div class="load_wrap">
+                                            <div class="load_inner load2" style="width: 0%;"></div>
+                                            <span class="num">100%</span>
+                                        </div>
+
+                                        <div class="project_style">
+                                            <span class="s_l">还款方式</span>
+                                            <span class="s_r">等本等息</span>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="path_5">
+                                        <a class="inve_bt">投资</a>
+                                    </div>
+
+                                </div>
+
+                                <div class="list">
+                                    <div class="path_1">
+                                        <p class="p1">  <span>10.8+2<a>活动加息</a></span>  </p>
+                                        <p class="p2">历史年化收益(%)</p>
+                                    </div>
+
+                                    <div class="path_2">
+                                        <p class="p1">702</p>
+                                        <p class="p2">投资期限(天)</p>
+                                    </div>
+
+
+                                    <div class="path_3">
+                                        <p class="p1">200,000</p>
+                                        <p class="p2">可投金额(元)</p>
+                                    </div>
+
+
+                                    <div class="path_4">
+                                        <div class="load_wrap">
+                                            <div class="load_inner load3" style="width: 0%;"></div>
+                                            <span class="num">100%</span>
+                                        </div>
+
+                                        <div class="project_style">
+                                            <span class="s_l">还款方式</span>
+                                            <span class="s_r">等本等息</span>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="path_5">
+                                        <a class="inve_bt">投资</a>
+                                    </div>
+
+                                </div>
+
+                                <div class="list">
+                                    <div class="path_1">
+                                        <p class="p1">  <span>10.8+2<a>活动加息</a></span>  </p>
+                                        <p class="p2">历史年化收益(%)</p>
+                                    </div>
+
+                                    <div class="path_2">
+                                        <p class="p1">702</p>
+                                        <p class="p2">投资期限(天)</p>
+                                    </div>
+
+
+                                    <div class="path_3">
+                                        <p class="p1">200,000</p>
+                                        <p class="p2">可投金额(元)</p>
+                                    </div>
+
+                                    <div class="path_4">
+                                        <div class="load_wrap">
+                                            <div class="load_inner load4" style="width: 0%;"></div>
+                                            <span class="num">100%</span>
+                                        </div>
+
+                                        <div class="project_style">
+                                            <span class="s_l">还款方式</span>
+                                            <span class="s_r">等本等息</span>
+                                        </div>
+                                    </div>
+                                    <div class="path_5">
+                                        <a class="inve_bt">投资</a>
+                                    </div>
+                                </div>
+
+                                <div class="list">
+                                    <div class="path_1">
+                                        <p class="p1">  <span>10.8+2<a>活动加息</a></span>  </p>
+                                        <p class="p2">历史年化收益(%)</p>
+                                    </div>
+
+                                    <div class="path_2">
+                                        <p class="p1">702</p>
+                                        <p class="p2">投资期限(天)</p>
+                                    </div>
+
+                                    <div class="path_3">
+                                        <p class="p1">200,000</p>
+                                        <p class="p2">可投金额(元)</p>
+                                    </div>
+
+                                    <div class="path_4">
+                                        <div class="load_wrap">
+                                            <div class="load_inner load5" style="width: 0%;"></div>
+                                            <span class="num">100%</span>
+                                        </div>
+
+                                        <div class="project_style">
+                                            <span class="s_l">还款方式</span>
+                                            <span class="s_r">等本等息</span>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="path_5">
+                                        <a class="inve_bt">投资</a>
+                                    </div>
+
+                                </div>
+                                <div class="list">
+                                    <div class="path_1">
+                                        <p class="p1">  <span>10.8+2<a>活动加息</a></span>  </p>
+                                        <p class="p2">历史年化收益(%)</p>
+                                    </div>
+
+                                    <div class="path_2">
+                                        <p class="p1">702</p>
+                                        <p class="p2">投资期限(天)</p>
+                                    </div>
+
+
+                                    <div class="path_3">
+                                        <p class="p1">200,000</p>
+                                        <p class="p2">可投金额(元)</p>
+                                    </div>
+
+
+                                    <div class="path_4">
+                                        <div class="load_wrap">
+                                            <div class="load_inner load6" style="width: 0%;"></div>
+                                            <span class="num">100%</span>
+                                        </div>
+
+                                        <div class="project_style">
+                                            <span class="s_l">还款方式</span>
+                                            <span class="s_r">等本等息</span>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="path_5">
+                                        <a class="inve_bt">投资</a>
+                                    </div>
+
+                                </div>
+
+            </div>
+
+
+            <div class="clear_div"></div>
+
+
+
+        </div>
+
+
+</div>
+
+<div id="new_main" class="div_center">
+    <div class="home_project_tit">
+        <span class="l">最新动态&媒体报道</span>
+    </div>
+	<div style="height:360px;background: #eaedf2;">
+
+	    <a href="#" class="new_box new_box1 box_shadow transition_box_shadow">
+	         <div class="inner">
+	             <img src="img/2.jpg" width="590" height="240">
+	             <div class="font_text">
+	                 <p class="p1" title="周伟标 — 月行一善伸出关爱之手资助贫学生圆梦周伟标">周伟标 — 月行一善伸出关爱之手资助贫学生圆梦周伟标</p>
+	                 <p class="p2">文/后河财富   2018.01.18</p>
+	             </div>
+	         </div>
+	        <p class="con" style="">
+	        	伸出关爱之手，资助贫困学生圆梦2017年11月25日，后河集团代表杨凱悦女士作为爱心人士参与到南山区好人关爱促进会的周末宣传活动中，并代表后河集团周伟标董事长向贵州省毕节市威宁县南山中学的5名特困学生资助1万元学费，以帮助他们减轻高中一学期的学费负担。
+	        	伸出关爱之手，资助贫困学生圆梦2017年11月25日，后河集团代表杨凱悦女士作为爱心人士参与到南山区好人关爱促进会的周末宣传活动中，并代表后河集团周伟标董事长向贵州省毕节市威宁县南山中学的5名特困学生资助1万元学费，以帮助他们减轻高中一学期的学费负担。
+	        	伸出关爱之手，资助贫困学生圆梦2017年11月25日，后河集团代表杨凱悦女士作为爱心人士参与到南山区好人关爱促进会的周末宣传活动中，并代表后河集团周伟标董事长向贵州省毕节市威宁县南山中学的5名特困学生资助1万元学费，以帮助他们减轻高中一学期的学费负担。
+	        	伸出关爱之手，资助贫困学生圆梦2017年11月25日，后河集团代表杨凱悦女士作为爱心人士参与到南山区好人关爱促进会的周末宣传活动中，并代表后河集团周伟标董事长向贵州省毕节市威宁县南山中学的5名特困学生资助1万元学费，以帮助他们减轻高中一学期的学费负担。
+	        </p>
+	
+	    </a>
+	
+	    <a href="#" class="new_box new_box2 box_shadow transition_box_shadow">
+	         <div class="tit"> <img src="img/sina_img.jpg">  <span class="time">2018.01.18</span>  </div>
+	         <p class="tit2" title="周伟标： 把企业做好就是在尽社会责任周伟标： 把企业做好就是在尽社会责任">周伟标： 把企业做好就是在尽社会责任周伟标： 把企业做好就是在尽社会责任</p>
+	
+	             <img class="pic" src="img/timg.jpg" height="115" width="225">
+	
+	         <p class="con">作为座谈会上最年轻的80后企业家，深圳市潮汕商会副会长、深圳市后河控股集团有限公司董事长周伟标说作为座谈会上最年轻的80后企业家，深圳市潮汕商会副会长、深圳市后河控股集团有限公司董事长周伟标说作为座谈会上最年轻的80后企业家，深圳市潮汕商会副会长、深圳市后河控股集团有限公司董事长周伟标说</p>
+	    </a>
+	
+	    <a href="#" class="new_box new_box2 box_shadow transition_box_shadow">
+	        <div class="tit"> <img src="img/sina_img.jpg">  <span class="time">2018.01.18</span>  </div>
+	        <p class="tit2" title="周伟标： 把企业做好就是在尽社会责任周伟标： 把企业做好就是在尽社会责任">周伟标： 把企业做好就是在尽社会责任周伟标： 把企业做好就是在尽社会责任</p>
+	
+	        <img class="pic" src="img/timg.jpg" height="115" width="225">
+	
+	        <p class="con">作为座谈会上最年轻的80后企业家，深圳市潮汕商会副会长、深圳市后河控股集团有限公司董事长周伟标说作为座谈会上最年轻的80后企业家，深圳市潮汕商会副会长、深圳市后河控股集团有限公司董事长周伟标说</p>
+	    </a>
+	</div>
+    <div class="clear_div"></div>
+</div>
+
+	<div class="div_center">
+	    <div class="home_project_tit">
+	        <span class="l">合作伙伴</span>
+	    </div>
+	
+	    <div id="fir_list" class=" box_shadow transition_box_shadow">
+	
+	        <table border="0" cellspacing="0" cellpadding="0">
+	            <tr>
+	                <td valign="middle">
+	                	 <a href="#"><img src="img/houhejt.png" style="width:140px;"></a>
+	                </td>
+	                <td valign="middle">
+	                    <a href="#"><img src="img/ac.png"></a>
+	                </td>
+	                <td valign="middle">
+	                    <a href="#"><img src="img/zl.png"></a>
+	                </td>
+	            </tr>
+	        </table>
+	    </div>
+	
+	</div>
+	
+	<!--底部开始-->
+	<div id="foot">
+	     <div class="div_center">
+	         <div class="l">
+	            <ul>
+	                <span class="tit">关于后河</span>
+	                <span><a href="#">后河简介</a></span>
+	                <span><a href="#">组织信息</a></span>
+	                <span><a href="#">最新公告</a></span>
+	                <span><a href="#">联系我们</a></span>
+	            </ul>
+	             <ul>
+	                 <span class="tit">信息披露</span>
+	                 <span><a href="#">数据统计</a></span>
+	                 <span><a href="#">运营报告</a></span>
+	                 <span><a href="#">企业资质</a></span>
+	                 <span><a href="#">安全保障</a></span>
+	             </ul>
+	             <ul>
+	                 <span class="tit">帮助中心</span>
+	                 <span><a href="#">注册登录</a></span>
+	                 <span><a href="#">如何投资</a></span>  <!--链接跳转至帮助中心的如何投资-->
+	                 <span><a href="#">充值提现</a></span>
+	                 <span><a href="#">收费标准</a></span>
+	                 <!--<span><a href="#">更多>></a></span>-->
+	             </ul>
+	             <p class="bottom-img">
+	                 <a href="https://seal.wosign.com/details/www.honhe.com" target="_blank" class="logo1"></a>
+	                 <a href="http://szcert.ebs.org.cn/e8369191-dc98-4072-ad44-e02027ae725f" target="_blank" class="logo2"></a>
+	             </p>
+	             <div class="clear_div"></div>
+	             <p class="foot_1">温馨提示：市场有风险  出借需谨慎</p>
+	             <p class="foot_2">Copyright © 2011-2018 HONHE Corporation All Rights Reserved. 版权所有 ©深圳市后河网互联网金融服务有限公司  粤ICP备13075040号</p>
+	         </div>
+	         <div class="r">
+	              <img src="img/webapp.png">
+	              <p class="phone_num">400-833-6898</p>
+	             <p class="time"> <span>工作日 09:00-21:00</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>周末 09:00-17:30</span> </p>
+	         </div>
+	     </div>
+	</div>
+	<!--底部结束-->
+	<!--侧边栏-->
+	<ul id="home_side">
+		<li>
+			<a style="width: 54px; left: 0px; text-indent: 64px;" href="javascript:void(0)" target="_blank" class=""><span class="pic1" style="left: 12px;"></span>投资计算器</a>
+		</li>
+		<li>
+			<a href="javascript:void(0)" class="" style="width: 54px; left: 0px;text-indent: 64px;" target="_blank"><span class="pic2"></span>借款人帮助</a>
+		</li>
+		<li>
+			<a style="width: 54px; left: 0px; text-indent: 75px;" href="javascript:void(0)" target="_blank" class=""><span class="pic3" style="left: 11px;"></span>帮助中心</a>
+		</li>
+		<li>
+			<div id="qq_group" class="" style="width: 0px; height: 0px; left: -5px;">
+				<div class="qq_icon">
+					<a class="char char2" href="javascript:void(0)" target="_blank">在线客服</a>
+				</div>
+				<div class="qq_group_num">
+					<p>QQ群Ⅰ 92835171</p>
+					<p>QQ群Ⅱ 159678735</p>
+				</div>
+			</div>
+			<a style="width: 54px;left: 0px;text-indent: 75px;" href="javascript:void(0)" class=""><span class="pic4" style="left: 10px;"></span>在线客服</a>
+		</li>
+		<li id="scrolltop" style="left: 0px;">
+			<a style="width: 54px;left: 0px;text-indent: 75px;margin-top: 9px;cursor: pointer;"><span class="pic5"></span></a>
+		</li>
+	</ul>
+
+<!--去旧版banner -->
+<div class="new_banner">
+	<a href="javascript:void(0);">汇付旧版 ></a>
+	<span></span>
+</div>
+
+<!--去新版banner-->
+<!--<div class="old_banner ">
+	<a href="javascript:void(0);">存管新版 ></a>
+	<span></span>
+</div>-->
+
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/jquery.honhe.js"></script>
+<script src="js/vel.min.js"></script>
+
+<script>
+    jQuery(".fullSlide").hover(function(){ jQuery(this).find(".prev,.next").stop(true,true).fadeTo("show",0.5) },function(){ jQuery(this).find(".prev,.next").fadeOut() });
+    jQuery(".fullSlide").slide({
+        titCell:".hd ul", mainCell:".bd ul", effect:"fold",  autoPlay:true, autoPage:true, trigger:"click",delayTime:"1500",interTime:"4000",
+        startFun:function(i){
+            var curLi = jQuery(".fullSlide .bd li").eq(i); /* 当前大图的li */
+            if( !!curLi.attr("_src") ){
+                curLi.css("background-image",curLi.attr("_src")).removeAttr("_src") /* 将_src地址赋予li背景，然后删除_src */
+            }
+        }
+    });
+	
+
+    //公告
+//  jQuery(".txtScroll-top").slide({titCell:"",mainCell:".bd .infoList",autoPage:true,effect:"top",autoPlay:true,delayTime:500,vis:5});
+    
+    /*广告滚动*/  
+	$(function() {  
+	    var $this = $(".scrollNews");  
+	    var scrollTimer;  
+	    $this.hover(function() {  
+	        clearInterval(scrollTimer);  //鼠标悬浮列表时间清除定时器
+	    }, function() {  
+	        scrollTimer = setInterval(function() {  
+	            scrollNews($this);  
+	        }, 3500);  
+	    }).trigger("mouseleave");  
+	});  
+	function scrollNews(obj) {  
+	    var $self = obj.find("ul:first");  
+	    var lineHeight = $self.find("li:first").height(); //获取行高  
+	    $self.animate({ "marginTop": -lineHeight + "px" }, 600, function() {  
+	        $self.css({ marginTop: 0 }).find("li:first").appendTo($self); //appendTo能直接移动元素  
+	    })  
+	}  
+    
+    //新手切换
+    jQuery(".slideTxtBox").slide({trigger:"click",delayTime:0});
+
+
+    //导航
+    jQuery("#nav,#nav1,#nav2").slide({
+        type:"menu",// 效果类型，针对菜单/导航而引入的参数（默认slide）
+        titCell:".nLi", //鼠标触发对象
+        targetCell:".sub", //titCell里面包含的要显示/消失的对象
+        effect:"slideDown", //targetCell下拉效果
+        delayTime:300 , //效果时间
+        triggerTime:0, //鼠标延迟触发时间（默认150）
+        returnDefault:true,//鼠标移走后返回默认状态，例如默认频道是“预告片”，鼠标移走后会返回“预告片”（默认false）
+        titOnClassName: "nav_active",//高亮样式
+        defaultIndex: 0//索引
+    });
+    
+	// 滑动滚动条
+	$(window).scroll(function(){
+		// 滚动条距离顶部的距离 大于 500px时
+		//console.info(window.scrollY); 
+		if($(window).scrollTop() >= 500){
+			$(".load_inner").animate({width:"50%"});
+		}
+		else if($(window).scrollTop() >= 700){
+			$(".load1").animate({width:"100%"});
+		}else if($(window).scrollTop() >= 820){
+			$(".load2").animate({width:"70%"});
+		}else if($(window).scrollTop() >= 950){
+			$(".load3").animate({width:"80%"});
+		}else if($(window).scrollTop() >= 1080){
+			$(".load4").animate({width:"90%"});
+		}else if($(window).scrollTop() >= 1180){
+			$(".load5").animate({width:"95%"});
+		}else if($(window).scrollTop() >= 1300){
+			$(".load6").animate({width:"60%"});
+		}
+	});
+	
+	//新手指南
+	$("#home_video").hover(function(){
+	   $("#new_hide").hide();
+	},function(){
+	   $("#new_hide").show()
+	   
+	});
+	
+	//点击新手指南跳转到指定页面
+	$("#home_video").click(function(){
+		window.open("https://www.honhe.com/rookiesGuide.jhtml")
+	})
+
+	$("#home_video").hover(function(){
+	   $("#new_hide").hide();
+	},function(){
+	   $("#new_hide").show()
+	   
+	});
+	
+	
+	//侧边 悬浮
+//	     $('#home_side li:eq(1)').hover(function(){
+//	         $(this).find('.er').velocity("stop").velocity({width:'179',height:'232',left:'-185px'})
+//	     },function(){
+//	         $(this).find('.er').velocity("stop").velocity({width:'0',height:'0',left:'-5px'})
+//	     });
+//	
+	     $('#home_side li:eq(3)').hover(function(){
+	         $(this).find('#qq_group').velocity("stop").velocity({width:'185',height:'190',left:'-185px'})
+	     },function(){
+	         $(this).find('#qq_group').velocity("stop").velocity({width:'0',height:'0',left:'-5px'})
+	     });
+	
+	     $('#home_side li a:not(".char")').mouseenter(function(){
+	         $(this).addClass('hover');
+	         if($(this).parent().index()!=4 && $(this).parent().index()!=3){
+	             $(this).addClass('hover').find('span').velocity("stop").velocity({left:'20px'});
+	             $(this).velocity("stop").velocity({width:'165px',left:'-111px'});
+	         }
+	
+	     }).mouseleave(function(){
+	         function callback(){
+	             $(this).removeClass('hover');
+	         }
+	
+	
+	         var n=$(this).parent().index();
+	
+	         if(n==4 || n==3) {
+	             $(this).removeClass('hover');
+	         }
+	         switch(n)
+	         {
+	             case 0:
+	                 $(this).find('span').velocity("stop").velocity({left:'12px'}, $.proxy(callback,this));
+	                 break;
+	             case 1:
+	                 $(this).find('span').velocity("stop").velocity({left:'12px'}, $.proxy(callback,this));
+	                 break;
+	             case 2:
+	                 $(this).find('span').velocity("stop").velocity({left:'11px'}, $.proxy(callback,this));
+	                 break;
+	             case 3:
+	                 $(this).find('span').velocity("stop").velocity({left:'10px'}, $.proxy(callback,this));
+	                 break;
+	         }
+	         $(this).velocity("stop").velocity({width:'54px',left:'0px'});
+	     });
+	
+	
+	     $(window).on('scroll.side',function(){
+	         scroll_side();
+	     });
+	
+	     function scroll_side(){
+	         if( $(window).scrollTop()>300 ){
+	             $('#scrolltop').css({left:'0px'});
+	         }else if( $(window).scrollTop()<300 ){
+	             $('#scrolltop').css({left:'54px'});
+	         }
+	     }
+	     scroll_side();
+	     
+	     $('#home_side li:eq(4)').click(function(){
+	     	// $(window).scrollTop(0)
+	     	$("html,body").stop().animate({ scrollTop:0},500);//慢一点的效果
+	     });
+	     
+	     //点击关闭banner
+	     $(".new_banner span").click(function(){
+	     	$(this).parents(".new_banner").hide();
+	     })
+		$(".old_banner span").click(function(){
+	     	$(this).parents(".old_banner").hide();
+	     })
+		
+		
+</script>
+
+
+
+
+</body>
+</html>

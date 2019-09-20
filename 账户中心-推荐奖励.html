@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>推荐奖励</title>
+		<link rel="stylesheet" type="text/css" href="css/layui.css" />
+		<link type="text/css" rel="stylesheet" href="css/css.css">
+		<!--我的css-->
+		<link rel="stylesheet" type="text/css" href="css/zcm.css" />
+		<link rel="stylesheet" type="text/css" href="css/my_investment.css" />
+		<link rel="stylesheet" type="text/css" href="css/layer.css" />
+		<style>
+			.layui-layer-page .layui-layer-content {
+				overflow: inherit;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<!--以下是公共头部-->
+		<!--以下是公共头部-->
+		<!--以下是公共头部-->
+		<!--以下是公共头部-->
+
+		<!--<div id="home_top_little_nav">
+			<div class="div_center">
+				<div class="l">客服热线 400-833-6898</div>
+
+				<ul class="r">
+					<li>
+						<a href="#">免费注册</a>
+					</li>
+					<li>
+						<a href="#">登录</a>
+					</li>
+					<li>
+						<a href="#">帮助中心</a>
+					</li>
+					<li>
+						<a href="#">关于我们</a>
+					</li>
+				</ul>
+			</div>
+		</div>-->
+
+		<div id="logo_nav">
+			<div class="div_center">
+				<a class="l" href="#"><img src="img/logo_bg.png"> </a>
+
+				<ul id="nav" class="nav clearfix">
+					<li class="nLi">
+						<h3><a href="#" target="_blank">首页</a></h3>
+					</li>
+					<li class="nLi">
+						<h3><a href="#" target="_blank">我要投资</a></h3>
+						<ul class="sub">
+							<li>
+								<a href="#">全部项目</a>
+							</li>
+							<li>
+								<a href="#">新手专享</a>
+							</li>
+							<li>
+								<a href="#">精选项目</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nLi">
+						<h3><a href="#" target="_blank">我要借款</a></h3>
+						
+					</li>
+					<li class="nLi ">
+						<h3><a href="#" target="_blank">信息披露</a></h3>
+						<ul class="sub">
+							<li>
+								<a href="#">安全保障</a>
+							</li>
+							<li>
+								<a href="#">运营披露</a>
+							</li>
+							<li>
+								<a href="#">关于后河</a>
+							</li>
+							<li>
+								<a href="#">公司动态</a>
+							</li>
+							<li>
+								<a href="#">监管法规</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nLi">
+						<h3><a href="#" target="_blank">我的账户</a></h3>
+						<ul class="sub">
+							<li>
+								<a href="#">资产管理</a>
+							</li>
+							<li>
+								<a href="#">投资管理</a>
+							</li>
+							<li>
+								<a href="#">我的账户</a>
+							</li>
+							<li>
+								<a href="#">我的奖励</a>
+							</li>
+							<li>
+								<a href="#">退出</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="clear_div"></div>
+		</div>
+
+		<!--以上是公共头部-->
+		<div class="main_box w1200">
+			<div class="main_l float_l">
+				<div class="main_l_top">
+					<img src="img/portrait_03.png" />
+					<p class="user_name">HONHE</p>
+					<ul class="user_icon ">
+						<li>
+							<a class="icon1 public_img hover"></a>
+						</li>
+						<li>
+							<a class="icon2 public_img hover"></a>
+						</li>
+						<li>
+							<a class="icon3 public_img "></a>
+						</li>
+						<li>
+							<a class="icon4 public_img "></a>
+						</li>
+						<li>
+							<a class="icon5 public_img "></a>
+						</li>
+					</ul>
+					<div id="safe_load">
+						<div class="inner_load"></div>
+					</div>
+
+					<p class="safe_txt">安全等级 <span>高</span></p>
+				</div>
+				<div class="item_box">
+					<div class="item_header cli">资产管理<i class="arrows_btom "></i></div>
+					<div class="item_content_box" style="display: none;">
+						<div class="account ">账户概览</div>
+						<div class="money_draw">交易记录</div>
+						<div class="money_record">回款计划</div>
+					</div>
+				</div>
+				<div class="item_box">
+					<div class="item_header cli">投资管理<i class="arrows_btom "></i></div>
+					<div class="item_content_box" style="display: none;">
+						<div class="account ">我的投资</div>
+					</div>
+				</div>
+				<div class="item_box">
+					<div class="item_header cli">我的账户<i class="arrows_btom "></i></div>
+					<div class="item_content_box" style="display: none;">
+						<div class="account">个人信息</div>
+						<div class="draw_money ">安全中心</div>
+						<div class="money_record">消息中心</div>
+					</div>
+				</div>
+				<div class="item_box">
+					<div class="item_header cli">我的奖励<i class="arrows_btom rotate90"></i></div>
+					<div class="item_content_box" style="display: block;">
+						<div class=" hover">推荐奖励</div>
+						<div class=" ">代金券</div>
+					</div>
+				</div>
+
+			</div>
+
+			<!--右边的内容框-->
+			<div class="main_r float_r ">
+				<div class="safety_header ">
+					<p>推荐奖励</p>
+				</div>
+				<!--<div class="money_content">
+					<div class="money_lef">
+						<p class="total_revenue">0.00</p>
+						<p class="total_txt">累计奖励(元)</p>
+					</div>
+					<div class="money_rig">
+						<p class="total_revenue">0.00</p>
+						<p class="total_txt">待发奖励(元)</p>
+					</div>
+				</div>
+				<div style="height: 15px;width: 964px;background: #eaedf2;"></div>-->
+				<div class="content_box">
+					<div class="share_box">
+						<p class="page_header1">
+							邀好友来注册投资，赚推荐奖励
+						</p>
+						<div style="width: 844px;height: 200px;padding: 0px 60px;padding-top: 50px;">
+							<a class="share_icon"style="background: url(img/QQ.png) no-repeat 52px 45px;" onclick="shareQQ()"></a>
+							<a class="share_icon"style="background: url(img/QQroom.png) no-repeat 44px 45px;" onclick="shareQQzone()"></a>
+							<a class="share_icon"style="background: url(img/weibo.png) no-repeat 44px 49px;"  onclick="shareWeibo()"></a>
+							<a class="share_icon"id="copy_btn" style="background: url(img/copy_icon.png) no-repeat 52px 45px;"></a>
+						</div>
+						<div style="height: 36px;color: #3a4762;font-size: 16px;padding-left: 60px;">推荐规则</div>
+						<img src="img/tttt_05.png" style="margin-left: 60px;margin-bottom: 30px;" />
+						<p class="p_txt">1.好友首笔投资奖励：推荐好友注册并完成首笔投资，后河财富按好友首笔投资的金额乘以千分之三的比例奖励推荐人；</p>
+						<p class="p_txt">
+							2.好友首笔投资成功后，后河财富将在代金券发放到您的后河财富账户的“代金券”中；
+						</p>
+						<p class="p_txt">
+							3.代金券仅限在后河财富进行使用，投资时可用于抵扣投资本金；
+						</p>
+						<p class="p_txt">
+							4.有效注册用户是指在活动期间注册并完成100元或以上投资的用户；
+						</p>
+						<p class="p_txt" style="margin-bottom: 55px;">
+							5.本推荐奖励规则最终解释权归后河财富所有。
+						</p>
+					</div>
+					<div style="width: 964px;height: 16px;background: #eaedf2;"></div>
+					<div class=" layui-tab">
+					  <ul class="layui-tab-title">
+					    <li class="layui-this">奖励记录</li>
+					    <!--<li class="li_c">已发邀请</li>-->
+					  </ul>
+					  <div class="layui-tab-content">
+					    <div class="layui-tab-item layui-show">
+					     		<div class="header_3">
+					     			<div class="header_txt">
+					     				<p class="login_num">0</p>
+					     				<p class="login_txt">推荐注册人数(人)</p>
+					     			</div>
+					     			<div class="header_txt">
+					     				<p class="login_num">0</p>
+					     				<p class="login_txt">已首笔投资人数(人)</p>
+					     			</div>
+					     			<div class="header_txt">
+					     				<p class="login_num">0</p>
+					     				<p class="login_txt">代金券奖励(元)</p>
+					     			</div>
+					     		</div>
+					     		<div class="list_heder" style="height: 40px;width: 844px;padding: 0 60px;background: #f7faff;">
+					     			<div class="list_heder_l">手机号</div>
+					     			<div>注册时间</div>
+					     			<div>是否首笔投资</div>
+					     			<div>奖励代金券</div>
+					     			<div class="list_heder_r">奖励时间</div>
+					     		</div>
+					     		<ul class="list_box">
+					     			<li class="list_content">
+					     				<div class="list_heder_l">185****9913</div>
+						     			<div>2016-06-30 10:44:36</div>
+						     			<div>是</div>
+						     			<div>100元</div>
+						     			<div class="list_heder_r">2016-06-30 10:44:36</div>
+					     			</li>
+					     			<li class="list_content">
+					     				<div class="list_heder_l">185****9913</div>
+						     			<div>2016-06-30 10:44:36</div>
+						     			<div>否</div>
+						     			<div>-</div>
+						     			<div class="list_heder_r">2016-06-30 10:44:36</div>
+					     			</li>
+					     			<li class="list_content">
+					     				<div class="list_heder_l">185****9913</div>
+						     			<div>2016-06-30 10:44:36</div>
+						     			<div>否</div>
+						     			<div>-</div>
+						     			<div class="list_heder_r">2016-06-30 10:44:36</div>
+					     			</li>
+					     			<li class="list_content">
+					     				<div class="list_heder_l">185****9913</div>
+						     			<div>2016-06-30 10:44:36</div>
+						     			<div>否</div>
+						     			<div>-</div>
+						     			<div class="list_heder_r">2016-06-30 10:44:36</div>
+					     			</li>
+					     			<li class="list_content">
+					     				<div class="list_heder_l">185****9913</div>
+						     			<div>2016-06-30 10:44:36</div>
+						     			<div>否</div>
+						     			<div>-</div>
+						     			<div class="list_heder_r">-</div>
+					     			</li>
+					     			<li class="list_content">
+					     				<div class="list_heder_l">185****9913</div>
+						     			<div>2016-06-30 10:44:36</div>
+						     			<div>否</div>
+						     			<div>-</div>
+						     			<div class="list_heder_r">2016-06-30 10:44:36</div>
+					     			</li>
+					     			<li class="list_content">
+					     				<div class="list_heder_l">185****9913</div>
+						     			<div>2016-06-30 10:44:36</div>
+						     			<div>否</div>
+						     			<div>-</div>
+						     			<div class="list_heder_r">2016-06-30 10:44:36</div>
+					     			</li>
+					     			<li class="list_content">
+					     				<div class="list_heder_l">185****9913</div>
+						     			<div>2016-06-30 10:44:36</div>
+						     			<div>否</div>
+						     			<div>-</div>
+						     			<div class="list_heder_r">2016-06-30 10:44:36</div>
+					     			</li>
+					     			<li class="list_content">
+					     				<div class="list_heder_l">185****9913</div>
+						     			<div>2016-06-30 10:44:36</div>
+						     			<div>否</div>
+						     			<div>-</div>
+						     			<div class="list_heder_r">2016-06-30 10:44:36</div>
+					     			</li>
+					     			<li class="list_content">
+					     				<div class="list_heder_l">185****9913</div>
+						     			<div>2016-06-30 10:44:36</div>
+						     			<div>否</div>
+						     			<div>-</div>
+						     			<div class="list_heder_r">2016-06-30 10:44:36</div>
+					     			</li>
+					     		</ul>
+					    </div>
+					    <!--<div class="layui-tab-item"><div class="header_3">
+					     			<div class="header_txt">
+					     				<p class="login_num">1</p>
+					     				<p class="login_txt">推荐注册人数(人)</p>
+					     			</div>
+					     			<div class="header_txt">
+					     				<p class="login_num">1</p>
+					     				<p class="login_txt">实名登记人数(人)</p>
+					     			</div>
+					     			<div class="header_txt">
+					     				<p class="login_num">1</p>
+					     				<p class="login_txt">已投资人数(人)</p>
+					     			</div>
+					     		</div>
+					     		<div class="list_heder" style="height: 40px;width: 844px;padding: 0 60px;background: #f7faff;">
+					     			<div class="list_heder_l">用户名</div>
+					     			<div>实名登记</div>
+					     			<div>手机号</div>
+					     			<div>是否登记</div>
+					     			<div class="list_heder_r">注册时间</div>
+					     		</div>
+					     		<ul class="list_box">
+					     			<li class="list_content">
+					     				<div class="list_heder_l">Me***</div>
+						     			<div>张** </div>
+						     			<div> 185****9913  </div>
+						     			<div>是  </div>
+						     			<div class="list_heder_r">2016-06-30 10:44:36</div>
+					     			</li>
+					     			<li class="list_content">
+					     				<div class="list_heder_l">Me***</div>
+						     			<div>张** </div>
+						     			<div> 185****9913  </div>
+						     			<div>是  </div>
+						     			<div class="list_heder_r">2016-06-30 10:44:36</div>
+					     			</li>
+					     			<li class="list_content">
+					     				<div class="list_heder_l">Me***</div>
+						     			<div>张** </div>
+						     			<div> 185****9913  </div>
+						     			<div>是  </div>
+						     			<div class="list_heder_r">2016-06-30 10:44:36</div>
+					     			</li>
+					     			<li class="list_content">
+					     				<div class="list_heder_l">Me***</div>
+						     			<div>张** </div>
+						     			<div> 185****9913  </div>
+						     			<div>是  </div>
+						     			<div class="list_heder_r">2016-06-30 10:44:36</div>
+					     			</li>
+					     			<li class="list_content">
+					     				<div class="list_heder_l">Me***</div>
+						     			<div>张** </div>
+						     			<div> 185****9913  </div>
+						     			<div>是  </div>
+						     			<div class="list_heder_r">2016-06-30 10:44:36</div>
+					     			</li>
+					     		</ul></div>-->
+					  </div>
+					</div>
+					<div class="page_box">
+						<span class="home_page">首页</span>
+						<span class="page_numb">1</span>
+						<span class="page_numb">2</span>
+						<span class="page_numb">3</span>
+						<span class="page_numb b_blue">4</span>
+						<span class="page_numb">5</span>
+						<span class="next_page">下一页</span>
+						<span class="last_page">末页</span>
+						<span class="all_page">共2791页</span>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<!--以下是底部公共部分-->
+		<!--以下是底部公共部分-->
+		<!--以下是底部公共部分-->
+		<div class="clear_div"></div>
+
+		<div id="foot" style="background:#fff;height:340px;width:100%;">
+		     <div class="div_center">
+		         <div class="l">
+		            <ul>
+		                <span class="tit">关于后河</span>
+		                <span><a href="#">后河简介</a></span>
+		                <span><a href="#">组织信息</a></span>
+		                <span><a href="#">最新公告</a></span>
+		                <span><a href="#">联系我们</a></span>
+		            </ul>
+		             <ul>
+		                 <span class="tit">信息披露</span>
+		                 <span><a href="#">数据统计</a></span>
+		                 <span><a href="#">运营报告</a></span>
+		                 <span><a href="#">企业资质</a></span>
+		                 <span><a href="#">安全保障</a></span>
+		             </ul>
+		
+		
+		             <ul>
+		                 <span class="tit">帮助中心</span>
+		                 <span><a href="#">注册登录</a></span>
+		                 <span><a href="#">资金存管</a></span>
+		                 <span><a href="#">充值提现</a></span>
+		                 <span><a href="#">收费标准</a></span>
+		                 <!--<span><a href="#">更多>></a></span>-->
+		             </ul>
+		
+		
+		
+		             <p class="bottom-img">
+		                 <a href="https://seal.wosign.com/details/www.honhe.com" target="_blank" class="logo1"></a>
+		                 <a href="http://szcert.ebs.org.cn/e8369191-dc98-4072-ad44-e02027ae725f" target="_blank" class="logo2"></a>
+		             </p>
+		
+		             <div class="clear_div"></div>
+		
+		             <p class="foot_1">温馨提示：市场有风险  出借需谨慎</p>
+		             <p class="foot_2">Copyright © 2011-2018 HONHE Corporation All Rights Reserved. 版权所有 ©深圳市后河网互联网金融服务有限公司  粤ICP备13075040号</p>
+		
+		
+		
+		
+		         </div>
+				
+		
+		         <div class="r">
+		              <img src="img/webapp.png">
+		              <p class="phone_num">400-833-6898</p>
+		             <p class="time"> <span>工作日 09:00-21:00</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>周末 09:00-17:30</span> </p>
+		         </div>
+		     </div>
+		</div>
+
+		<!--以上是底部公共部分-->
+		<!--以上是底部公共部分-->
+		<!--以上是底部公共部分-->
+		
+		<div class="agree_box layui-layer-content" ms-controller="avalon" style="display: none;">
+				<span class="close"></span>
+				<img src="img/success_icon_03.png"  style="margin-top: 55px;"/>
+				<a class="sure_btn" style="margin: 0 auto;">确定</a>
+		</div>
+	</body>
+	<script src="js/jquery-1.11.3.min.js"></script>
+
+	<script src="js/jquery.honhe.js"></script>
+	<!--首页的 导航 选项卡 轮播图需引入-->
+	<script src="js/zcm.js"></script>
+	<script src="src/calendar.js"></script>
+	<script src="js/layer/layer.js"></script>
+	<script>
+		//导航
+		jQuery("#nav").slide({
+			type: "menu", // 效果类型，针对菜单/导航而引入的参数（默认slide）
+			titCell: ".nLi", //鼠标触发对象
+			targetCell: ".sub", //titCell里面包含的要显示/消失的对象
+			effect: "slideDown", //targetCell下拉效果
+			delayTime: 300, //效果时间
+			triggerTime: 0, //鼠标延迟触发时间（默认150）
+			returnDefault: true //鼠标移走后返回默认状态，例如默认频道是“预告片”，鼠标移走后会返回“预告片”（默认false）
+		});
+
+	
+
+		
+		//点击下拉
+		$(".time_txt").on("click",function(){
+			$(this).children(".sx_day").toggleClass("hover");
+			$(".slet_down").toggleClass("show");
+			
+		})
+		$(".slet_down span").on("click",function(){
+			$(".time_txt").children(".tttext").text($(this).text())
+		})
+		
+		
+		//复制成功弹窗
+	$('#copy_btn').click(function() {
+		$(this).css("color", "#002FD1")
+		layer.open({
+			type: 1,
+			shade: [0.4, '#393D49'],
+			scrollbar: false,
+			closeBtn: 0,
+			title: false,
+			area: ['620px', '300px'],
+			content: $('.agree_box'), //这里content是一个DOM，注意：最好该元素要存放在body最外层，否则可能被其它的相对元素所影响
+			success: function(layero, index) {
+
+			}
+		});
+	});
+
+	$('.agree_box .sure_btn').click(function() {
+//		$(this).css("color", "#3a4762")
+		layer.closeAll();
+		$(".agree_box").hide();
+	});
+	$('.agree_box .close').click(function() {
+//		$(this).css("color", "#3a4762")
+		layer.closeAll();
+		$(".agree_box").hide();
+	});
+	
+	
+	//qq推荐
+	function shareQQ(){
+		var _url=encodeURIComponent("https://www.honhe.com");//y要分享的网站
+		var _desc="邀请详情";
+		var _title="标题";
+		var _summary="详情";
+		var _title="标题";
+		
+       window.open('http://connect.qq.com/widget/shareqq/index.html?url=' + _url + '&desc='+_desc+'&title='+_title+'&summary='+_summary+'&pics=&flash=&site=&callback=')
+    }
+	
+	
+	//	4.QQ空间：
+	function shareQQzone(){
+		var _url=encodeURIComponent("https://www.honhe.com");//要分享的网站
+		var _desc="默认分享理由(可选)";//默认分享理由(可选)
+		var _title="标题";//标题
+		var _summary="分享摘要(可选)";//分享摘要(可选)
+		var _title="分享标题(可选)";//分享标题(可选)
+		var _site="分享来源 如：腾讯网(可选)";//分享来源 如：腾讯网(可选)
+		var _pics="分享图片的路径(可选)";//分享图片的路径(可选)
+		
+       window.open('http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=' + _url + '&desc='+_desc+'&title='+_title+'&summary='+_summary+'&pics='+_pics+'&flash=&site='+_site+'&callback=')
+    }
+
+
+
+	//1.新浪微博：
+	function shareWeibo(){
+		var _url=encodeURIComponent("https://www.honhe.com");//将页面地址转成短域名，并显示在内容文字后面。(可选，允许为空)
+		var _count="表示是否显示当前页面被分享数量(1显示)(可选，允许为空)";//表示是否显示当前页面被分享数量(1显示)(可选，允许为空)
+		var _title="标题";//标题
+		var _appkey="用于发布微博的来源显示，为空则分享的内容来源会显示来自互联网。(可选，允许为空)";//用于发布微博的来源显示，为空则分享的内容来源会显示来自互联网。(可选，允许为空)
+		var _language="语言设置(zh_cn|zh_tw)(可选)";//语言设置(zh_cn|zh_tw)(可选)
+		var _ralateUid="转发时会@相关的微博账号(可选，允许为空)";//转发时会@相关的微博账号(可选，允许为空)
+		var _pics="分享图片的路径(可选)";//自定义图片地址，作为微博配图(可选，允许为空)
+		
+       window.open('http://service.weibo.com/share/share.php?url=' + _url + '&count='+_count+'&title='+_title+'&appkey='+_appkey+'&pic='+_pics+'&ralateUid='+_ralateUid)
+    }
+
+	</script>
+
+</html>

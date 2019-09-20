@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+		<title></title>
+
+		<link type="text/css" rel="stylesheet" href="css/css.css">
+		<link type="text/css" rel="stylesheet" href="css/layer.css">
+		<style>
+			select {
+				border: solid 1px #000;
+				appearance: none;
+				-moz-appearance: none;
+				-webkit-appearance: none;
+				background: url("img/selet_xl.png") no-repeat scroll 315px center transparent;
+				padding-right: 14px;
+			}
+			
+			select::-ms-expand {
+				display: none;
+			}
+			select:focus{
+				border: solid 1px #607ee2;
+			}
+			html {
+				background: #002fd1 url("img/account_bg.jpg") no-repeat center;
+				background-size: 100% 100%;
+			}
+			
+			#body_inner {
+				background: #002fd1 url("img/account_bg.jpg") no-repeat center;
+				height: 1040px;
+			}
+			
+			.layui-layer-page .layui-layer-content {
+				overflow: inherit;
+			}
+			
+			.input {
+				display: inline-block;
+			}
+			
+			.input1:last-child {
+				border-right: 1px solid #999;
+			}
+			
+			.input1 {
+				border-top: 1px solid #999;
+				border-bottom: 1px solid #999;
+				border-left: 1px solid #999;
+				width: 46px;
+				height: 46px;
+				outline: none;
+				font-family: inherit;
+				font-size: 28px;
+				font-weight: inherit;
+				text-align: center;
+				line-height: 45px;
+				color: #c2c2c2;
+				background: rgba(255, 255, 255, 0);
+			}
+			#account_main {
+			    padding-top: 95px;
+			    background: #fff;
+			    margin-top: 50px;
+			    padding-bottom: 73px;
+			    padding-left: 300px;
+			}
+			.top_title{
+				font-size: 14px;
+    			color: #8c93a2;
+    			margin-bottom: 20px;
+			}
+			.time_box{
+				height: 70px;
+				line-height: 30px;
+				width: 610px;
+			}
+			.time_txt{
+				font-size: 14px;
+				width: 115px;
+				float: left;
+			}
+			.now_day{
+				font-size: 14px;
+				width: 100px;
+				float: left;
+				background-color: #f6f8fc;
+			    border: 1px solid #cfd5e1;
+			    text-align: center;
+			}
+			.tetet{
+				font-size: 14px;
+				width: 100px;
+				float: left;
+				text-align: center;
+			}
+			.time_inp{
+				    width: 70px;
+				    height: 30px;
+				    padding: 0px 12px;
+				    float: left;
+				    background-color: #f6f8fc;
+				    border: 1px solid #cfd5e1;
+			}
+			.time_inp1{
+				    width: 70px;
+				    height: 30px;
+				    padding: 0px 12px;
+				    float: right;
+				    background-color: #f6f8fc;
+				    border: 1px solid #cfd5e1;
+			}
+			.bg_hui{
+				    height: 52px;
+				    width: 200px;
+				    background: #c0c0c0;
+				    float: right;
+				    padding-top: 5px;
+				    padding-right: 10px;
+				    margin-top: 20px;
+			}
+			.sub{
+				width: 100px;
+			    height: 30px;
+			    background: #3f84cb;
+			    color: #fff;
+			   
+			}
+			.fanhui{
+				width: 100px;
+			    height: 30px;
+			    background: #3f84cb;
+			    color: #fff;
+			    margin-left:100px;
+			}
+			.time_box1{
+				height: 40px;
+				line-height: 30px;
+				width: 610px;
+			}
+			.tip_p{
+    			    border: 1px solid #cfd5e1;
+				    width: 545px;
+				    padding: 5px;
+				    margin-bottom: 20px;
+				    line-height: 20px;
+			}
+			.time_box1 input{
+				vertical-align: middle;
+			}
+			.time_box1 label{
+				vertical-align: middle;
+				margin-right: 20px;
+			}
+		</style>
+
+	</head>
+
+	<body>
+
+		<div id="body_inner">
+
+			<div id="active_account">
+				<div class="div_center">
+					<div class="l">客服热线 400-833-6898</div>
+					<div class="r">
+						<a href="#">帮助中心</a>
+					</div>
+				</div>
+			</div>
+
+			<div id="logo_account" class="div_center">
+				<div id="account_main">
+					<p class="top_title">开通自动授权前，请先确认您本次操作的授权参数：</p>
+					<div class="form_box">
+						<form action="" method="post">
+							<div class="time_box">
+								<div class="time_txt">授权时间段：</div>
+								<p class="now_day">当前日期</p>
+								<p class="tetet">至</p>
+								<input class="time_inp" type="text" value="2038-03-12" />
+								<!--<div class="bg_hui">
+									<input name="" type="checkbox" value="checkbox"  />其它截止时间<input class="time_inp1" id="stop_day" type="text" placeholder="请填写" />
+								</div>-->
+							</div>
+							<div class="time_box">
+								<div class="time_txt">授权金额区间：</div>
+								<p class="now_day">0</p>
+								<p class="tetet">至</p>
+								<input class="time_inp" type="text" value="2000000" />
+								<p>（单位：元）</p>
+								<!--<div class="bg_hui">
+									<input name="" type="checkbox" value="checkbox"  />其它（最大值）<input class="time_inp1" type="text" placeholder="请填写" />
+								</div>-->
+							</div>
+							<div class="time_box1">
+								<div class="time_txt">授权类型：</div>
+								<label><input type="checkbox" name="" value="">自动还款</label>
+								<label><input type="checkbox" name="" value="2">自动缴费</label>
+							</div>
+							<p class="tip_p">同意开通授权，代表您知晓并同意存管系统（平安银行）有权根据后河财富平台代发起的划扣指令（比如经您同意发起的还款、提现等业务指令），进行相应款项的划扣、支付、冻结及行使其他权利，这些代发起指令将视为您的真实意思表示，相关风险由您自行承担，您对此予以接受和认可。授权后，后河财富将有权代发起您的业务指令——《网站服务协议》中与您有约定的业务授权范围（包括但不限于授权还款、授权提现），由存管系统（平安银行）操作您的账户资金进行相关自动业务操作，需要您自行承担相应的资金风险和责任，请您谨慎操作。</p>
+							<input type="submit" class="sub" value="提交授权参数" />
+							<input type="button" class="fanhui" value="返回" />
+						</form>
+					</div>
+
+				</div>
+
+			</div>
+
+
+
+		</div>
+
+		<div id="foot" class="login_reg">
+
+			<div class="div_center">
+				<div class="l">
+
+					<p class="bottom-img">
+						<!-- <a href="http://webscan.360.cn/index/checkwebsite/url/www.honhe.com" name="19fe75e9f6557cdf26a3af658889ab7c" class="logo1" target="_blank"></a> -->
+						<!--<a href="http://v.pinpaibao.com.cn/authenticate/cert/?site=www.honhe.com&amp;at=business" target="_blank" class="logo2"></a>-->
+						<a href="https://seal.wosign.com/details/www.honhe.com" target="_blank" class="logo3"></a>
+						<a href="http://szcert.ebs.org.cn/e8369191-dc98-4072-ad44-e02027ae725f" target="_blank" class="logo4"></a>
+						<!--<a href="https://search.szfw.org/cert/l/CX20140928005203005271" id="___szfw_logo___" target="_blank" class="logo5"></a>
+						<script type="text/javascript">
+							(function() {
+								document.getElementById('___szfw_logo___').oncontextmenu = function() {
+									return false;
+								}
+							})();
+						</script>-->
+					</p>
+
+					<div class="clear_div"></div>
+
+					<p class="foot_2">Copyright © 2011-2018 HONHE Corporation All Rights Reserved. 版权所有 ©深圳市后河网互联网金融服务有限公司 粤ICP备13075040号</p>
+
+				</div>
+
+				<div class="r">
+					<p class="phone_num">400-833-6898</p>
+					<p class="time"> <span>工作日 09:00-21:00</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>周末 09:00-17:30</span> </p>
+				</div>
+			</div>
+
+		</div>
+
+
+		<!--授权-->
+		<!--<div class="agree_box layui-layer-content" ms-controller="avalon" style="display: none;">
+			<div class="title">
+				同意开通授权
+				<span class="close"></span>
+			</div>
+			<p class="disclaimer_txt">开通授权代表您知晓并同意存管系统（平安银行）有权根据后河财富平台代发起的划扣指令（比如经您同意发起的投标、债权转让、债权转让还款、提现等业务指令），进行相应款项的划扣、支付、冻结及行使其他权利，这些代发起指令将视为您的真实意思表示，相关风险由您自行承担，您对此予以接受和认可。授权后，后河财富将有权代发起您的业务指令——《网站服务协议》中与您有约定的业务授权范围（包括但不限于投标、授权债权转让、授权还款、授权提现），由存管系统（平安银行）操作您的账户资金进行相关自动业务操作，需要您自行承担相应的资金风险和责任，请您谨慎操作。</p>
+
+		</div>-->
+
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/jquery.honhe.js"></script>
+		<script src="js/layer.js"></script>
+		<!--弹窗-->
+		<script src="js/zcm.js"></script>
+		<script>
+
+			//新手切换
+			jQuery("#account_main_tab").slide({
+				trigger: "click",
+				delayTime: 0
+			});
+			
+//			var regExp = new RegExp(/^[1-2][0-9][0-9][0-9]-[0-1]{0,1}[0-9]-[0-3]{0,1}[0-9]$/);
+//			if(!regExp.test($('#stop_day').val()){
+//			　　alert("时间格式不正确,正确格式为: yyyy-mm-dd ");
+//			　　return;
+//			　　}
+//			});
+
+			//验证yyyy-mm-dd
+			var regExp = new RegExp(/^\d{4}-(((0[1-9])|(1[0-2])))(-((0[1-9])|([1-2][0-9])|(3[0-1])))?$/);
+			 
+			$(".time_inp").blur(function(){
+				console.log($(this).val())
+				if(!regExp.test($(".time_inp").val())){
+					alert("日期输入有误,请按yyyy-mm-dd 格式输入");
+					return;
+				}
+			});
+		</script>
+
+	</body>
+
+</html>

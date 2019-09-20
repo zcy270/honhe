@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>提现</title>
+		<link type="text/css" rel="stylesheet" href="css/css.css">
+		<!--我的css-->
+		<link rel="stylesheet" type="text/css" href="css/zcm.css" />
+		<link rel="stylesheet" type="text/css" href="css/user_draw_money.css" />
+		<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+		<style>
+			.agree_box .disclaimer_txt {
+			    font-size: 14px;
+			    line-height: 28px;
+			    margin: 0px 40px;
+			    font-size: 14px;
+			    color: #8c93a2;
+			    text-align: center;
+			}
+			.suc_img {
+			    margin-top: 0px;
+			}
+			.suc_go {
+			    width: 300px;
+			    height: 46px;
+			    line-height: 46px;
+			    text-align: center;
+			    background-color: #eb6e28;
+			    color: #fff;
+			    margin: 0 auto;
+			    display: block;
+			    text-indent: 0;
+			}
+			.sub_sure{
+				width: 300px;
+				height: 46px;
+				line-height: 46px;
+				text-align: center;
+				background-color: #eb6e28;
+				font-size: 14px;
+				color: #fff;
+				display: block;
+			}
+			.sub_sure.sub_err{
+				background-color: #ced1d7;
+			}
+			.tip_txt>i{
+				margin-left: 0px;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<!--以下是公共头部-->
+		<!--以下是公共头部-->
+		<!--以下是公共头部-->
+		<!--以下是公共头部-->
+
+		<!--<div id="home_top_little_nav">
+			<div class="div_center">
+				<div class="l">客服热线 400-833-6898</div>
+
+				<ul class="r">
+					<li>
+						<a href="#">免费注册</a>
+					</li>
+					<li>
+						<a href="#">登录</a>
+					</li>
+					<li>
+						<a href="#">帮助中心</a>
+					</li>
+					<li>
+						<a href="#">关于我们</a>
+					</li>
+				</ul>
+			</div>
+		</div>-->
+
+		<!--未登录状态nav-->
+		<!--<div id="logo_nav">
+		    <div class="div_center">
+		                <a class="l" href="index.html"><img src="img/logo_bg.png"> </a>
+		                <ul id="nav" class="nav clearfix">
+		                    <li class="nLi">
+		                        <h3><a href="index.html" target="_blank">首页</a></h3>
+		                    </li>
+		                    <li class="nLi">
+		                        <h3><a href="项目页.html" target="_blank">我要投资</a></h3>
+		                        <ul class="sub box-shadow">
+		                            <li><a href="项目页.html">全部项目</a></li>
+		                            <li><a href="项目页.html">新手专享</a></li>
+		                            <li><a href="项目页.html">精选项目</a></li>
+		                        </ul>
+		                    </li>
+		                    <li class="nLi">
+		                        <h3><a href="http://chedai.honhe.com/" target="_blank">我要借款</a></h3>
+		                    </li>
+		                    <li class="nLi ">
+		                        <h3><a href="#" target="_blank">信息披露</a></h3>
+		                        <ul class="sub box-shadow">
+		                            <li><a href="#">安全保障</a></li>
+		                            <li><a href="#">运营披露</a></li>
+		                            <li><a href="#">关于后河</a></li>
+		                            <li><a href="信息披露-公司动态.html">公司动态</a></li>
+		                            <li><a href="信息披露-监管部门.html">监管法规</a></li>
+		                        </ul>
+		                    </li>
+		                    <li class="nLi login_li">
+		                        <h3><a href="#" target="_blank" style="">&nbsp;登陆&nbsp;<span class="arrow_nav"></span></a></h3>
+		                        <ul class="sub box-shadow" style="">
+		                            <li><a href="#">投资人登录</a></li>
+		                            <li><a href="#">借款人登录</a></li>
+		                        </ul>
+		                    </li>
+		                    <li class="nLi register_li">
+		                        <h3><a href="#" target="_blank" style="">&nbsp;注册&nbsp;<span class="arrow_nav"></span></a></h3>
+		                        <ul class="sub box-shadow" style="left:10px;">
+		                            <li><a href="#">投资人注册</a></li>
+		                            <li><a href="#">借款人注册</a></li>
+		                        </ul>
+		                    </li>
+		                </ul>
+		    </div>
+		    <div class="clear_div"></div>
+		</div>-->
+		
+		<!--投资人已登录nav-->
+		<div id="logo_nav1">
+		    <div class="div_center">
+		                <a class="l" href="index.html"><img src="img/logo_bg.png"> </a>
+		                <ul id="nav1" class="nav clearfix">
+		                    <li class="nLi">
+		                        <h3><a href="index.html" target="_blank">首页</a></h3>
+		                    </li>
+		                    <li class="nLi">
+		                        <h3><a href="项目页.html" target="_blank">我要投资</a></h3>
+		                        <ul class="sub box-shadow">
+		                            <li><a href="项目页.html">全部项目</a></li>
+		                            <li><a href="项目页.html">新手专享</a></li>
+		                            <li><a href="项目页.html">精选项目</a></li>
+		                           
+		                        </ul>
+		                    </li>
+		                    <li class="nLi ">
+		                        <h3><a href="#" target="_blank">信息披露</a></h3>
+		                        <ul class="sub box-shadow">
+		                            <li><a href="#">安全保障</a></li>
+		                            <li><a href="#">运营披露</a></li>
+		                            <li><a href="#">关于后河</a></li>
+		                            <li><a href="信息披露-公司动态.html">公司动态</a></li>
+		                            <li><a href="信息披露-监管部门.html">监管法规</a></li>
+		                        </ul>
+		                    </li>
+		                    <li class="nLi">
+								<h3><a href="#" target="_blank">我的账户</a></h3>
+							</li>
+		                    <li class="nLi register_li">
+		                        <h3><a href="#" target="_blank">&nbsp;&nbsp;退出&nbsp;</a></h3>
+		                    </li>
+		                </ul>
+		    </div>
+		    <div class="clear_div"></div>
+		</div>
+		
+		<!--借款人已登录nav-->
+		<!--<div id="logo_nav2">
+		    <div class="div_center">
+		                <a class="l" href="index.html"><img src="img/logo_bg.png"> </a>
+		                <ul id="nav2" class="nav clearfix">
+		                    <li class="nLi ">
+		                        <h3><a href="后河财富-帮助中心.html" target="_blank">帮助中心</a></h3>
+		                    </li>
+		                    <li class="nLi ">
+		                        <h3><a href="#" target="_blank">我的账户</a></h3>
+		                    </li>
+		                    <li class="nLi register_li">
+		                        <h3><a href="#" target="_blank">&nbsp;&nbsp;退出&nbsp;</a></h3>
+		                    </li>
+		                </ul>
+		    </div>
+		    <div class="clear_div"></div>
+		</div>-->
+
+		<!--以上是公共头部-->
+		<!--以上是公共头部-->
+		<!--以上是公共头部-->
+		<!--以上是公共头部-->
+		<div class="main_box w1200">
+			<div class="main_l float_l">
+				<div class="main_l_top">
+					<img src="img/portrait_03.png" />
+					<p class="user_name">HONHE</p>
+					<ul class="user_icon ">
+						<li>
+							<a class="icon1 public_img hover"></a>
+						</li>
+						<li>
+							<a class="icon2 public_img hover"></a>
+						</li>
+						<li>
+							<a class="icon3 public_img "></a>
+						</li>
+						<li>
+							<a class="icon4 public_img "></a>
+						</li>
+						<li>
+							<a class="icon5 public_img "></a>
+						</li>
+					</ul>
+					<div id="safe_load">
+						<div class="inner_load"></div>
+					</div>
+
+					<p class="safe_txt">安全等级 <span>高</span></p>
+				</div>
+				<div class="item_box">
+					<div class="item_header cli">资产管理<i class="arrows_btom rotate90"></i></div>
+					<div class="item_content_box" style="display: block;">
+						<div class="account hover">账户概览</div>
+						<div class="money_draw">提现</div>
+						<div class="money_record">交易流水</div>
+					</div>
+				</div>
+				<div class="item_box">
+					<div class="item_header cli">我的账户<i class="arrows_btom"></i></div>
+					<div class="item_content_box" style="display: none;">
+						<div class="account">安全中心</div>
+						<div class="draw_money ">我的银行卡</div>
+					</div>
+				</div>
+				<div class="item_box">
+					<div class="item_header cli safety_bz" id="safety_bz">借款流程</div>
+					<div class="item_content_box" style="display: block;border-top: 0px;">
+					</div>
+				</div>
+			</div>
+
+			<!--右边的内容框-->
+			<div class="main_r float_r">
+				<div class="right_header ">
+					<p>提现</p>
+				</div>
+
+				<div class="form_box">
+					<form>
+						<div class="to_bank_box ">
+							<div class="to_bank_text">到账银行卡</div>
+							<div class="to_bank_content" id="see_bank">
+								<div class="bank_logo"></div>
+								<div class="bank_name" id="bank_name">中国银行</div>
+								<div class="change">更换<i class="dropdown"></i></div>
+								<div class="bank_txt" id="bank_txt"><span>尾号1174[默认银行]</span></div>
+							</div>
+							<div class="xl_box ">
+								<div class="to_bank_content">
+									<div class="bank_logo"></div>
+									<div class="bank_name">中国银行</div>
+									<div class="bank_txt">尾号1174[默认银行]</div>
+								</div>
+								<div class="to_bank_content">
+									<div class="bank_logo"></div>
+									<div class="bank_name">工商银行</div>
+									<div class="bank_txt">尾号1234</div>
+								</div>
+							</div>
+							<div class="xl_add ">
+								<div class="to_bank_content">
+									<div class="bank_logo"></div>
+									<div class="add_name">+添加银行卡</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="item1">
+							<div class="label">提现金额</div><input class="u_input" name="" type="text" placeholder="可提现0.5元" />
+							<a class="tip_txt" href="#">
+								全部提现
+								<i class="tip_txt_icon"><div id="cy_tip_box">
+										<div class="cy_tip">
+											注意：今明两天的待还总额不允许提现。今明两天的待还总额共计xxx元。
+											<div class="cy_san"></div>
+											<div class="cy_nsan"></div>
+										</div>
+									</div>
+									</i>
+							</a>
+							<div class="tip_txt1">实际到账<span>100.00</span>元，手续费<span class="numb">2.00</span>元<i class="tip_txt_icon" ><div id="cy_tip_box">
+									<div class="cy_tip">
+										可提现金额是指当前您的平安银行资金存管账户中，可以用于提现的实际金额
+										<div class="cy_san"></div>
+										<div class="cy_nsan"></div>
+									</div>
+								</div>
+								</i></div>
+						</div>
+						<div class="item2">
+							<div class="label">交易密码</div><input class="u_input" name="" type="text" placeholder="请输入交易密码" />
+							<a href="#" class="tip_txt">忘记密码？</a>
+						</div>
+						<div class="item4">
+							<p class="tip_btom error">错误提示</p>
+							<a id="sub_sure" href="#">确认提现</a>
+							<a class="sub_sure sub_err" href="#">确认提现</a>
+						</div>
+					</form>
+				</div>
+				
+				<div class="tip_btom_box">
+					<div class="tip_btom_hd">温馨提示</div>
+					<div class="tip_btom_content">
+						<p>1. 提现手续费2元/笔。每月首笔提现且金额不小于100元的，免收手续费，仅限当月使用，不可累计至下月（提现最低
+  						  &nbsp;&nbsp;&nbsp;&nbsp;限额4元，不设上限）；</p>
+						<p>2. 身份认证、银行存管开通、提现银行卡均设置成功后，才能进行提现操作；</p>
+						<p>3. 个人账户当日充值金额，需待次日才可发起取现；</p>
+						<p>4. 费用及预计到账时间：点击查看；</p>
+						<p>5. 提现必须为银行借记卡，不支持存折、信用卡提现；</p>
+						<p>6. 严禁信用卡套现、转账、洗钱等行为，一经发现将予以处罚，包括但不限于：限制交易、 冻结账户、永久停止服
+						&nbsp;&nbsp;&nbsp;&nbsp;务，并会影响银行征信记录。</p>
+					</div>
+				</div>
+				
+				
+			</div>
+		</div>
+		
+		
+		
+
+		<!--以下是底部公共部分-->
+		<!--以下是底部公共部分-->
+		<!--以下是底部公共部分-->
+		<div class="clear_div"></div>
+
+		<div id="foot" style="background:#fff;height:340px;width:100%;">
+		     <div class="div_center">
+		         <div class="l">
+		            <ul>
+		                <span class="tit">关于后河</span>
+		                <span><a href="#">后河简介</a></span>
+		                <span><a href="#">组织信息</a></span>
+		                <span><a href="#">最新公告</a></span>
+		                <span><a href="#">联系我们</a></span>
+		            </ul>
+		             <ul>
+		                 <span class="tit">信息披露</span>
+		                 <span><a href="#">数据统计</a></span>
+		                 <span><a href="#">运营报告</a></span>
+		                 <span><a href="#">企业资质</a></span>
+		                 <span><a href="#">安全保障</a></span>
+		             </ul>
+		
+		
+		             <ul>
+		                 <span class="tit">帮助中心</span>
+		                 <span><a href="#">注册登录</a></span>
+		                 <span><a href="#">资金存管</a></span>
+		                 <span><a href="#">充值提现</a></span>
+		                 <span><a href="#">收费标准</a></span>
+		                 <!--<span><a href="#">更多>></a></span>-->
+		             </ul>
+		
+		
+		
+		             <p class="bottom-img">
+		                 <a href="https://seal.wosign.com/details/www.honhe.com" target="_blank" class="logo1"></a>
+		                 <a href="http://szcert.ebs.org.cn/e8369191-dc98-4072-ad44-e02027ae725f" target="_blank" class="logo2"></a>
+		             </p>
+		
+		             <div class="clear_div"></div>
+		
+		             <p class="foot_1">温馨提示：市场有风险  出借需谨慎</p>
+		             <p class="foot_2">Copyright © 2011-2018 HONHE Corporation All Rights Reserved. 版权所有 ©深圳市后河网互联网金融服务有限公司  粤ICP备13075040号</p>
+		
+		
+		
+		
+		         </div>
+				
+		
+		         <div class="r">
+		              <img src="img/webapp.png">
+		              <p class="phone_num">400-833-6898</p>
+		             <p class="time"> <span>工作日 09:00-21:00</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>周末 09:00-17:30</span> </p>
+		         </div>
+		     </div>
+		</div>
+
+		<!--以上是底部公共部分-->
+		<!--以上是底部公共部分-->
+		<!--以上是底部公共部分-->
+		
+		<div class="agree_box layui-layer-content" ms-controller="avalon" style="display: none;">
+			<div class="title">
+				<span class="close"></span>
+			</div>
+			
+			<div class="disclaimer_txt">
+				<img src="img/success_icon.png" class="suc_img"/>
+				<p class="suc_txt">提现成功</p>
+				<p class="suc_tip">提现到账可能还需要一段时间，请稍后确认。<br />
+					如有疑问，请致电400-833-6898或<a href="javascript:void(0);">联系客服</a>。</p>
+				<a href="javascript:void(0);" class="suc_go">查看提现记录</a>
+			</div>
+
+		</div>
+	</body>
+	<script src="js/jquery-1.11.3.min.js"></script>
+
+	<script src="js/jquery.honhe.js"></script>
+	<!--首页的 导航 选项卡 轮播图需引入-->
+	<script src="src/jquery.contip.js"></script>
+	<script src="js/layer/layer.js"></script>
+	<script src="js/zcm.js"></script>
+	<script>
+		//导航
+		jQuery("#nav,#nav1,#nav2").slide({
+			type: "menu", // 效果类型，针对菜单/导航而引入的参数（默认slide）
+			titCell: ".nLi", //鼠标触发对象
+			targetCell: ".sub", //titCell里面包含的要显示/消失的对象
+			effect: "slideDown", //targetCell下拉效果
+			delayTime: 300, //效果时间
+			triggerTime: 0, //鼠标延迟触发时间（默认150）
+			returnDefault: true //鼠标移走后返回默认状态，例如默认频道是“预告片”，鼠标移走后会返回“预告片”（默认false）
+		});
+		
+		//下拉银行卡 有银行卡i为true
+		var i=1;
+		function xlbank(i){
+			if(i){
+				$(".dropdown").addClass("hover");
+				$(".xl_box").addClass("show");
+			}else{
+				$(".dropdown").addClass("hover");
+				$(".xl_add").addClass("show");
+			}
+		}
+		$("#see_bank").mouseover(function(){
+			xlbank(i);
+		})
+		$("#see_bank").mouseout(function(){
+			$(".dropdown").removeClass("hover");
+			$(".xl_box").removeClass("show");
+			$(".xl_add").removeClass("show");
+		})
+		$(".xl_box .to_bank_content").mouseover(function(){
+			$(".dropdown").addClass("hover");
+			$(".xl_box").addClass("show");
+		})
+		$(".xl_box .to_bank_content").mouseout(function(){
+			$(".dropdown").removeClass("hover");
+			$(".xl_box").removeClass("show");
+		})
+		$(".xl_add .to_bank_content").mouseover(function(){
+			$(".dropdown").addClass("hover");
+			$(".xl_add").addClass("show");
+		})
+		$(".xl_add .to_bank_content").mouseout(function(){
+			$(".dropdown").removeClass("hover");
+			$(".xl_add").removeClass("show");
+		})
+		
+		$(".xl_box .to_bank_content").on("click",function(){
+			$("#bank_name").text($(this).children(".bank_name").text());
+			$("#bank_txt span").text($(this).children(".bank_txt").text());
+			$(".xl_box").removeClass("show");
+		})
+		
+		
+		
+		//弹窗
+		layer.open({
+			type: 1,
+			shade: [0.4, '#393D49'],
+			scrollbar: false,
+			closeBtn: 0,
+			title: false,
+			area: ['620px', '430px'],
+			content: $('.agree_box'), //这里content是一个DOM，注意：最好该元素要存放在body最外层，否则可能被其它的相对元素所影响
+			success: function(layero, index) {
+	
+			}
+		});
+		
+		//关闭
+		$('.agree_box .close').click(function() {
+			$(this).css("color", "#3a4762")
+			layer.closeAll();
+		});
+
+	</script>
+
+</html>

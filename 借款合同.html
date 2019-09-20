@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+		<title>借款合同</title>
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
+		<link type="text/css" rel="stylesheet" href="css/css.css">
+		<!--我的css-->
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
+		<link rel="stylesheet" type="text/css" href="css/zcm.css" />
+		<link rel="stylesheet" type="text/css" href="css/retrieve_password.css" />
+		<style>
+			.tab_jk{border-collapse:collapse;color:#8c93a2;margin-bottom: 20px;}
+			.tab_jk td{text-align: center;height:30px;line-height: 30px;}
+		</style>
+	</head>
+
+	<body>
+
+		<!--以下是公共头部-->
+
+		<!--<div id="home_top_little_nav">
+			<div class="div_center">
+				<div class="l">客服热线 400-833-6898</div>
+
+				<ul class="r">
+					<li>
+						<a href="#">免费注册</a>
+					</li>
+					<li>
+						<a href="#">登录</a>
+					</li>
+					<li>
+						<a href="#">帮助中心</a>
+					</li>
+				</ul>
+			</div>
+		</div>-->
+
+		<!--未登录状态nav-->
+		<!--<div id="logo_nav">
+		    <div class="div_center">
+		                <a class="l" href="index.html"><img src="img/logo_bg.png"> </a>
+		                <ul id="nav" class="nav clearfix">
+		                    <li class="nLi">
+		                        <h3><a href="index.html" target="_blank">首页</a></h3>
+		                    </li>
+		                    <li class="nLi">
+		                        <h3><a href="项目页.html" target="_blank">我要投资</a></h3>
+		                        <ul class="sub box-shadow">
+		                            <li><a href="项目页.html">全部项目</a></li>
+		                            <li><a href="项目页.html">新手专享</a></li>
+		                            <li><a href="项目页.html">精选项目</a></li>
+		                        </ul>
+		                    </li>
+		                    <li class="nLi">
+		                        <h3><a href="http://chedai.honhe.com/" target="_blank">我要借款</a></h3>
+		                    </li>
+		                    <li class="nLi ">
+		                        <h3><a href="#" target="_blank">信息披露</a></h3>
+		                        <ul class="sub box-shadow">
+		                            <li><a href="#">安全保障</a></li>
+		                            <li><a href="#">运营披露</a></li>
+		                            <li><a href="#">关于后河</a></li>
+		                            <li><a href="信息披露-公司动态.html">公司动态</a></li>
+		                            <li><a href="信息披露-监管部门.html">监管法规</a></li>
+		                        </ul>
+		                    </li>
+		                    <li class="nLi login_li">
+		                        <h3><a href="#" target="_blank" style="">&nbsp;登陆&nbsp;<span class="arrow_nav"></span></a></h3>
+		                        <ul class="sub box-shadow" style="">
+		                            <li><a href="#">投资人登录</a></li>
+		                            <li><a href="#">借款人登录</a></li>
+		                        </ul>
+		                    </li>
+		                    <li class="nLi register_li">
+		                        <h3><a href="#" target="_blank" style="">&nbsp;注册&nbsp;<span class="arrow_nav"></span></a></h3>
+		                        <ul class="sub box-shadow" style="left:10px;">
+		                            <li><a href="#">投资人注册</a></li>
+		                            <li><a href="#">借款人注册</a></li>
+		                        </ul>
+		                    </li>
+		                </ul>
+		    </div>
+		    <div class="clear_div"></div>
+		</div>-->
+		
+		<!--投资人已登录nav-->
+		<div id="logo_nav1">
+		    <div class="div_center">
+		                <a class="l" href="index.html"><img src="img/logo_bg.png"> </a>
+		                <ul id="nav1" class="nav clearfix">
+		                    <li class="nLi">
+		                        <h3><a href="index.html" target="_blank">首页</a></h3>
+		                    </li>
+		                    <li class="nLi">
+		                        <h3><a href="项目页.html" target="_blank">我要投资</a></h3>
+		                        <ul class="sub box-shadow">
+		                            <li><a href="项目页.html">全部项目</a></li>
+		                            <li><a href="项目页.html">新手专享</a></li>
+		                            <li><a href="项目页.html">精选项目</a></li>
+		                           
+		                        </ul>
+		                    </li>
+		                    <li class="nLi ">
+		                        <h3><a href="#" target="_blank">信息披露</a></h3>
+		                        <ul class="sub box-shadow">
+		                            <li><a href="#">安全保障</a></li>
+		                            <li><a href="#">运营披露</a></li>
+		                            <li><a href="#">关于后河</a></li>
+		                            <li><a href="信息披露-公司动态.html">公司动态</a></li>
+		                            <li><a href="信息披露-监管部门.html">监管法规</a></li>
+		                        </ul>
+		                    </li>
+		                    <li class="nLi">
+								<h3><a href="#" target="_blank">我的账户</a></h3>
+							</li>
+		                    <li class="nLi register_li">
+		                        <h3><a href="#" target="_blank">&nbsp;&nbsp;退出&nbsp;</a></h3>
+		                    </li>
+		                </ul>
+		    </div>
+		    <div class="clear_div"></div>
+		</div>
+		
+		<!--借款人已登录nav-->
+		<!--<div id="logo_nav2">
+		    <div class="div_center">
+		                <a class="l" href="index.html"><img src="img/logo_bg.png"> </a>
+		                <ul id="nav2" class="nav clearfix">
+		                    <li class="nLi ">
+		                        <h3><a href="后河财富-帮助中心.html" target="_blank">帮助中心</a></h3>
+		                    </li>
+		                    <li class="nLi ">
+		                        <h3><a href="#" target="_blank">我的账户</a></h3>
+		                    </li>
+		                    <li class="nLi register_li">
+		                        <h3><a href="#" target="_blank">&nbsp;&nbsp;退出&nbsp;</a></h3>
+		                    </li>
+		                </ul>
+		    </div>
+		    <div class="clear_div"></div>
+		</div>-->
+
+		<!--以上是公共头部-->
+		<div class="text_box">
+			<div class="header_top1">借款合同</div>
+			<div class="text_content">
+				<p class="text_tit" style="text-align: center;font-weight: bold;font-size:16px;letter-spacing:5px">借款合同</p>
+				<p style="text-align: right;margin-top: 40px;">合同编号：____________________</p>
+				<p>出借人姓名：____________________</p>
+				<p>居民身份号码：____________________</p>
+				<p style="margin-bottom: 30px;">后河财富ID号：____________________</p>
+				
+				<p>借款人姓名：____________________</p>
+				<p>居民身份证号：___________________________________</p>
+				<p style="margin-bottom: 30px;">后河财富ID号：____________________</p>
+			
+				<p>出借人（签署）：</p>
+				<p style="margin-bottom: 30px;">借款人（签署）：</p>
+				<p></p>
+				<p style="margin-bottom: 30px;">合同签署日：________年____月____日</p>
+				
+				<p>
+					借款人和出借人均已在“后河财富”平台（包括网站：www.honhe.com，以下统称““后河财富”平台”）进行注册并同意履行《网站注册服务协议》，双方自愿通过“后河财富”平台的借款流程并以电子签名方式签署本合同。根椐中华人民共和国有关法律、法规，在遵循公平原则的基础上，经当事人协商一致，特订立本合同条款如下，以兹遵守。
+				</p>
+				<p>
+					第一条	借款金额及借款用途
+				</p>
+				<p>
+					1.1借款人向出借人借款金额为人民币大写_______________（小写：￥____________元）。
+				</p>
+				<p>
+					1.2借款人在此确认，本合同项下的借款明确用于____________________，不得用于其他法律法规明令禁止的领域，不得进行证券投资或权益投资，不得用于期货合约、结构化产品及其他衍生品等高风险的投资或从事其他违法、违规交易。
+				</p><p>
+					1.3借款人擅自改变约定的借款用途的，应当从改变用途之日按本合同的约定承担违约责任。
+				</p><p>
+					1.4在借款申购时间内，一旦出借人申请买入本合同标的借款项目，则出借人的该申购行为不可撤销。一旦出借人同意出借资金后，除非借款人放弃借款外，出借人不可撤回其出借的资金。
+				</p>
+				<p>
+					1.5各出借人向借款人借出的金额具体详见“后河财富”平台关于本借款项目申购情况。依据本项目借款合同的不同出借金额约定，各出借人各自独立地享有对借款人的借款债权。
+				</p>
+				<p>
+					第二条 借款期限和利率
+				</p><p>
+					2.1 本次借款期限为   个月。借款期限自出借人将借款款项划付借款人指定存管账户之次日起计算。借款人应按还款计划表偿还借款本金和利息。
+				</p>
+				<p>
+					2.2本合同项下借款开始计息日为借款划付借款人指定存管账户之次日。借款人选择下列利率约定向出借人支付相应的利息。
+				</p>
+				<p>
+					①　约定利息：借款年利率为______%，以实际借款金额为准计算利息；
+				</p>
+				<p>
+					②　不支付利息。
+				</p>
+				<p>
+					2.3本合同各类利率计算标准：
+				</p>
+				<p>
+					① 日利率计算标准:一年按360天计，日利率＝年利率÷360；
+				</p>
+				<p>
+					② 期利率计算标准：借款人选择以   作为一个还款周期，按期计息。各种期利率计算标准为：周利率＝年利率÷360×7，月利率＝年利率÷360×30，季利率＝年利率÷360×30×3。若实际借款期限非还款周期的整数倍，则在以________作为还款周期整数倍的期限计收利息后，其剩余借款天数仍按日利率计收利息。
+				</p><p>
+					第三条	借款拨付
+				</p>
+				<p>
+					3.1借款人与出借人在此确认，双方已在资金存管银行同步建立属于其本人的交易结算资金管理账户，并且双方同意由资金存管银行依照各自发出的指令或业务授权指令，对借款资金进行存管、划付、核算和监督。
+				</p><p>
+					3.2出借人将款项划付借款人下列指定的存管账户时，视为借款人收到该借款款项。
+				</p>
+				<p>
+					后河财富ID号：______________；
+				</p><p>
+					账户名：____________________；
+				</p>
+				<p>
+					存管银行：____________________。
+				</p>
+				<p>
+					3.3涉及到第三方费用
+				</p>
+				<p>
+					① 借款过程中若涉及到第三方的费用，包括但不限于转账手续费、借款人提现费、评估、公证/见证、抵押/质押登记、保险及其他第三方收取的相关费用的，由借款人承担。
+				</p>
+				<p>
+					② 借款人在本合同有效期内，不能依照本合同规定履行还本付息及其他有关责任义务，致使出借人决定通过其他途径采取补救或追索措施的，由此引起的一切费用概由借款人承担（包括但不限于诉讼/仲裁费用、诉讼财产保全担保费、律师费用、交通费、差旅费、调查费及其他实现债权所产生的费用等）。
+				</p>
+				<p>
+					第四条 还款
+				</p>
+				<p>
+					4.1借款人依照以下第   种方式还本付息，具体还款计划详见还款计划表：
+				</p><p>
+					①先息后本：按月付息，到期还本，借款人每月归还的利息=借款本金*年化利率/360*30。即放款成功后，借款人在借款期限内先按期支付利息，借款到期后，按还款约定归还本金。
+				</p><p>
+					②等本等息：按月偿还，借款人每月归还的本金=借款本金/借款月数，每月归还的利息=借款本金*年化利率/360*30。即放款成功后，借款人在借款期限内每月按期支付相同的本金和利息。
+				</p>
+				<p>
+					③等额本息：按月偿还，借款人每月归还的本金=借款本金*[年化利率/360*30*(1+年利率/360*30)^借款月数]/[（1+年化利率/360*30）^借款月数-1]-上期剩余借款本金*年利率/360*30，每月归还的利息=上期剩余借款本金*年化利率/360*30。即放款成功后，借款人在借款期限内按每月按期支付本金和利息。
+				</p>
+				<p>
+					④一次性还本付息：到期还本付息，借款人到期应归还的本金=借款本金，到期应归还的利息=借款本金*年化利率/360*30*借款月数。即放款成功后，借款人在借款到期后，按还款约定归还本金和利息。
+				</p>
+				<p style="margin-top:20px;">
+					还款计划表：
+				</p>
+				
+				<table class="tab_jk" width="1000" border="1" cellpadding="0" cellspacing="0" bordercolor="#8c93a2">  
+				  <tr>  
+				    <td> 还款期数</td>  
+				    <td> 还款日期</td>  
+				    <td> 应还小计（元）</td>  
+				    <td> 应还本金（元）</td>  
+				    <td> 应还利息（元）</td>  
+				  </tr>  
+				  <tr>  
+				    <td>1 </td>  
+				    <td> </td>  
+				    <td> </td>  
+				    <td> </td>  
+				    <td> </td>  
+				  </tr>  
+				  <tr>  
+				    <td> 2</td>  
+				    <td> </td>  
+				    <td> </td>  
+				    <td> </td>  
+				    <td> </td>  
+				  </tr>  
+				  <tr>  
+				    <td> ...</td>  
+				    <td> </td>  
+				    <td> </td>  
+				    <td> </td>  
+				    <td> </td>  
+				  </tr>  
+				</table>
+				<p>
+					4.2借款人应于约定的还款日前，将应还金额足额充值至借款人指定存管账户。借款人不可撤销地委托并授权存管银行代为划扣，将应还金额从借款人指定存管账户中代为划扣至出借人的指定存管账户。出借人指定存管账户信息如下：
+				</p>
+				<p>
+					后河财富ID号：______________；
+				</p>
+				<p>
+					账户名：_____________________；
+				</p>
+				<p>
+					存管银行：______________________。
+				</p>
+				<p>
+					4.4 还款日    点前，借款人未按本合同约定将该应还金额足额充值至借款人指定存管账户的视为借款人逾期。
+				</p>
+				<p>
+					4.5借款人逾期时，应按照每天应还未还金额的0.01%支付罚息，但利息及罚息合计不得超过年利率的24%。
+				</p><p>
+					4.6借款人逾期时，借款人同意选择如下还款来源向出借人还款：
+				</p>
+				<p>
+					当借款人的任何一期应付款项逾期时，由第三方担保公司代偿的方式进行偿还，偿还顺序为相关利息、本金。
+				</p>
+				<p>
+					4.7提前还款
+				</p>
+				<p>
+					征得出借人书面同意后，借款人可以在约定的借款期限届满截止日前选择提前还款；借款人提前还款的，利息按照实际借款的期间按天计算。
+				</p>
+				<p>
+					第五条 承诺及保证
+				</p>
+				<p>
+					5.1 借款人的承诺与保证
+				</p>
+				<p>
+					①提供的身份、财产证明等信息真实、准确、完整；
+				</p>
+				<p>
+					②依照约定的合法用途使用借款，不得将借款用于合同约定借款用途以外其他目的；
+				</p>
+				<p>
+					③按照约定向出借人如实报告影响或可能影响出借人权益的重大信息；
+				</p>
+				<p>
+					④确保自身具有与借款金额相匹配的还款能力并按照合同约定还款及支付相应费用。
+				</p>
+				<p>
+					⑤对本合同内容及出借人信息应予保密。
+				</p>
+				<p>
+					5.2 出借人的承诺与保证
+				</p>
+				<p>
+					①提供的身份信息等信息真实、准确、完整；
+				</p>
+				<p>
+					②出借资金为来源合法的自有资金，具有完全的支配权利。
+				</p>
+				<p>
+					③对本合同内容及借款人信息应予保密。
+				</p>
+				<p>
+					第六条 借款人违约
+				</p>
+				<p>
+					6.1借款人发生下列任一事件，均构成借款人违约：
+				</p>
+				<p>
+					(1)借款人未按约定的借款用途使用借款；
+				</p>
+				<p>
+					(2)借款人未依照本合同约定按时足额向出借人偿还借款或支付利息或支付合同约定的各项费用；
+				</p>
+				<p>
+					(3)借款人向出借人提供虚假证明资料或者隐瞒影响债务安全的重要事实；
+				</p>
+				<p>
+					(4)未经出借人同意，借款人或抵押人或出质人将设定抵押权或质押权的财产或权益出售、转让、赠与、重复抵押或有其他行为，出借人认为足以影响抵押权或质押权利行使的（如有）；
+				</p>
+				<p>
+					(5)借款人及其他反担保人（如有）未办妥相关抵押/质押及其他手续的（如有）；
+				</p>
+				<p>
+					(6)借款人发生重大债权债务纠纷，引起重大诉讼、仲裁等事件的；
+				</p>
+				<p>
+					(7)借款人经济收入状况有恶化迹象，经济效益（收入）急剧下降或经营亏损，出现影响其偿债能力的其他重大不利事项的；
+				</p>
+				<p>
+					(8)担保人（如有，含本合同以外的其他保证担保人）或担保财产（如有）发生变化，对实现债权有不利影响的；
+				</p>
+				<p>
+					(9)借款人的财产被占用、查封、扣押、没收、转移、破坏、损毁、弃置、丧失使用功能；
+				</p>
+				<p>
+					(10)发生其他违反本合同条款的行为及出借人有理由认定借款人无法偿还到期债务的。
+				</p>
+				<p>
+					6.2 当借款人出现违约或违约迹象，或出借人合理判断借款人可能发生第6.1条所列违约事件之一时，出借人有权采取下列一种或数种措施进行处理：
+				</p>
+				<p>
+					(1)解除本借款合同；
+				</p>
+				<p>
+					(2)宣布本合同项下的借款部分或全部立即提前到期，提前收回借款及利息并支付违约金、罚息；
+				</p>
+				<p>
+					(3)行使抵押权或质权，处分抵押物或质物，依处分抵押物或质物所得价款清偿借款本息和依法追究其他担保人（如有）的担保责任；
+				</p>
+				<p>
+					(4)要求借款人对出借人造成的损失进行赔偿；
+				</p>
+				<p>
+					(5)采取法律、法规以及本合同约定的其他救济措施。
+				</p>
+				<p>
+					第七条 合同的生效
+				</p>
+				<p>
+					自出借人将借款款项划付借款人指定存管账户时，本合同正式生效。
+				</p>
+				<p>
+					第八条 其他条款
+				</p>
+				<p>
+					8.1本合同各方根据本合同约定做出的任何通知或文件均应以书面做出。专人送递的，自交付时即视为送达。以快递或挂号信邮寄的，自快递或挂号信寄出之日起三日即视为送达。如以手机短信、或其他电子方式通知或公告的，自发出或公布之日即视为送达。本合同各方预留的联系方式，均为有效联络方式，如更改联系人、联系地址、联系电话的，应在相关信息变更之日起三日内做出变更通知。借款人变更联系方式或地址而未及时通知出借人，视为借款人恶意逃避债务之行为，由借款人承担通知不能送达的一切后果。 
+				</p>
+				<p>
+					8.2本合同中部分条款根据相关法律、行政法规等的规定无效或部分无效的，该等无效不影响本合同项下其他条款的效力，各方仍应履行其在本合同项下义务。
+				</p>
+				<p>
+					8.3本合同未尽事宜，双方应另行协商并签订补充协议。
+				</p>
+				<p>
+					8.4	本合同项下附件和补充协议构成本合同不可分割的一部分，与本合同具有同等法律效力。
+				</p>
+				<p>
+					8.5本合同适用中华人民共和国大陆法律。任何有关本借款合同产生的争议，均一致同意由被告所在地有管辖权的法院诉讼解决。
+				</p>
+				<p>
+					8.6本合同（包括本合同的附件、补充协议等）经当事各方同意后以网络方式订立，按各方在“后河财富”平台的正常操作后自动生成电子合同，为各方同意和认可，生效后对各方均具有法律约束力。各方签署纸质合同的，电子合同与当事人签署的纸质合同具有同等法律效力。纸质合同与电子合同内容不一致的，纸质合同必需经网络合同提供方确认并修改才能有效。本合同各方确认并同意由第三方电子签名认证机构提供的电子签名及合同签署版本均具有法律效力，与本合同有关的书面文件或者数据电文或其他电子信息，在无明显错误的情况下作为本合同有关事项的有效证据。
+				</p>
+				
+				
+			</div>
+		</div>
+		<div id="help_number">
+				<div class="float_l">
+					<p style="color: #2a2a2a; font-size: 14px;">
+						还没解决？联系
+						<a style="color: #2ba8ff; font-size: 14px;" href="http://cs.honhe.com/" target="_blank">在线客服</a>
+					</p>
+					<p style="color: #848484; font-size: 12px;">(工作日 09:00-21:00 周六日 09:00-17:30)
+					</p>
+				</div>
+				<div class="float_r">
+					<p style="color: #848484;">全国统一服务热线</p>
+					<p style="color: #f77b20; font-size: 24px;">400-833-6898</p>
+				</div>
+				<div class="clear0"></div>
+			</div>
+		<!--以下是底部公共部分-->
+		<div class="clear_div"></div>
+
+		<div id="foot" style="height:340px;width:100%;">
+		     <div class="div_center">
+		         <div class="l">
+		            <ul>
+		                <span class="tit">关于后河</span>
+		                <span><a href="#">后河简介</a></span>
+		                <span><a href="#">组织信息</a></span>
+		                <span><a href="#">最新公告</a></span>
+		                <span><a href="#">联系我们</a></span>
+		            </ul>
+		             <ul>
+		                 <span class="tit">信息披露</span>
+		                 <span><a href="#">数据统计</a></span>
+		                 <span><a href="#">运营报告</a></span>
+		                 <span><a href="#">企业资质</a></span>
+		                 <span><a href="#">安全保障</a></span>
+		             </ul>
+		
+		
+		             <ul>
+		                 <span class="tit">帮助中心</span>
+		                 <span><a href="#">注册登录</a></span>
+		                 <span><a href="#">资金存管</a></span>
+		                 <span><a href="#">充值提现</a></span>
+		                 <span><a href="#">收费标准</a></span>
+		                 <!--<span><a href="#">更多>></a></span>-->
+		             </ul>
+		             <p class="bottom-img">
+		                 <a href="http://webscan.360.cn/index/checkwebsite/url/www.honhe.com" name="19fe75e9f6557cdf26a3af658889ab7c" class="logo1" target="_blank"></a> 
+		                 <a href="http://v.pinpaibao.com.cn/authenticate/cert/?site=www.honhe.com&amp;at=business" target="_blank" class="logo2"></a>
+		             </p>
+		             <div class="clear_div"></div>
+		             <p class="foot_1">温馨提示：市场有风险  出借需谨慎</p>
+		             <p class="foot_2">Copyright © 2011-2018 HONHE Corporation All Rights Reserved. 版权所有 ©深圳市后河网互联网金融服务有限公司  粤ICP备13075040号</p>
+		         </div>
+		
+		
+		         <div class="r">
+		              <img src="img/webapp.png">
+		              <p class="phone_num">400-833-6898</p>
+		             <p class="time"> <span>工作日 09:00-21:00</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>周末 09:00-17:30</span> </p>
+		         </div>
+		     </div>
+		</div>		
+
+		<!--以上是底部公共部分-->
+
+	</body>
+	<script src="js/account.js"></script>
+	<script src="js/jquery-1.11.3.min.js"></script>
+
+	<script src="js/jquery.honhe.js"></script>
+	<!--首页的 导航 选项卡 轮播图需引入-->
+	<script src="js/zcm.js"></script>
+
+	<script>
+		//导航
+		jQuery("#nav").slide({
+			type: "menu", // 效果类型，针对菜单/导航而引入的参数（默认slide）
+			titCell: ".nLi", //鼠标触发对象
+			targetCell: ".sub", //titCell里面包含的要显示/消失的对象
+			effect: "slideDown", //targetCell下拉效果
+			delayTime: 300, //效果时间
+			triggerTime: 0, //鼠标延迟触发时间（默认150）
+			returnDefault: true //鼠标移走后返回默认状态，例如默认频道是“预告片”，鼠标移走后会返回“预告片”（默认false）
+		});
+	</script>
+</html>

@@ -1,0 +1,423 @@
+.main_r .draw_header{
+	height: 80px;
+	line-height: 80px;
+	width: 960px;
+	padding-left: 60px;
+	box-sizing: border-box;
+	border-bottom: 2px solid #f1f5fc;
+}
+.main_r .draw_header p{
+	font-size: 20px;
+	color: #3a4762;
+	
+}
+.form_box{
+	width: 960px;
+	height: 509px;
+	padding-top:70px;
+	border-bottom:1px solid #f1f5fc;
+}
+.to_bank_box{
+	padding-left: 60px;
+	height: 60px;
+	margin-bottom: 40px;
+	position: relative;
+	
+}
+.to_bank_text{
+	line-height: 60px;
+	width: 104px;
+	float: left;
+	text-align: left;
+	font-size: 14px;
+	color: #3a4762;
+	
+}
+.to_bank_content{
+	padding: 14px 0px 0px 14px;
+	height: 48px;
+	width: 284px;
+	float: left;
+	border: solid 1px #cfd5e1;
+}
+.xl_add .to_bank_content{
+	border-top: none;
+    background: #f7faff;
+    cursor: pointer;
+}
+.xl_box .to_bank_content{
+	padding: 14px 0px 0px 14px;
+	height: 48px;
+	width: 284px;
+	float: left;
+	border: solid 1px #cfd5e1;
+	border-top: none;
+	cursor: pointer;
+}
+.xl_box .to_bank_content:hover{
+	background: url(../img/bank_sub.png)no-repeat 265px 20px;
+	background-color: #f7faff;
+	url(../img/bank_card.png)no-repeat -39px 0px
+}
+.xl_box .to_bank_content:hover .bank_logo{
+	background:url(../img/bank_card.png)no-repeat 0px 0px;
+}
+.xl_box .to_bank_content .bank_logo.hover{
+	background-position: -39px 0px;
+}
+.bank_logo{
+	float: left;
+	width: 38px;
+	height: 32px;
+	margin-right: 13px;
+	background: url(../img/bank_card.png)no-repeat 0px 0px; 
+}
+.xl_add .bank_logo{
+	float: left;
+	width: 38px;
+	height: 32px;
+	margin-right: 13px;
+	background: url(../img/bank_card.png)no-repeat -39px 0px; 
+}
+.xl_box .bank_logo{
+	float: left;
+	width: 38px;
+	height: 32px;
+	margin-right: 13px;
+	background: url(../img/bank_card.png)no-repeat -39px 0px; 
+}
+.bank_name{
+	height: 15px;
+	width: 175px;
+	font-size: 14px;
+	line-height: 15px;
+	color: #3a4762;
+	float: left;
+	margin-bottom: 14px;
+}
+.xl_box  .bank_name{
+	width: 192px;
+}
+.bank_txt{
+	height: 14px;
+	font-size: 12px;
+	line-height: 15px;
+	color: #8c93a2;
+	float: left;
+}
+.bank_txt span{
+	line-height: 14px;
+}
+.change{
+    width: 52px;
+    height: 47px;
+    float: right;
+    padding-top: 9px;
+    color: #607ee2;
+    cursor: pointer;
+}
+.dropdown{
+	width: 10px;
+    height: 20px;
+    display: block;
+    float: right;
+    background: url(../img/sx_day.png)no-repeat 0px 5px;
+    margin-right: 11px;
+}
+.to_bank_content:hover .dropdown{
+	background-position: -10px 5px;
+}
+.dropdown.hover{
+	background-position: -10px 5px;
+}
+.xl_box{
+	width: 300px;
+	position: absolute;
+    left: 164px;
+    top: 64px;
+    background: #fff;
+    z-index: 100;
+    display: none;
+}
+.xl_add{
+	width: 234px;
+	position: absolute;
+    left: 164px;
+    top: 64px;
+    background: #fff;
+    z-index: 100;
+    display: none;
+}
+.to_bank_content .add_name{
+	font-size: 16px;
+    margin-top: 3px;
+    color: #8c93a2;
+}
+.item1{
+	padding-left: 60px;
+	height: 76px;
+	line-height: 46px;
+	margin-bottom: 20px;
+	position: relative;
+}
+.tip_btom{
+	position: absolute;
+	top: -35px;
+	left: 165px;
+	color: #ff6666;
+	display: none;
+}
+.error{
+	display: block;
+}
+.label{
+	float: left;
+	width: 104px;
+	text-align: left;
+	font-size: 14px;
+	color: #3a4762;
+}
+.u_input{
+	float: left;
+	width: 278px;
+	height: 44px;
+	border: solid 1px #cfd5e1;
+	padding: 0px 10px;
+}
+.y_input{
+	float: left;
+	width: 186px;
+	height: 44px;
+	border: solid 1px #cfd5e1;
+	padding: 0px 100px 0px 10px;
+}
+.s_input{
+	float: left;
+	border: none;
+	width: 300px;
+	height: 46px;
+	color: #ffffff;
+	font-size: 14px;
+	background-color: #eb6e28;
+}
+.tip_txt{
+	width: 68px;
+	height: 48px;
+	float: left;
+	color: #8c93a2;
+	line-height: 48px;
+	padding-left:12px ;
+	text-align: left;
+	position: relative;
+	
+}
+#cy_tip_box{
+	position: absolute;
+	font-family: "微软雅黑";
+	height: 33px;
+	top: -37px;
+	left: -212px;
+	display: none;
+	background: #fff;
+}
+.tip_txt_icon:hover #cy_tip_box{
+	display: block;
+}
+.cy_tip {
+	width: 425px;
+	height: 27px;
+	line-height: 27px;
+	border: 1px solid #8c93a2;
+	position: relative;
+	font-size: 12px;
+	text-align: center;
+}
+
+.cy_san {
+	border-top: 6px solid #8c93a2;
+	border-left: 6px solid transparent;
+	border-bottom: 6px solid transparent;
+	border-right: 6px solid transparent;
+	position: absolute;
+	left: 212px;
+	bottom: -12px;
+}
+
+.cy_nsan {
+	border-top: 4px solid white;
+	border-left: 4px solid transparent;
+	border-bottom: 4px solid transparent;
+	border-right: 4px solid transparent;
+	position: absolute;
+	left: 214px;
+	bottom: -8px;
+}
+.item1 .tip_txt:hover{
+	color: #607ee2;
+}
+.tip_txt_icon{
+	width: 16px;
+	height: 16px;
+	background: url(../img/tip_icon_01.png) no-repeat 0px 1px;
+    display: inline-block;
+    margin-left: 6px;
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+}
+.tip_txt_icon:hover{
+	color: #8c93a2;
+}
+.tip_txt1{
+	height: 26px;
+	line-height: 26px;
+	width: 800px;
+	float: left;
+	color: #8c93a2;
+	padding-left: 104px;
+	
+}
+.tip_txt1 span{
+	color: #ee3030;
+}
+.tip_txt1 .numb{
+	color: #3a4762;
+}
+.tip_txt2{
+	height: 13px;
+	color: #8c93a2;
+	margin:7px 0px 40px 164px;
+	
+}
+.tip_txt2 span{
+	color: #3a4762;
+}
+
+.item2{
+	padding-left: 60px;
+	height: 46px;
+	line-height: 46px;
+	margin-bottom: 40px;
+	position: relative;
+}
+.item3{
+	padding-left: 60px;
+	height: 46px;
+	line-height: 46px;
+	margin-bottom: 7px;
+	position: relative;
+}
+.item4{
+	padding-left: 164px;
+	height: 46px;
+	line-height: 46px;
+	margin-bottom: 7px;
+	position: relative;
+}
+.message_code{
+	width: 80px;
+	height: 24px;
+	background-color: #607ee2;
+	border-radius: 12px;
+	color: #fff;
+	text-align: center;
+	float: left;
+	position: absolute;
+	line-height: 24px;
+	top: 11px;
+	left: 372px;
+}
+.message_code.hover{
+	background: transparent;
+	color: #8c93a2;
+}
+.tip_btom_box{
+	width: 902px;
+	height: 230px;
+	padding: 30px 0px 0px 60px;
+}
+.tip_btom_hd{
+	font-size: 14px;
+	width: 104px;
+	height: 230px;
+	float: left;
+}
+.tip_btom_content{
+	width: 730px;
+	height: 230px;
+	float: left;
+}
+.tip_btom_content p{
+	font-size: 14px;
+	color: #8c93a2;
+	line-height: 26px;
+}
+
+.item2 .tip_txt:hover{
+	color: #607ee2;
+}
+.success_box{
+	width: 964px;
+	text-align: center;
+	height: 838px;
+}
+.suc_img{
+	margin-top: 100px;
+}
+.suc_txt{
+    font-size: 24px;
+    color: #3a4762;
+    margin-bottom: 24px;
+}
+.suc_tip{
+    font-size: 12px;
+    color: #8c93a2;
+    width: 400px;
+    /*background-color: #f7faff;*/
+    margin: 0 auto;
+    padding: 10px;
+    /*margin-bottom: 50px;*/
+    line-height: 20px;
+}
+.suc_tip>a{
+	color: #607ee2;
+}
+.suc_go{
+    width: 300px;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    background-color: #eb6e28;
+    color: #fff;
+    margin: 0 auto;
+    display: block;
+}
+/*借款流程*/
+.yellow_tip{
+	width: 964px;
+	height: 50px;
+	line-height: 50px;
+	color: #eb6e28;
+	text-align: center;
+	font-size: 14px;
+	background-color: #fff9da;
+}
+.flow_box{
+	width: 964px;
+	min-height: 590px;
+	text-align: center;
+}
+.service_img{
+	margin-top:110px;
+	margin-bottom: 30px;
+}
+.service_txt{
+	font-size: 34px;
+	font-family: "AvantGuardRegularSWFTE";
+	color: #3A4762;
+	margin-bottom: 3px;
+}
+.service_p{
+	color: #8c93a2;
+	letter-spacing: 1px;
+}

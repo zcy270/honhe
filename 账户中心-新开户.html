@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+		<title>开通存管账户</title>
+
+		<link type="text/css" rel="stylesheet" href="css/css.css">
+		<!--<link type="text/css" rel="stylesheet" href="css/layer.css">-->
+		<style>
+			select {
+				border: solid 1px #000;
+				appearance: none;
+				-moz-appearance: none;
+				-webkit-appearance: none;
+				background: url("img/selet_xl.png") no-repeat scroll 315px center transparent;
+				padding-right: 14px;
+			}
+			
+			select::-ms-expand {
+				display: none;
+			}
+			select:focus{
+				border: solid 1px #607ee2;
+			}
+			html {
+				background: #002fd1 url("img/account_bg.jpg") no-repeat center;
+				background-size: 100% 100%;
+			}
+			
+			#body_inner {
+				background: #002fd1 url("img/account_bg.jpg") no-repeat center;
+				height: 1040px;
+			}
+			
+			.layui-layer-page .layui-layer-content {
+				overflow: inherit;
+			}
+			
+			.input {
+				display: inline-block;
+			}
+			
+			.input1:last-child {
+				border-right: 1px solid #999;
+			}
+			
+			.input1 {
+				border-top: 1px solid #999;
+				border-bottom: 1px solid #999;
+				border-left: 1px solid #999;
+				width: 46px;
+				height: 46px;
+				outline: none;
+				font-family: inherit;
+				font-size: 28px;
+				font-weight: inherit;
+				text-align: center;
+				line-height: 45px;
+				color: #c2c2c2;
+				background: rgba(255, 255, 255, 0);
+			}
+			.agree {
+				width: 344px;
+				line-height: 20px;
+			}
+			#checked_box {
+				margin-top: 3px;
+			}
+		</style>
+
+	</head>
+
+	<body>
+
+		<div id="body_inner">
+
+			<div id="active_account">
+				<div class="div_center">
+					<div class="l">客服热线 400-833-6898</div>
+					<div class="r">
+						<a href="#">帮助中心</a>
+					</div>
+				</div>
+			</div>
+
+			<div id="logo_account" class="div_center">
+				<img src="img/logo_bg2.png">
+				<div id="account_main">
+
+					<div id="account_main_tab" class="slideTxtBox">
+						<!--<div class="hd">
+							<div style="left: -10px;width: 540px;height: 45px;position: absolute;z-index: 1;opacity: 0.1;background:url('img/account_tit_bg.png') no-repeat;"></div>
+							<ul>
+								<li class="on">1. 完善个人信息</li>
+								<li>2. 确认个人信息</li>
+								<li>3. 开户成功</li>
+							</ul>
+						</div>-->
+						<div class="bd" style="margin-left: 20px;">
+							<ul>
+
+								<div class="inner">
+									<table id="table_1" border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tr>
+											<td class="tit" valign="middle">真实姓名</td>
+											<td>
+												<input class="style_input" type="text" value="">
+											</td>
+										</tr>
+
+										<tr>
+											<td class="tit" valign="middle">证件类型</td>
+											<td valign="middle">
+
+												<select class="style_input" style="width: 341px;display: block;">
+													<option>居民身份证</option>
+													<option>港澳台居民通行证</option>
+													<option>外国护照</option>
+													<option>组织机构代码证</option>
+													<option>营业执照</option>
+													<option>统一社会信用代码</option>
+												</select>
+											</td>
+										</tr>
+										<tr>
+											<td class="tit" valign="middle">证件号码</td>
+											<td>
+												<input class="style_input" type="text" value="">
+											</td>
+										</tr>
+
+
+
+										<tr>
+											<td class="tit" valign="middle" nowrap="nowrap">&nbsp;</td>
+											<td>
+												<div class="error">开户前请您先阅读并同意相关协议
+												</div>
+												<a style="margin-top: 20px;width: 341px;" class="active_start_bt" onclick="$('#account_main_tab .hd ul li:eq(1)').click()">下一步</a>
+												<p class="agree">同意开通
+													<input type="checkbox" id="checked_box" checked="checked" />
+													<a href="#">《存管银行开户协议》</a>，
+													及用于申请个人数字证书的
+													<a href="#">《SZCA数字证书授权协议》</a>
+													<!-- <a class="disclaimer" href="#">免责声明</a> -->
+												</p>
+											</td>
+										</tr>
+									</table>
+								</div>
+
+							</ul>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div id="foot" class="login_reg">
+
+			<div class="div_center">
+				<div class="l">
+
+					<p class="bottom-img">
+						<!-- <a href="http://webscan.360.cn/index/checkwebsite/url/www.honhe.com" name="19fe75e9f6557cdf26a3af658889ab7c" class="logo1" target="_blank"></a> -->
+						<!--<a href="http://v.pinpaibao.com.cn/authenticate/cert/?site=www.honhe.com&amp;at=business" target="_blank" class="logo2"></a>-->
+						<a href="https://seal.wosign.com/details/www.honhe.com" target="_blank" class="logo3"></a>
+						<a href="http://szcert.ebs.org.cn/e8369191-dc98-4072-ad44-e02027ae725f" target="_blank" class="logo4"></a>
+						<!--<a href="https://search.szfw.org/cert/l/CX20140928005203005271" id="___szfw_logo___" target="_blank" class="logo5"></a>
+						<script type="text/javascript">
+							(function() {
+								document.getElementById('___szfw_logo___').oncontextmenu = function() {
+									return false;
+								}
+							})();
+						</script>-->
+					</p>
+
+					<div class="clear_div"></div>
+
+					<p class="foot_2">Copyright © 2011-2018 HONHE Corporation All Rights Reserved. 版权所有 ©深圳市后河网互联网金融服务有限公司 粤ICP备13075040号</p>
+
+				</div>
+
+				<div class="r">
+					<p class="phone_num">400-833-6898</p>
+					<p class="time"> <span>工作日 09:00-21:00</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>周末 09:00-17:30</span> </p>
+				</div>
+			</div>
+
+		</div>
+
+
+		<!--描述：免责声明-->
+		<!--<div class="disclaimer_tip layui-layer-content" ms-controller="avalon" style="display: none;">
+			<div class="title">
+				免责声明
+				<span class="close"></span>
+			</div>
+			<p class="disclaimer_txt">平安银行不对网络借贷交易行为提供保证或担保，不承担借贷违约责任，不对网络借贷资金本金及收益予以保证或承诺，不承担资金运用风险，不承担借款项目及借贷交易信息真实性的审核责任，不对网络借贷信息数据的真实性、准确性和完整性负责。</p>
+
+		</div>-->
+		<!--授权-->
+		<!--<div class="agree_box layui-layer-content" ms-controller="avalon" style="display: none;">
+			<div class="title">
+				同意开通授权
+				<span class="close"></span>
+			</div>
+			<p class="disclaimer_txt">开通授权代表您知晓并同意存管系统（平安银行）有权根据后河财富平台代发起的划扣指令（比如经您同意发起的投标、债权转让、债权转让还款、提现等业务指令），进行相应款项的划扣、支付、冻结及行使其他权利，这些代发起指令将视为您的真实意思表示，相关风险由您自行承担，您对此予以接受和认可。授权后，后河财富将有权代发起您的业务指令——《网站服务协议》中与您有约定的业务授权范围（包括但不限于投标、授权债权转让、授权还款、授权提现），由存管系统（平安银行）操作您的账户资金进行相关自动业务操作，需要您自行承担相应的资金风险和责任，请您谨慎操作。</p>
+
+		</div>-->
+
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/jquery.honhe.js"></script>
+		<!--<script src="js/layer.js"></script>-->
+		<!--弹窗-->
+		<script>
+
+//			$('.agree .age_a').click(function() {
+//				$(this).css("color", "#002FD1")
+//				layer.open({
+//					type: 1,
+//					shade: [0.4, '#393D49'],
+//					scrollbar: false,
+//					closeBtn: 0,
+//					title: false,
+//					area: ['620px', '330px'],
+//					content: $('.agree_box'), //这里content是一个DOM，注意：最好该元素要存放在body最外层，否则可能被其它的相对元素所影响
+//					success: function(layero, index) {
+//
+//					}
+//				});
+//			});
+//			$('.agree .disclaimer').click(function() {
+//				layer.open({
+//					type: 1,
+//					shade: [0.4, '#393D49'],
+//					scrollbar: false,
+//					closeBtn: 0,
+//					title: false,
+//					area: ['620px', '220px'],
+//					content: $('.disclaimer_tip'), //这里content是一个DOM，注意：最好该元素要存放在body最外层，否则可能被其它的相对元素所影响
+//					success: function(layero, index) {
+//
+//					}
+//				});
+//			});
+//
+//			//关闭弹窗
+//			$('.set_pass .close').click(function() {
+//				$(this).css("color", "#3a4762")
+//				layer.closeAll();
+//			});
+//			$('.disclaimer_tip .close').click(function() {
+//				$(this).css("color", "#3a4762")
+//				layer.closeAll();
+//			});
+//			$('.agree_box .close').click(function() {
+//				$(this).css("color", "#3a4762")
+//				layer.closeAll();
+//			});
+
+			//新手切换
+			jQuery("#account_main_tab").slide({
+				trigger: "click",
+				delayTime: 0
+			});
+			
+		</script>
+
+	</body>
+
+</html>

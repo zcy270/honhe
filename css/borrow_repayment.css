@@ -1,0 +1,151 @@
+.item_nav{
+    margin-top: 30px;
+}
+.money_content {
+    width: 100%;
+    height: 146px;
+    padding: 0px 140px;
+    padding-top: 45px;
+    margin-bottom: 15px;
+    display: table;
+    box-sizing: border-box;
+}
+.money_content>div{
+    width: 33.3%;
+    display: table-cell;
+    float: none;
+}
+.tip_ppp{
+    line-height: 64px;
+    float: right;
+    color: #8c93a2;
+    font-size: 12px;
+    margin-right: 60px;
+}
+.particulars_box .particulars_header .day_num1 {
+    width: 108px;
+    text-align: left;
+}
+.particulars_box .particulars_header .receivable1 {
+    width: 68px;
+}
+.particulars_box .particulars_header .receivable_money1 {
+    width: 84px;
+}
+.particulars_box .particulars_header .receivable_interest1 {
+    width: 116px;
+}
+.particulars_box .particulars_header .service_charge1 {
+    width: 116px;
+}
+.particulars_box .particulars_header .practical_collect1 {
+    width: 116px;
+}
+.particulars_box .particulars_header .return_day1 {
+    width: 78px;
+}
+.particulars_box .particulars_header {
+    padding-right: 50px;
+}
+.particulars_box .particulars_header {
+    width: 855px;
+}
+.particulars_box .particulars_list .day_num1 {
+    width: 108px;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #607ee2;
+    cursor: pointer;
+}
+.particulars_box .particulars_list .day_num1 a{
+    width: 108px;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #607ee2;
+    cursor: pointer;
+}
+.particulars_box .particulars_list .return_day1 {
+    width: 78px;
+}
+.particulars_box .particulars_list .receivable1 {
+    width: 68px;
+}
+.particulars_box .particulars_list .receivable_money1 {
+    width: 84px;
+}
+.particulars_box .particulars_list .receivable_interest1 {
+    width: 116px;
+}
+.particulars_box .particulars_list .service_charge1 {
+    width: 116px;
+}
+.particulars_box .particulars_list .practical_collect1 {
+    width: 116px;
+}
+.particulars_box .particulars_list .status1 {
+    width: 50px;
+    text-align: right;
+}
+.particulars_box .particulars_list {
+    width: 855px;
+    height: 24px;
+    background: #edf2fa;
+    padding: 0 60px;
+    padding-right: 50px;
+}
+.yellow_tip{
+    height: 80px;
+    line-height: 80px;
+    padding-left: 100px;
+    background: #fff;
+    color: #8c93a2;
+    background: url("../img/money.png") no-repeat 60px center ;
+}
+.yellow_tip.to_be_paid{
+    color:#3a4762;
+}
+.yellow_tip span{
+    font-size: 16px;
+}
+.yellow_tip a{
+    width: 100px;
+    height: 36px;
+    background: #eb6e28;
+    color: #fff;
+    text-align: center;
+    line-height: 36px;
+    cursor: pointer;
+    font-size: 14px;
+    float: right;
+    margin-right: 60px;
+    margin-top: 22px;
+}
+.disclaimer_tip .title{
+    border-bottom: none;
+}
+.disclaimer_tip .disclaimer_txt {
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0px 85px;
+    color: #3a4762;
+    text-align: center;
+}
+.go_repayment{
+    width: 320px;
+    height: 46px;
+    background: #eb6e28;
+    color: #fff;
+    text-align: center;
+    line-height: 46px;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+    margin-top: 70px;
+}
+.particulars_box .particulars_header div {
+    font-size: 12px;
+}

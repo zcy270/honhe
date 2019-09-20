@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<title>账户中心-借款人账户概览</title>
+		<link type="text/css" rel="stylesheet" href="css/css.css">
+		<!--我的css-->
+		<link rel="stylesheet" type="text/css" href="css/zcm.css" />
+		<link rel="stylesheet" type="text/css" href="css/user_recharge.css" />
+		<style>
+			.calendar{width: 964px; min-height: 300px;background:#fff; margin: 0 auto;overflow:hidden;margin-top:16px;}
+			.calendar .infoxinxi a {border: 2px solid #eb6e28;font-size: 14px;cursor: pointer;}
+			.calendar .manage{height:60px;line-height: 60px;padding-left:40px;border-bottom:2px solid #f1f5fc;}
+			.calendar .manage span{color: #3a4762;font-size: 18px;}
+			.calendar .wait_repay{width: 120px;color: #607ee2;margin-right:40px;float: right;}
+			.calendar .infoxinxi .a1 {
+			    background: #eb6e28;
+			    color: #fff;
+			    width:320px;
+			    height: 46px;
+			    line-height: 46px;
+			    margin-top:40px;
+			}
+			.calendar .infoxinxi .repay_info{
+				color: #3a4762;margin-top:65px;font-size: 18px;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<!--以下是公共头部-->
+
+		<!--<div id="home_top_little_nav">
+			<div class="div_center">
+				<div class="l">客服热线 400-833-6898</div>
+
+				<ul class="r">
+					<li>
+						<a href="javascript:void(0);">免费注册</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">登录</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">帮助中心</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">关于我们</a>
+					</li>
+				</ul>
+			</div>
+		</div>-->
+
+		<div id="logo_nav2">
+		    <div class="div_center">
+		                <a class="l" href="index.html"><img src="img/logo_bg.png"> </a>
+		                <ul id="nav2" class="nav clearfix">
+		                    <li class="nLi ">
+		                        <h3><a href="index.html" target="_blank">首页</a></h3>
+		                    </li>
+		                    <li class="nLi ">
+		                        <h3><a href="javascript:void(0);" target="_blank">我的账户</a></h3>
+		                    </li>
+		                    <li class="nLi register_li">
+		                        <h3><a href="javascript:void(0);" target="_blank">&nbsp;&nbsp;退出&nbsp;</a></h3>
+		                    </li>
+		                </ul>
+		    </div>
+		    <div class="clear_div"></div>
+		</div>
+
+		<!--以上是公共头部-->
+		<div class="main_box w1200">
+			<div class="main_l float_l">
+				<div class="main_l_top">
+					<img src="img/portrait_03.png" />
+					<p class="user_name">HONHE</p>
+					<ul class="user_icon ">
+						<li>
+							<a class="icon1 public_img hover"></a>
+						</li>
+						<li>
+							<a class="icon2 public_img hover"></a>
+						</li>
+						<li>
+							<a class="icon3 public_img "></a>
+						</li>
+						<li>
+							<a class="icon4 public_img "></a>
+						</li>
+						<li>
+							<a class="icon5 public_img "></a>
+						</li>
+					</ul>
+					<div id="safe_load">
+						<div class="inner_load"></div>
+					</div>
+
+					<p class="safe_txt">安全等级 <span>高</span></p>
+				</div>
+				<div class="item_box">
+					<div class="item_header cli">资产管理<i class="arrows_btom rotate90"></i></div>
+					<div class="item_content_box" style="display: block;">
+						<div class="account hover">账户概览</div>
+						<div class="money_draw">交易记录</div>
+						<div class="money_record">还款统计</div>
+						<div class="money_recharge">充值</div>
+						<div class="money_forword">提现</div>
+					</div>
+				</div>
+				<div class="item_box">
+					<div class="item_header cli">借款管理<i class="arrows_btom"></i></div>
+					<div class="item_content_box" style="display: none;">
+						<div class="account">借款记录</div>
+					</div>
+				</div>
+				<div class="item_box">
+					<div class="item_header cli">我的账户<i class="arrows_btom"></i></div>
+					<div class="item_content_box" style="display: none;">
+						<div class="account">个人中心</div>
+						<div class="draw_money ">我的奖励</div>
+						<div class="money_safe">安全中心</div>
+						<div class="money_news">消息中心</div>
+					</div>
+				</div>
+			</div>
+
+			<!--右边的内容框-->
+			<div class="main_r float_r" style="background: none;">
+
+                <div id="money_total">
+                    <table border="0" width="100%" height="140" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td class="td2" width="140" valign="middle">
+                                <p class="p2" style="margin-left:40px;text-align: left;">可用余额(元)</p>
+                            </td>
+                            <td class="td2" width="200" valign="middle">
+                                <p class="p1" style="text-align: left;">88,362.00</p>
+                            </td>
+                            <td class="td3" align="right" valign="middle" style="padding-right:80px;">
+                                <a class="a1">充值</a><a class="a2">提现</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="main" style="width: 400px;height:400px;float:left;position: relative;top:25px;left:95px;"></div>
+                <!--圆心的标题-->
+	                <div class="circle_title">
+	                	<div class="user_title">150,000.00</div>
+	                	<div class="tip_txt"><span>资产总额</span><i class="tip_txt_icon" title=""><div id="cy_tip_box">
+							<div class="cy_tip">
+								资产总额=可用余额+在途金额+冻结金额
+								<div class="cy_san"></div>
+								<div class="cy_nsan"></div>
+							</div>
+						</div></i></div>
+	                </div>
+                
+                <!--右边的副标题-->
+                <!--投资人-账户概览：
+					历史总收益：含历史手续费***元，历史代金券抵扣***元。
+					
+					资产总额=可用余额+在途金额+已投金额+冻结金额
+					可用余额：可用于投资或申请提现的账户余额
+					在途金额：待存管银行处理的充值金额
+					已投金额：已投资待放款处理的金额
+					冻结金额：到期回本或回息的暂时记账金额，每笔回款计划完成后将自动转入可用余额
+-->
+                <div class="subhead_box " style="top:305px;">
+                	<div class="subhead_content ">
+                		<div class="y_circle"></div>
+                		<div class="road_money">可用余额(元)<i class="tip_txt_icon1" title=""><div id="cy_tip_box1">
+									<div class="cy_tip1">
+										可用于投资或申请提现的账户余额
+										<div class="cy_san"></div>
+										<div class="cy_nsan"></div>
+									</div>
+								</div></i></div>
+                		<div class="road_money_num">50,000<span>.00</span></div>
+                	</div>
+                	<div class="subhead_content ">
+                		<div class="g_circle"></div>
+                		<div class="road_money">在途金额(元)<i class="tip_txt_icon1" title=""><div id="cy_tip_box2">
+									<div class="cy_tip2">
+										待存管银行处理的充值金额
+										<div class="cy_san"></div>
+										<div class="cy_nsan"></div>
+									</div>
+								</div></i></div>
+                		<div class="road_money_num">50,000<span>.00</span></div>
+                	</div>
+                	<div class="subhead_content ">
+                		<div class="b_circle"></div>
+                		<div class="road_money">冻结金额(元)<i class="tip_txt_icon1" title=""><div id="cy_tip_box4">
+									<div class="cy_tip4">
+										到期回本或回息的暂时记账金额，每笔回款计划完成后将自动转入可用余额
+										<div class="cy_san"></div>
+										<div class="cy_nsan"></div>
+									</div>
+								</div></i></div>
+                		<div class="road_money_num">50,000<span>.00</span></div>
+                	</div>
+                	
+                </div>
+                
+                <div id="container" style="width: 964px; height: 460px;background:#fff; margin: 0 auto；"></div>
+                
+                <!--还款管理-->
+                <div class="calendar">
+                	<div class="manage">
+                		<span style="">还款管理</span>
+                		<a href="javascript:void(0);" class="wait_repay" style="">待还款统计（平台）</a>
+                	</div>
+                	<div class="infoxinxi" style="text-align: center;">
+                		<p class="repay_info">7日内您有待还款项共计3211.05元，目前余额不足，您还需要再充入100.00元，请及时充值。</p>
+                		<!--<p class="repay_info">您当前可用余额资金充足，暂不需要充值。</p>-->
+                		<a class="a1">立即还款</a>
+                	</div>
+                </div>
+                
+			</div>
+
+		</div>
+		<!--以下是底部公共部分-->
+		<div class="clear_div"></div>
+
+		<div id="foot" style="background:#fff;height:340px;width:100%;">
+		     <div class="div_center">
+		         <div class="l">
+		            <ul>
+		                <span class="tit">关于后河</span>
+		                <span><a href="javascript:void(0);">后河简介</a></span>
+		                <span><a href="javascript:void(0);">组织信息</a></span>
+		                <span><a href="javascript:void(0);">最新公告</a></span>
+		                <span><a href="javascript:void(0);">联系我们</a></span>
+		            </ul>
+		             <ul>
+		                 <span class="tit">信息披露</span>
+		                 <span><a href="javascript:void(0);">数据统计</a></span>
+		                 <span><a href="javascript:void(0);">运营报告</a></span>
+		                 <span><a href="javascript:void(0);">企业资质</a></span>
+		                 <span><a href="javascript:void(0);">安全保障</a></span>
+		             </ul>
+		             <ul>
+		                 <span class="tit">帮助中心</span>
+		                 <span><a href="javascript:void(0);">注册登录</a></span>
+		                 <span><a href="javascript:void(0);">资金存管</a></span>
+		                 <span><a href="javascript:void(0);">充值提现</a></span>
+		                 <span><a href="javascript:void(0);">收费标准</a></span>
+		                 <!--<span><a href="javascript:void(0);">更多>></a></span>-->
+		             </ul>
+		             <p class="bottom-img">
+		                 <a href="https://seal.wosign.com/details/www.honhe.com" target="_blank" class="logo1"></a>
+		                 <a href="http://szcert.ebs.org.cn/e8369191-dc98-4072-ad44-e02027ae725f" target="_blank" class="logo2"></a>
+		             </p>
+		             <div class="clear_div"></div>
+		             <p class="foot_1">温馨提示：市场有风险  出借需谨慎</p>
+		             <p class="foot_2">Copyright © 2011-2018 HONHE Corporation All Rights Reserved. 版权所有 ©深圳市后河网互联网金融服务有限公司  粤ICP备13075040号</p>
+		         </div>
+		         <div class="r">
+		              <img src="img/webapp.png">
+		              <p class="phone_num">400-833-6898</p>
+		             <p class="time"> <span>工作日 09:00-21:00</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>周末 09:00-17:30</span> </p>
+		         </div>
+		     </div>
+		</div>
+
+		<!--以上是底部公共部分-->
+
+	</body>
+	<script src="js/account.js"></script>
+	<script src="js/jquery-1.11.3.min.js"></script>
+
+	<script src="js/jquery.honhe.js"></script>
+	<!--首页的 导航 选项卡 轮播图需引入-->
+    <script src="http://www.xgllseo.com/wp-content/uploads/2015/11/json2.js"></script>
+    <!--环形图插件-->
+    <script src="js/echarts.js"></script>
+    <!--<script src="src/highcharts.js"></script>-->
+    <!--提示框插件-->
+    <script src="src/jquery.contip.js"></script>
+    <script src="js/zcm.js"></script>
+    <!--弹窗-->
+	<script src="js/layer/layer.js"></script>
+	<script>
+		 //导航
+	    jQuery("#nav,#nav1,#nav2").slide({
+	        type:"menu",// 效果类型，针对菜单/导航而引入的参数（默认slide）
+	        titCell:".nLi", //鼠标触发对象
+	        targetCell:".sub", //titCell里面包含的要显示/消失的对象
+	        effect:"slideDown", //targetCell下拉效果
+	        delayTime:300 , //效果时间
+	        triggerTime:0, //鼠标延迟触发时间（默认150）
+	        returnDefault:true,//鼠标移走后返回默认状态，例如默认频道是“预告片”，鼠标移走后会返回“预告片”（默认false）
+	        titOnClassName: "nav_active",//高亮样式
+	        defaultIndex: 1//索引
+	    });
+		
+		 // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main'));
+		 // 指定图表的配置项和数据
+	        var option = {
+			    tooltip: {
+			        trigger: 'item',
+			        formatter: "{a} <br/>{b}: {c} ({d}%)"
+			    },
+			    color:['#1561ff', ' #0096ff','#ffb20e'] , //饼图背景色
+			    series: [
+			        {
+			            name:'资产概览',
+			            type:'pie',
+			            radius: ['60%', '90%'],
+			            avoidLabelOverlap: false,
+			            label: {
+			                normal: {
+			                    show: false,
+			                    position: 'center'
+			                },
+			                emphasis: {
+			                    show: false,
+			                    textStyle: {
+			                        fontSize: '10',
+			                        fontWeight: 'bold'
+			                    }
+			                }
+			            },
+			            labelLine: {
+			                normal: {
+			                    show: false
+			                }
+			            },
+			            data:[
+			                {value:50000.00, name:'可用余额'},
+			                {value:50000.00, name:'在途金额'},
+			                {value:50000.00, name:'冻结金额'},
+			            ]
+			        }
+			    ]
+			};
+			 // 使用刚指定的配置项和数据显示图表。
+	        myChart.setOption(option);
+		
+	</script>
+
+
+
+
+
+
+
+
+<script>
+
+
+
+//    ﻿http://192.168.88.211:8990/cffront//investorCenter/getRepaymentDataCalendar?statisticsDate=2017-11
+//     http://192.168.88.211:8990/cffront//investorCenter/getRepaymentDataByDate_day?statisticsDate=2017-11-16
+//     http://192.168.88.211:8990/cffront//investorCenter/getRepaymentDataByDate_month?statisticsDate=2017-11
+
+
+//
+//
+//
+//
+    $(function () {
+        function Date_time(config) {
+            var datatime=new Date();
+            var current_year=datatime.getFullYear();
+            var current_mon=datatime.getMonth()+1;
+
+            var config=config;
+
+
+
+            //当前年月日
+            current_time();
+            function current_time() {
+                $(config.year).empty();
+                $(config.mon).empty();
+
+                for(var year=2014;year<=2020;year++){
+                    if( current_year==year ){
+                        $(config.year).append('<option value="'+year+'" selected>'+year+'年</option>');
+                    }else{
+                        $(config.year).append('<option value="'+year+'">'+year+'年</option>');
+                    }
+                }
+
+
+                for(var mon=1;mon<=12;mon++){
+                    if(mon<10){
+                        mon='0'+mon;
+                    }
+                    if( current_mon==mon ){
+                        $(config.mon).append('<option value="'+mon+'" selected>'+mon+'月</option>');
+                    }else{
+                        $(config.mon).append('<option value="'+mon+'">'+mon+'月</option>');
+                    }
+                }
+            }
+
+
+
+            //显示当月统计
+            function mon_total(year_,mon_) {
+
+                $.ajax({
+                    type:'get',
+                    async:false,
+                    cache:false,
+                    url:'http://192.168.88.211:8990/cffront//investorCenter/getRepaymentDataByDate_month?statisticsDate='+year_+'-'+mon_,
+                    success:function (data) {
+
+                        var jsonString = data;
+
+                       // var m=0;
+
+
+
+                        $('#mon3').text(JSON.parse(jsonString)[0].principal);
+                        $('#mon4').text(JSON.parse(jsonString)[0].interest);
+
+//                        (function () {
+//                            for(var i=5;i<=8;i++){
+//                                $('#tab_money_info .m'+i+' .money_r a').text( JSON.parse(jsonString)[m].repayment_money )
+//                                $('#tab_money_info .m'+i+' .mon1').text( JSON.parse(jsonString)[m].principal )
+//                                $('#tab_money_info .m'+i+' .mon2').text( JSON.parse(jsonString)[m].interest )
+//                                $('#tab_money_info .m'+i+' .mon3').text( JSON.parse(jsonString)[m].fees )
+//                                ++m;
+//                            }
+//                        })();
+
+                    }
+                });
+            }
+
+
+            $(config.mon).change(function () {
+                $('.day').remove();
+                each_day($(config.year).val(),$(this).val());
+                mon_total($(config.year).val(),$(this).val());
+            });
+
+
+            $(config.year).change(function () {
+                $('.day').remove();
+                each_day($(this).val(),$(config.mon).val());
+                mon_total($(this).val(),$(config.mon).val());
+            });
+
+
+
+
+            //遍历当前月份有几号
+            function each_day(year,mon) {
+                var year=year || current_year;
+                var mon=mon || current_mon;
+
+
+                //将几号日期与星期对应
+                for(var y=0;y<new Date(year+'/'+mon+'/1').getDay();y++){
+                    $(config.ele).append('<div class="day empty_date">&nbsp;</div>');
+                }
+
+
+
+
+
+//                    var empty_index=0;
+//                    //将每月的1号前面空白处填补上  上个月的日期
+//                    for(var z=new Date(year, mon-1, 0).getDate()-y+1;z<=new Date(year, mon-1, 0).getDate();z++){
+//                        $('.empty_date').eq(empty_index).text(z);
+//                        if(new Date(year, mon-1, 0).getDate()<=z){
+//                            empty_index=0;
+//                        }else{
+//                            empty_index++;
+//                        }
+//                    }
+
+
+                for(var i=1;i<=new Date(year, mon, 0).getDate();i++){
+                    if( datatime.getFullYear()+'-'+(datatime.getMonth()+1)+'-'+datatime.getDate()==year+'-'+mon+'-'+i ) {
+                        $(config.ele).append('<div class="day current_day">' + i + '</div>')  //标注当天
+//                        }else if(  datatime.getFullYear()+'-'+(datatime.getMonth()+1)+'-'+1==year+'-'+mon+'-'+i   ) {
+//                            $(config.ele).append('<div class="day">' + i +'<span class="payment"></span> <span class="repayment"></span>'+ '</div>')
+//                        }else if( datatime.getFullYear()+'-'+(datatime.getMonth()+1)+'-'+25==year+'-'+mon+'-'+i ){
+//                            $(config.ele).append('<div class="day">' + i + '<span class="repayment"></span>'+ '</div>')
+                    }else{
+                        if(i<10){   //个数 补零
+                            $(config.ele).append('<div data-m1="123'+i+'" data-m2="456" data-m3="789" data-m4="aaa" data-m5="bbb" data-m6="ccc" data-m7="ddd" data-m8="eee" class="day">'+'0'+i+'</div>')  //遍历当月所有日期
+                        }else{
+                            $(config.ele).append('<div data-m1="123'+i+'" data-m2="456" data-m3="789" data-m4="aaa" data-m5="bbb" data-m6="ccc" data-m7="ddd" data-m8="eee" class="day">'+i+'</div>')  //遍历当月所有日期
+                        }
+
+                    }
+                }
+
+
+                $.ajax({
+                    type:'get',
+                    async:false,
+                    cache:false,
+                    url:'http://192.168.88.211:8990/cffront//investorCenter/getRepaymentDataCalendar?statisticsDate='+year+'-'+mon,
+                    success:function (data) {
+                        var jsonString = data;
+
+                        $.each( JSON.parse(jsonString), function(index,value){
+                            $('.day').each(function (i,v) {
+
+                                if(value.repayemntDate==year+'-'+mon+'-'+$(this).text() && value.refundFlag==1 && value.repaymentFlag==1){
+                                    $(this).append('<span class="payment"></span> <span class="repayment"></span>');
+                                }
+
+                                if(value.repayemntDate==year+'-'+mon+'-'+$(this).text() && value.refundFlag==1 && value.repaymentFlag==0){
+
+                                    $(this).append('<span class="payment"></span>');
+                                }
+
+                                if(value.repayemntDate==year+'-'+mon+'-'+$(this).text() && value.refundFlag==0 && value.repaymentFlag==1){
+                                    $(this).append('<span class="repayment"></span>');
+                                }
+
+                            });
+
+
+                        });
+
+                    }
+                });
+
+                //在每月的尾号 填补空白
+                if(  ($('.day').length%7)>0  ){
+                    (function () {
+                        var num=7-(($('.day').length%7));
+                        for(var w=1;w<=num;w++){
+                            $(config.ele).append('<div class="day">&nbsp;</div>');
+                        }
+                    })();
+                }
+
+                //显示当日统计
+                function today_total(today) {
+
+                    $.ajax({
+                        type:'get',
+                        async:false,
+                        cache:false,
+                        url:'http://192.168.88.211:8990/cffront//investorCenter/getRepaymentDataByDate_day?statisticsDate='+year+'-'+mon+'-'+today,
+                        success:function (data) {
+                            //[{principal: 10500, interest: 53.83, way: "dhui", fees: 4.31, repayment_money: 10549.52},{}]
+                            var jsonString = data;
+
+                            $('#mon1').text(JSON.parse(jsonString)[0].principal);
+                            $('#mon2').text(JSON.parse(jsonString)[0].interest);
+//                            (function () {
+//                                for(var i=1;i<=4;i++){
+//                                    $('#tab_money_info .m'+i+' .money_r a').text( JSON.parse(jsonString)[i-1].repayment_money )
+//                                    $('#tab_money_info .m'+i+' .mon1').text( JSON.parse(jsonString)[i-1].principal )
+//                                    $('#tab_money_info .m'+i+' .mon2').text( JSON.parse(jsonString)[i-1].interest )
+//                                    $('#tab_money_info .m'+i+' .mon3').text( JSON.parse(jsonString)[i-1].fees )
+//                                }
+//                            })();
+
+
+
+
+                        }
+                    });
+                }
+                today_total(datatime.getDate());
+
+
+
+
+                mon_total(current_year,current_mon);
+
+
+
+                $(config.ele).find('.day').click(function () {
+                    //插入当日统计数据
+                    today_total($(this).text());
+                    $(config.ele).find('.current_day').removeClass('current_day');
+                    $(this).addClass('current_day');
+
+                });
+
+
+            };
+            each_day(current_year,current_mon);
+
+
+            //气泡提示功能
+//          function show_details() {
+//              $('.day').mouseenter(function () {
+//                  $(this).find('.details').show();
+//              }).mouseleave(function () {
+//                  $(this).find('.details').hide();
+//              });
+//          }
+//          show_details();
+
+
+        }
+
+
+
+        $('#tab_money_info .tab_tit span').click(function () {
+
+            $('#tab_money_info .tab_tit span').removeClass('hover');
+            $(this).addClass('hover');
+
+            $('#tab_money_info ul').removeClass('show');
+            $('#tab_money_info ul').eq($(this).index()).addClass('show');
+        });
+
+
+
+        $('#tab_money_info ul li').mouseenter(function () {
+            $(this).find('.hover_show').show();
+        }).mouseleave(function () {
+            $(this).find('.hover_show').hide();
+        });
+
+
+
+
+        var p1=new Date_time({
+            ele:'#calendar .con .l .con_wrap',
+            year:'#year_select',
+            mon:'#mon_select'
+        });
+    });
+    
+    
+    
+</script>
+
+
+</html>

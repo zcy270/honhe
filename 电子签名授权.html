@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>电子签名授权</title>
+		<link rel="stylesheet" href="css/css.css" />
+		<style type="text/css">
+			.inner #table_1{width: 443px;margin: 0 auto;margin-top: 55px;}
+			.inner #table_1 td{position: relative;}
+			.inner #table_1 td .error{position: absolute;color: #ee3030;    top: 0px; line-height: normal;}
+			.inner #table_1 .tit{font-size: 14px;color: #3a4762;padding-right: 30px;}
+			.style_input2 input{background:#e7ecf2;border: 1px solid #cfd5e1;background: none;}
+			#table_1  td{line-height: 78px;}
+			#checked_box {
+			    -webkit-appearance: none;
+			    -moz-appearance: none;
+			    width: 10px;
+			    height: 10px;
+			    border: 1px solid #607ee2;
+			    margin-top: 10px;
+			    margin-left: 0px;
+			    float: left;
+			    margin-right: 7px;
+			}
+			.stars_txt{
+			    font-size: 25px;
+			    font-weight: bold;
+			    text-align: center;
+			    margin-bottom: 30px;
+			}
+			.success_img img{
+				margin-bottom: 15px;
+				margin-top: 120px;
+			}
+			.stars_tip{
+				width: 400px;
+			    margin-left: -50px;
+			    font-size: 12px;
+			    line-height: 24px;
+			    margin-bottom: 30px;
+			    text-align: center;
+			    color: #8c93a2;
+			}
+			.stars_tip a{
+				font-size: 12px;
+			    line-height: 24px;
+				color: #607ee2;			    
+			}
+		</style>
+	</head>
+	<body>
+		<!--未登录状态nav-->
+		<!--<div id="logo_nav">
+		    <div class="div_center">
+		                <a class="l" href="index.html"><img src="img/logo_bg.png" style="z-index: 100;"> </a>
+		                <ul id="nav" class="nav clearfix">
+		                    <li class="nLi">
+		                        <h3><a href="index.html" target="_blank">首页</a></h3>
+		                    </li>
+		                    <li class="nLi">
+		                        <h3><a  href="项目页.html" target="_blank">我要投资</a></h3>
+		                        <ul class="sub box-shadow">
+		                            <li><a href="项目页.html">全部项目</a></li>
+		                            <li><a href="项目页.html">新手专享</a></li>
+		                            <li><a href="项目页.html">精选项目</a></li>
+		                        </ul>
+		                    </li>
+		                    <li class="nLi">
+		                        <h3><a href="http://chedai.honhe.com/" target="_blank">我要借款</a></h3>
+		                    </li>
+		                    <li class="nLi ">
+		                        <h3><a href="#" target="_blank">信息披露</a></h3>
+		                        <ul class="sub box-shadow">
+		                            <li><a href="#">安全保障</a></li>
+		                            <li><a href="#">运营披露</a></li>
+		                            <li><a href="#">关于后河</a></li>
+		                            <li><a href="信息披露-公司动态.html">公司动态</a></li>
+		                            <li><a href="信息披露-监管部门.html">监管法规</a></li>
+		                        </ul>
+		                    </li>
+		                    <li class="nLi login_li">
+		                        <h3><a href="#" target="_blank" style="">&nbsp;登陆&nbsp;<span class="arrow_nav"></span></a></h3>
+		                        <ul class="sub box-shadow" style="">
+		                            <li><a href="#">投资人登录</a></li>
+		                            <li><a href="#">借款人登录</a></li>
+		                        </ul>
+		                    </li>
+		                    <li class="nLi register_li">
+		                        <h3><a href="#" target="_blank" style="">&nbsp;注册&nbsp;<span class="arrow_nav"></span></a></h3>
+		                        <ul class="sub box-shadow" style="left:10px;">
+		                            <li><a href="#">投资人注册</a></li>
+		                            <li><a href="#">借款人注册</a></li>
+		                        </ul>
+		                    </li>
+		                </ul>
+		    </div>
+		    <div class="clear_div"></div>
+		</div>-->
+		
+		<!--投资人已登录nav-->
+		<div id="logo_nav1">
+		    <div class="div_center">
+		                <a class="l" href="index.html"><img src="img/logo_bg.png"> </a>
+		                <ul id="nav1" class="nav clearfix">
+		                    <li class="nLi">
+		                        <h3><a href="index.html" target="_blank">首页</a></h3>
+		                    </li>
+		                    <li class="nLi">
+		                        <h3><a  href="项目页.html" target="_blank">我要投资</a></h3>
+		                        <ul class="sub box-shadow">
+		                            <li><a href="项目页.html">全部项目</a></li>
+		                            <li><a href="项目页.html">新手专享</a></li>
+		                            <li><a href="项目页.html">精选项目</a></li>
+		                           
+		                        </ul>
+		                    </li>
+		                    <li class="nLi ">
+		                        <h3><a href="#" target="_blank">信息披露</a></h3>
+		                        <ul class="sub box-shadow">
+		                            <li><a href="#">安全保障</a></li>
+		                            <li><a href="#">运营披露</a></li>
+		                            <li><a href="#">关于后河</a></li>
+		                            <li><a href="信息披露-公司动态.html">公司动态</a></li>
+		                            <li><a href="信息披露-监管部门.html">监管法规</a></li>
+		                        </ul>
+		                    </li>
+		                    <li class="nLi">
+								<h3><a href="#" target="_blank">我的账户</a></h3>
+							</li>
+		                    <li class="nLi register_li">
+		                        <h3><a href="#" target="_blank">&nbsp;&nbsp;退出&nbsp;</a></h3>
+		                    </li>
+		                </ul>
+		    </div>
+		    <div class="clear_div"></div>
+		</div>
+		
+		<!--借款人已登录nav-->
+		<!--<div id="logo_nav2">
+		    <div class="div_center">
+		                <a class="l" href="index.html"><img src="img/logo_bg.png"> </a>
+		                <ul id="nav2" class="nav clearfix">
+		                    <li class="nLi ">
+		                        <h3><a href="#" target="_blank">帮助中心</a></h3>
+		                    </li>
+		                    <li class="nLi ">
+		                        <h3><a href="#" target="_blank">我的账户</a></h3>
+		                    </li>
+		                    <li class="nLi register_li">
+		                        <h3><a href="#" target="_blank">&nbsp;&nbsp;退出&nbsp;</a></h3>
+		                    </li>
+		                </ul>
+		    </div>
+		    <div class="clear_div"></div>
+		</div>-->
+		
+		<div class="confirm_buy" style="">
+			<div class="buy_tit">
+				<p>电子签名</p>
+			</div>
+			<div class="infomation" style="width:435px;margin:0px auto;">
+				
+				<!--填写信息-->
+				<div class="inner">
+					<table id="table_1" border="0" cellpadding="0" cellspacing="0" width="100%">
+						<tbody><tr>
+							<td class="tit" valign="middle">真实姓名</td>
+							<td>
+								<input class="style_input" type="text" value="" placeholder="请输出您的真实姓名">
+							</td>
+						</tr>
+
+
+						<tr>
+							<td class="tit" valign="middle">证件类型</td>
+							<td valign="middle">
+
+								<select class="style_input" style="width: 341px;display: block;">
+									<option>居民身份证</option>
+								</select>
+							</td>
+						</tr>
+
+						<tr>
+							<td class="tit" valign="middle">证件号码</td>
+							<td>
+								<input class="style_input" type="text" value="" placeholder="请输入与真实姓名匹配的证件号码">
+							</td>
+						</tr>
+
+						<tr>
+							<td class="tit" valign="middle">预留手机号</td>
+							<td>
+								<input class="style_input" type="text" value="135****2104" placeholder="" disabled="true" style="background: #f6f8fc;">
+							</td>
+						</tr>
+
+						<tr>
+							<td class="tit" valign="middle" nowrap="nowrap">短信验证码</td>
+							<td valign="middle">
+								<div class="style_input2">
+									<input class="code_input" type="text" value="" maxlength="10" placeholder="短信验证码">
+
+									<a id="code_num">发送验证码</a>
+								</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td class="tit" valign="middle" nowrap="nowrap">&nbsp;</td>
+							<td>
+								<div class="error">xxxxxxxx</div>
+								<a style="margin-top: 20px;width: 341px;" class="active_start_bt" onclick="$('#account_main_tab .hd ul li:eq(1)').click()">下一步</a>
+								<input type="checkbox" id="checked_box" checked="checked">
+								<p class="agree">同意开通
+									<a href="#">《**协议》</a>
+								</p>
+							</td>
+						</tr>
+					</tbody></table>
+				</div>
+				
+				
+				<!--授权成功-->
+				<!--<div class="active_success">
+					<div class="success_img" style="background: none;">
+						<img src="img/success_icon.png">
+						<p class="stars_txt">授权成功</p>
+						<p class="stars_tip">您已成功授权电子签名，详见<a href="javascript:void(0);">电子签名</a>。</p>
+						<a class="active_start_bt">账户中心</a>
+						<a class="public_bt2">回到首页</a>
+					</div>
+	
+				</div>-->
+				
+				
+				
+				<!--授权失败-->
+				<!--<div class="active_success">
+					<div class="success_img" style="background: none;">
+						<img src="img/fail.png">
+						<p class="stars_txt">授权成功</p>
+						<p class="stars_tip">第三方电子签名授权返回结果</p>
+						<a class="active_start_bt">重新授权</a>
+						<a class="public_bt2">回到首页</a>
+					</div>
+				</div>-->
+				
+	    	</div>
+	    	
+	    	
+		</div>
+		
+		<!--页脚-->
+		<div id="foot" style="background:#fff!important;height:340px;width:100%;">
+		     <div class="div_center">
+		         <div class="l">
+		            <ul>
+		                <span class="tit">关于后河</span>
+		                <span><a href="#">后河简介</a></span>
+		                <span><a href="#">组织信息</a></span>
+		                <span><a href="#">最新公告</a></span>
+		                <span><a href="#">联系我们</a></span>
+		            </ul>
+		             <ul>
+		                 <span class="tit">信息披露</span>
+		                 <span><a href="#">数据统计</a></span>
+		                 <span><a href="#">运营报告</a></span>
+		                 <span><a href="#">企业资质</a></span>
+		                 <span><a href="#">安全保障</a></span>
+		             </ul>
+		
+		
+		             <ul>
+		                 <span class="tit">帮助中心</span>
+		                 <span><a href="#">注册登录</a></span>
+		                 <span><a href="#">资金存管</a></span>
+		                 <span><a href="#">充值提现</a></span>
+		                 <span><a href="#">收费标准</a></span>
+		                 <!--<span><a href="#">更多>></a></span>-->
+		             </ul>
+		
+		
+		
+		             <p class="bottom-img">
+		                 <a href="https://seal.wosign.com/details/www.honhe.com" target="_blank" class="logo1"></a>
+		                 <a href="http://szcert.ebs.org.cn/e8369191-dc98-4072-ad44-e02027ae725f" target="_blank" class="logo2"></a>
+		             </p>
+		
+		             <div class="clear_div"></div>
+		
+		             <p class="foot_1">温馨提示：市场有风险  出借需谨慎</p>
+		             <p class="foot_2">Copyright © 2011-2018 HONHE Corporation All Rights Reserved. 版权所有 ©深圳市后河网互联网金融服务有限公司  粤ICP备13075040号</p>
+		
+		
+		
+		
+		         </div>
+				
+		
+		         <div class="r">
+		              <img src="img/webapp.png">
+		              <p class="phone_num">400-833-6898</p>
+		             <p class="time"> <span>工作日 09:00-21:00</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>周末 09:00-17:30</span> </p>
+		         </div>
+		     </div>
+		</div>
+
+		<!--描述：免责声明-->
+		
+
+		<div class="disclaimer_tip disclaimer_tip3 layui-layer-content" ms-controller="avalon" style="display: none;">
+			<div class="title">
+				线上交易电子签名授权
+				<span class="close"></span>
+			</div>
+			<div class="disclaimer_txt">
+				<p>授权事项：</p>
+				<p>因您需要在“后河财富”平台上投资，与借款人、第三方资产管理公司、后河财富签订有关协议，需要签名，但限于技术手段限制，无法亲自执行，您特在此授权代理方后河财富合作伙伴杭州安存网络科技有限公司（以下简称“安存科技”）根据您在“后河财富”平台设置的个人信息制作电子签名并用于授权人投资的有关产品和协议，您认可安存科技根据《电子签名法》制作的电子签名的效力，享有载有其电子签名的有关协议中的权利，承担载有其电子签名的有关协议中的义务和责任。（安存科技电子签名的有关协议，请点击<a href="SZCA数字证书授权协议.html">《SZCA数字证书授权协议》</a>）
+				授权时间和时限：自您本人注册后河财富账号成为后河财富用户之日起，至您本人结清所有债权债务并注销后河财富账号之日止。</p>
+				<br />
+				<p>一旦您在投资产品时勾选“同意电子签名授权”并点击”确认投资“时，即表示您了解同意上述授权事项、授权时间和时限及可能造成的损失，您愿意且有能力承担上述风险可能带来的损失。</p>
+
+			</div>
+		</div>
+
+		<div class="agree_box layui-layer-content" ms-controller="avalon" style="display: none;">
+			<div class="title">
+				风险、禁止性行为提示及资金承诺
+				<span class="close"></span>
+			</div>
+			<div class="disclaimer_txt" style="text-align: left;">
+				<p class="p_header">风险提示</p>
+				<p>您了解本平台网上的交易系用户自行发布，且可能存在风险。您应充分理解包括但不限于如下之风险：</p>
+				<p>包括但不限于：</p>
+				<p>1、利率风险，是指市场利率变动的不确定性给您造成损失的可能性；</p>
+				<p>2、汇率风险，又称汇兑风险，是指人民币与外币价值因货币汇率的变动而导致您产生损失的可能性；</p>
+				<p>3、宏观经济风险，因宏观经济形势变化，可能引起价格等方面的异常波动，您有可能遭受损失；</p>
+				<p>4、政策法律风险，是指政府有关金融市场的政策发生变化或是重要的法规规章出台，引起金融市场的波动，从而给您带来损失的可能性，比如税收风险；</p>
+				<p>5、不可抗力风险，由于自然灾害、战争、社会动乱、罢工、电力中断、黑客攻击、计算机病毒、系统或网络故障等不可抗力因素的出现，导致您投资本金及收益延迟或者部分损失的可能性；</p>
+				<p>6、信用/道德风险，因借款方没有还款意愿或者还款能力不足而导致出借本金和利息无法收回的可能性；</p>
+				<p>7、项目市场风险，借款企业虽然谨慎勤勉，但由于各种原因仍不能排除项目失败导致本息受损的风险，如产品或服务质量达不到市场需求、销售渠道缺乏或不畅、营销战略或策略出现失误等；</p>
+				<p>8、违约风险，因其他交易方无力或无意愿按时足额履约，您有可能遭受损失；</p>
+				<p>9、不可抗力因素导致的风险；</p>
+				<p>10、因您的过错导致的任何损失由您自行承担，该过错包括但不限于：决策失误、操作不当、遗忘或泄露密码、密码被他人破解、泄露密码验证码、点击错误页面链接、您使用的计算机系统被第三方侵入、您委托他人代理交易时他人恶意或不当操作、理解错误等而造成的损失；</p>
+				<p>11、以上并不能涵盖交易过程中的全部风险及市场的全部情形。您在做出交易决策前，应通过自行学习或查阅本平台公布的信息及其他相关公告了解拟进行借贷交易行为的风险收益特征，并根据本人的目标、期限、风险承受能力和资产状况等谨慎决策，并自行承担全部风险。
+一旦您进行了投资，即表示您了解认识上述风险类别、风险大小及可能造成的损失，您愿意且有能力承担上述风险可能带来的损失。</p>
+
+				<p class="p_header">互联网借贷平台禁止性行为提示</p>
+				<p>投资者/出借人禁止性行为</p>
+				<p>包括但不限于：</p>
+				<p>1、未满18周岁或者虽满18周岁但智力存在障碍以及年满18周岁以自己的劳动收入为主要生活来源但智力存在障碍，均不能以完全民事行为能力人参与出借，除非经过其监护人代理；</p>
+				<p>2、对所出借的资金不具有所有权或处分权的，如违法犯罪收入，不能参与网络借贷；</p>
+				<p>3、使用他人的身份证号码，手机号码和银行卡号的，不提供其他真实个人资料的，不能参与网络借贷。</p>
+				<p>融资者/借款人禁止性行为</p>
+				<p>包括但不限于：</p>
+				<p>1、生产、经营或投资国家明文禁止的或者超出国家限制限额的产品、项目和服务的；</p>
+				<p>2、违反国家外汇管理规定的；</p>
+				<p>3、建设项目按国家规定应当报有关部门批准而未取得批准文件的；</p>
+				<p>4、生产经营或投资项目未取得环境保护部门许可的；</p>
+				<p>5、未按照约定的用途、约定的资金比例使用借款资金的；</p>
+				<p>6、将借款资金用于违法犯罪活动或者资助违法犯罪活动；</p>
+				<p>7、通过故意变换身份、虚构融资项目、夸大融资项目收益前景等形式的欺诈借款；</p>
+				<p>8、同时通过多个网络借贷信息中介机构，或者通过变换项目名称、对项目内容进行非实质性变更等方式，就同一融资项目进行重复融资；</p>
+				<p>9、在网络借贷信息中介机构以外的公开场所发布同一融资项目的信息；</p>
+				<p>10、其他严重违法行业主管部门规定的。</p>
+				<p>平台禁止性行为</p>
+				<p>包括但不限于：</p>
+				<p>1、为自身或变相为自身融资；</p>
+				<p>2、直接或间接接受、归集出借人的资金；</p>
+				<p>3、直接或变相向出借人提供担保或者承诺保本保息；</p>
+				<p>4、自行或委托、授权第三方在互联网、固定电话、移动电话等电子渠道以外的物理场所进行宣传或推介融资项目；</p>
+				<p>5、发放贷款，但法律法规另有规定的除外；</p>
+				<p>6、将融资项目的期限进行拆分；</p>
+				<p>7、自行发售理财等金融产品募集资金，代销银行理财、券商资管、基金、保险或信托产品等金融产品；</p>
+				<p>8、开展类资产证券化业务或实现以打包资产、证券化资产、信托资产、基金份额等形式的债权转让行为；</p>
+				<p>9、除法律法规和网络借贷有关监管规定允许外，与其他机构投资、代理销售、经纪等业务进行任何形式的混合、捆绑、代理；</p>
+				<p>10、虚构、夸大融资项目的真实性、收益前景，隐瞒融资项目的瑕疵及风险，以歧义性语言或其他欺骗性手段等进行虚假片面宣传或促销等，捏造、散布虚假信息或不完整信息损害他人商业信誉，误导出借人或借款人；</p>
+				<p>11、向借款用途为投资股票、场外配资、期货合约、结构化产品及其他衍生品等高风险的融资提供信息中介服务；</p>
+				<p>12、从事股权众筹等业务；</p>
+				<p>13、法律法规、网络借贷有关监管规定禁止的其他活动。</p>
+				<p>一旦您进行了投资，即代表您愿意遵守上述义务并有权利监督另外两方的义务的履行情况。</p>
+				<p class="p_header">资金来源合法承诺</p>
+				<p>为了交易的安全性和合规性需要，投资人须承诺：做后河财富充值和投资的资金均为本人具有合法来源、具有所有权和处分权的资金，不存在违法犯罪来源、不道德来源和存在争议。并承诺将严格遵守《中华人民共和国反洗钱法》《中华人民共和国刑法》及央行等金融管理部门的规定，绝不从事洗钱行为。洗钱行为指的是《反洗钱法》和《刑法》中关于洗钱罪及洗钱违法行为的认定标准，如黑社会性质犯罪收入来源、恐怖活动犯罪收入来源、毒品犯罪收入来源、抢劫犯罪收入来源等。 </p>
+				<p>一旦您进行了投资，即代表您愿意遵守上述承诺。 </p>
+			</div>
+			<button id="botton">我已知晓条款</button>
+			
+		</div>
+		
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/jquery.honhe.js"></script>
+		<script>
+			//导航
+		    jQuery("#nav,#nav1,#nav2").slide({
+		        type:"menu",// 效果类型，针对菜单/导航而引入的参数（默认slide）
+		        titCell:".nLi", //鼠标触发对象
+		        targetCell:".sub", //titCell里面包含的要显示/消失的对象
+		        effect:"slideDown", //targetCell下拉效果
+		        delayTime:300 , //效果时间
+		        triggerTime:0, //鼠标延迟触发时间（默认150）
+		        returnDefault:true //鼠标移走后返回默认状态，例如默认频道是“预告片”，鼠标移走后会返回“预告片”（默认false）
+		    });
+		    
+		</script>
+	</body>
+</html>

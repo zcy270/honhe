@@ -1,0 +1,113 @@
+.right_content_box{
+	width: 904px;
+	height: 777px;
+	padding: 63px 0px 0px 60px;
+}
+.content_item_box{
+	width: 900px;
+	height: 50px;
+	margin-bottom: 30px;
+	position: relative;
+}
+.content_item_txt{
+	height: 50px;
+	width: 165px;
+	float: left;
+	line-height: 46px;
+	font-size: 14px;
+	color: #3a4762;
+}
+.auto_inp{
+	height: 14px;
+	width: 228px;
+	padding: 17px 20px 17px 14px;
+	border: solid 1px #cfd5e1;
+	font-size: 14px;
+	
+}
+
+.before_inp{
+	width: 125px;
+	height: 46px;
+	line-height: 46px;
+	font-size: 14px;
+	text-align: center;
+	margin-right:10px;
+	float: left;
+	border: solid 1px #cfd5e1;
+}
+.grade_inp{
+	width: 125px;
+	height: 46px;
+	line-height: 46px;
+	font-size: 14px;
+	text-align: center;
+	float: left;
+	border: solid 1px #cfd5e1;
+}
+.radio_cli{
+	background: url(../img/fr_focus_03.png) no-repeat 110px 0px;
+	background-color: #eff3ff;
+	border: solid 1px #607ee2;
+}
+.day_inp{
+	width: 80px;
+	height: 12px;
+	border: solid 1px #cfd5e1;
+	float: left;
+	padding: 17px 26px 17px 14px;
+}
+.interval{
+	width: 20px;
+	height: 46px;
+	line-height: 46px;
+	float: left;
+	text-align: center;
+}
+.sub_sure{
+	width: 265px;
+	height: 44px;
+	background-color: #eb6e28;
+	border: none;
+	font-size: 14px;
+	color: #fff;
+	margin-left: 165px;
+	cursor: pointer;
+}
+.tip_txt{
+	color: #8c93a2;
+	margin-left: 96px;
+}
+.tip_txt span{
+	color: #ee3030;
+}
+.inp_units{
+	width: 25px;
+	height: 46px;
+	line-height: 46px;
+	color: #c2c7d3;
+	position: absolute;
+	font-size: 14px;
+	left: 403px;
+	top: 1px;
+}
+.inp_units_1{
+	width: 25px;
+	height: 46px;
+	line-height: 46px;
+	color: #c2c7d3;
+	position: absolute;
+	font-size: 14px;
+	left: 403px;
+	top: 1px;
+}
+.inp_units_2{
+	width: 25px;
+	height: 46px;
+	line-height: 46px;
+	color: #c2c7d3;
+	position: absolute;
+	font-size: 14px;
+	left: 261px;
+	top: 1px;
+}

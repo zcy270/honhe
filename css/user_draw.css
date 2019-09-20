@@ -1,0 +1,115 @@
+.main_r .draw_header{
+	height: 80px;
+	line-height: 80px;
+	width: 960px;
+	font-size: 20px;
+	padding-left: 60px;
+	box-sizing: border-box;
+	color: #3a4762;
+	border-bottom: 2px solid #f1f5fc;
+}
+.draw_box{
+	width: 960px;
+	height: 560px;
+	border-bottom: 1px solid #f1f5fc;
+	padding-top: 90px;
+	box-sizing: border-box;
+}
+.charge_way_box{
+	width: 850px;
+	height: 180px;
+	margin: 0 auto;
+}
+.charge_way{
+	color: #3a4762;
+	font-size: 14px;
+	float: left;
+}
+.approve{
+	color: #3a4762;
+	font-size: 14px;
+	float: left;
+	width: 150px;
+	height: 180px;
+	margin-left: 40px;
+	padding-top: 20px;
+	text-align: center;
+	box-sizing: border-box;
+	border: 1px solid #e4e8f0;
+	background: #f6f8fc;
+}
+
+.approve_bank{
+	width: 50px;
+	height: 50px;
+}
+.approve_h1{
+	width: 150px;
+	font-size: 20px;
+	text-align: center;
+	color: #3a4762;
+	margin: 15px 0px;
+}
+.bank_tail_number{
+	width: 150px;
+	font-size: 12px;
+	text-align: center;
+	color: #3a4762;
+	margin: 5px 0px;
+}
+.bank_info{
+	width: 150px;
+	font-size: 12px;
+	text-align: center;
+	color: #8c93a2;
+	margin: 5px 0px;
+}
+.instructions{
+	width: 360px;
+	height: 180px;
+	line-height:28px;
+	border: 1px solid #eef2f9;
+	padding: 25px;
+	box-sizing: border-box;
+	font-size: 14px;
+	box-shadow: 17px 17px 17px #eef2f9;
+}
+.instructions span{
+	color: #ee3030;
+}
+.user_inp{
+	float: left;
+	width: 410px;
+	height: 45px;
+	line-height: 45px;
+	margin-top: 75px;
+}
+.user_top_up{
+	font-size: 14px;
+	color: #3a4762;
+	float: left;
+}
+.top_up_inp{
+	float: left;
+	height: 45px;
+	width: 300px;
+	margin-left: 40px;
+	border: 1px solid #c2c8d4;
+}
+.top_up_inp input{
+	float: left;
+	height: 45px;
+	width: 288px;
+	margin-left: 10px;
+	border: none;
+}
+.top_up_inp input:focus{
+	outline: none;
+}
+.btn_confirm{
+	width: 300px;
+	height: 45px;
+	background-color: #eb6e28;
+	color: #fff;
+	float: left;
+}

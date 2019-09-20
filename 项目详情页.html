@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+		<meta name="renderer" content="webkit">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>项目详情</title>
+		<link rel="stylesheet" href="css/layui.css"  media="all">
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
+		<link type="text/css" rel="stylesheet" href="css/layer.css">
+		<link type="text/css" rel="stylesheet" href="css/css.css">
+		<link rel="stylesheet" href="css/reset.css" />
+		<!-- <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css"/> -->
+		<style type="text/css">
+			input[type=text]::-ms-clear {
+			  display:none
+			}
+			.text_content{
+			    overflow-x: hidden;
+			    padding: 30px;
+			    padding-top:0px;
+			    height:420px;
+			    background: #fafafa;
+			}
+			.text_box .header_top1 {
+			    color: #3A4762;
+			    font-size: 20px;
+			    margin-top:-50px;
+			}
+			.text_content p{
+				font-size:14px ;
+				line-height: 40px;
+				letter-spacing: 0px;
+				color: #8c93a2;
+			}
+			.text_box .header_top1{
+				color: #18284b;
+				font-size: 28px;
+			}
+			#help_number {
+				margin: 0 auto;
+			    margin-bottom: 20px;
+			    padding: 40px;
+			    width: 1120px;
+			    background: #fff;
+			}
+			#help_number .float_r p{ text-align:right;}
+			#help_number p{ line-height:26px;}
+			.clear0 {
+			    height: 0px;
+			    clear: both;
+			}
+		
+
+			.layui-layer-content .disclaimer_tip .btn_prol{
+				background:#eb6e28;
+			}
+			.layui-layer-content .disclaimer_tip .btn_kt{
+				background:#e7ebf6;/*灰色*/
+			}
+			/*常用协议范本*/
+    		.infomation .infomation-info .compact>a{color: #8c93a2;display: inline;line-height: 50px}
+			.infomation .infomation-info  .compact>a:hover{color:#9db9ff;}
+				    	
+		</style>
+	</head>
+	<body style="background: #eaedf2;">
+		<!--未登录状态nav-->
+		<div id="logo_nav">
+		    <div class="div_center">
+		                <a class="l" href="index.html"><img src="img/logo_bg.png" style="z-index:100;position: relative;"> </a>
+		                <ul id="nav" class="nav clearfix">
+		                    <li class="nLi">
+		                        <h3><a href="index.html" target="_blank">首页</a></h3>
+		                    </li>
+		                    <li class="nLi">
+		                        <h3><a  href="项目页.html" target="_blank">我要投资</a></h3>
+		                        <ul class="sub box-shadow">
+		                            <li><a href="项目页.html">全部项目</a></li>
+		                            <li><a href="项目页.html">新手专享</a></li>
+		                            <li><a href="项目页.html">精选项目</a></li>
+		                        </ul>
+		                    </li>
+		                    <li class="nLi">
+		                        <h3><a href="http://chedai.honhe.com/" target="_blank">我要借款</a></h3>
+		                    </li>
+		                    <li class="nLi ">
+		                        <h3><a href="#" target="_blank">信息披露</a></h3>
+		                        <ul class="sub box-shadow">
+		                            <li><a href="#">安全保障</a></li>
+		                            <li><a href="#">运营披露</a></li>
+		                            <li><a href="#">关于后河</a></li>
+		                            <li><a href="信息披露-公司动态.html">公司动态</a></li>
+		                            <li><a href="信息披露-监管部门.html">监管法规</a></li>
+		                        </ul>
+		                    </li>
+		                    <li class="nLi login_li">
+		                        <h3><a href="#" target="_blank" style="">&nbsp;登陆&nbsp;<span class="arrow_nav"></span></a></h3>
+		                        <ul class="sub box-shadow" style="">
+		                            <li><a href="#">投资人登录</a></li>
+		                            <li><a href="#">借款人登录</a></li>
+		                        </ul>
+		                    </li>
+		                    <li class="nLi register_li">
+		                        <h3><a href="#" target="_blank" style="">&nbsp;注册&nbsp;<span class="arrow_nav"></span></a></h3>
+		                        <ul class="sub box-shadow" style="left:10px;">
+		                            <li><a href="#">投资人注册</a></li>
+		                            <li><a href="#">借款人注册</a></li>
+		                        </ul>
+		                    </li>
+		                </ul>
+		    </div>
+		    <div class="clear_div"></div>
+		</div>
+		
+		<!--投资人已登录nav-->
+		<!--<div id="logo_nav1">
+		    <div class="div_center">
+		                <a class="l" href="index.html"><img src="img/logo_bg.png"> </a>
+		                <ul id="nav1" class="nav clearfix">
+		                    <li class="nLi">
+		                        <h3><a href="index.html" target="_blank">首页</a></h3>
+		                    </li>
+		                    <li class="nLi">
+		                        <h3><a  href="项目页.html" target="_blank">我要投资</a></h3>
+		                        <ul class="sub box-shadow">
+		                            <li><a href="项目页.html">全部项目</a></li>
+		                            <li><a href="项目页.html">新手专享</a></li>
+		                            <li><a href="项目页.html">精选项目</a></li>
+		                           
+		                        </ul>
+		                    </li>
+		                    <li class="nLi ">
+		                        <h3><a href="#" target="_blank">信息披露</a></h3>
+		                        <ul class="sub box-shadow">
+		                            <li><a href="#">安全保障</a></li>
+		                            <li><a href="#">运营披露</a></li>
+		                            <li><a href="#">关于后河</a></li>
+		                            <li><a href="信息披露-公司动态.html">公司动态</a></li>
+		                            <li><a href="信息披露-监管部门.html">监管法规</a></li>
+		                        </ul>
+		                    </li>
+		                    <li class="nLi">
+								<h3><a href="#" target="_blank">我的账户</a></h3>
+							</li>
+		                    <li class="nLi register_li">
+		                        <h3><a href="#" target="_blank">&nbsp;&nbsp;退出&nbsp;</a></h3>
+		                    </li>
+		                </ul>
+		    </div>
+		    <div class="clear_div"></div>
+		</div>-->
+		
+		<!--借款人已登录nav-->
+		<!--<div id="logo_nav2">
+		    <div class="div_center">
+		                <a class="l" href="index.html"><img src="img/logo_bg.png"> </a>
+		                <ul id="nav2" class="nav clearfix">
+		                    <li class="nLi ">
+		                        <h3><a href="#" target="_blank">帮助中心</a></h3>
+		                    </li>
+		                    <li class="nLi ">
+		                        <h3><a href="#" target="_blank">我的账户</a></h3>
+		                    </li>
+		                    <li class="nLi register_li">
+		                        <h3><a href="#" target="_blank">&nbsp;&nbsp;退出&nbsp;</a></h3>
+		                    </li>
+		                </ul>
+		    </div>
+		    <div class="clear_div"></div>
+		</div>-->
+		
+
+		<!-- 项目基本信息  -->
+		<div class="credit_item_info">
+           <div class="credit_item_info_tit">
+                 <div class="float_l">
+                     <span class="l">
+            		 	<img src="img/11.png">
+						&nbsp;进货资金3万-汽车抵押
+                     </span>   
+                     <span class="r">项目编号：HH0000147688</span>
+                 </div>
+
+                 <div class="float_r time_up" id="djs">
+                      <span class="t_h">00</span><span>时</span>
+                      <span class="t_m">00</span><span>分</span>
+                      <span class="t_s">00</span><span>秒</span>
+                 </div>
+                 
+           </div>
+           
+           <div class="float_l fl table_2" style="width:65%;float: left;">
+                   <table class="credit_table f" width="809" border="0">
+                      <tr>
+                         <td style="width:260px;" class="big_num" nowrap="nowrap">
+						    <span class="or_font">10.8<a class="or_font">%</a></span>
+						    <p class="num_b">历史年化收益率</p>
+						 </td>
+                         <td></td>
+                         <td style="width:210px;" class="big_num" nowrap="nowrap">
+                         	<span>8</span><span class="unit">个月</span>
+                         	<p class="num_b">投资期限</p>
+                         </td>
+                         <td></td>
+                         <td class="big_num" nowrap="nowrap">
+                         	<span>79,000.00</span><span class="unit">元</span>
+                         	<p class="num_b">借款金额</p>
+                         </td>
+                      </tr>
+                   </table>
+                   
+        
+                   <table class="credit_table s" id="move" width="809" border="0">
+                      <tr>
+                        <td class="tit" nowrap="nowrap" >回款方式 </td>
+                        <td nowrap="nowrap">
+                            <a class="label_blue">先息后本</a>
+                 		</td>
+                        <td>&nbsp;</td>
+                        <td class="tit" nowrap="nowrap">计息方法</td>
+                        <td nowrap="nowrap">满标后放款，放款次日计息，到期次日回款</td>
+                      </tr>
+                      
+                      <tr>
+                         <td class="tit" nowrap="nowrap">申购时间  </td>
+                         <td nowrap="nowrap">2017-12-20 12:00:00 至  2018-01-04 23:59:59</td>
+                         <td>&nbsp;</td>
+                         <td class="tit" nowrap="nowrap">保障措施</td>
+                         <td nowrap="nowrap">GPS实时定位监控，国家车管所车辆抵押登记</td>
+                      </tr>
+                      
+                      <tr>
+                         <td class="tit" nowrap="nowrap">申购说明</td>
+                         <td nowrap="nowrap">100元起投，投资金额须是10的整数倍 </td>
+                         <td>&nbsp;</td>
+                         <!--<td class="tit" nowrap="nowrap">保障措施 </td>
+                         <td nowrap="nowrap">
+                         	
+                         		
+                         		
+                         			GPS实时定位监控，国家车管所车辆抵押登记
+                         		
+                         	
+                         </td>-->
+                      </tr>
+                   </table>
+           </div>
+           
+        
+           <!--<div class="float_l fl" style="width:5%;position:relative;height:1px;top:-246px;right:-790px;float:left;">
+              <div style="height: 350px;width:1px; background:#f0f0f0; position:absolute;left:50%;top: 0px;height:338px\9;"></div>
+           </div>-->
+           
+           <div class="float_r fr" style="width:30%;float: right;margin-top:30px;">
+                   <table class="enter_table" width="310">
+                      <tr>
+                         <td colspan="2" class="big_num">
+                         	<span>12,450.00</span><span class="unit">元</span>
+                         	<p>可投金额</p>
+                         </td>
+                      </tr>
+                      
+                      <tr>
+                         <td style="padding-top: 30px;">可用金额</td>
+                         <td align="right" style="position: relative;">
+                             <a class="user_moneymore" style="line-height: 0;">0.00</a>元
+                             <a href="#" class="question_icon"><span class="cash_gift">投资时优先使用账户礼金<div class="direction"></div></span></a>
+                             <!--<a class="mon" href="/investorCenter/recharge.jhtml" target="_blank">[充值]</a>-->
+                         </td>                      
+                      </tr>
+                      
+
+                      <tr>
+                         <td style="position:relative;" colspan="2">
+                         <div class="show_mon" style="">
+	                         <input type="text" placeholder="100起投，且为10的倍数" class="input_money" id="investMoneyShow" />
+	                         <!--<input type="hidden" id="investMoney"/>-->
+	                         <a id="a_invest_all" href="javascript:void(0);">全额买入</a>
+                         </div>
+                         </td>
+                      </tr>
+                      
+                      <tr>
+                         <td colspan="2">
+                            <div class="load_wrap" style=" position:relative;">
+                               <div class="show_load" style="width:304px;">
+                                 <a class="absolute" href="#" style="width:312px;">
+	                               	<input class="btn_gray btn_buy" type="button" value="立即买入"/>
+	                               	<!--<input id="btn_buy" type="button" value="立即买入"/>-->
+                                 </a>
+                                 <span style="width: 72px;height: 11px;font-family: MicrosoftYaHei;line-height: 32px;color: #ee3030;">可用余额不足</span>
+                               </div>
+                            </div>
+                         </td>
+                      </tr>
+                   </table>
+           </div>
+           
+           <div style="width:1px;height:335px;background:#eaedf2;position:relative;left:820px;"></div>
+           <div class="clear0"></div>
+      		<p class="prospective" style="z-index:10000;">预期收益<span>￥31.27</span>元</p>
+      	</div>  
+      	
+      	
+		
+      	<!--同意电子签名授权-->
+      	<!--<div class="disclaimer_tip agree_accredit layui-layer-content" ms-controller="avalon" style="display: none;">
+			<span class="close" style="top:8%;"></span>
+			<div class="title tit" style="text-align: center;border:none;text-indent: 0;top:45px;">
+				<p class="disclaimer_txt dislog"><img src="img/logo_bg.png" alt="弹窗未测评" style="position:relative;left:-20px;" /></p>
+				<p class="titp" style="font-size: 14px;color: #8c93a2;text-indent: 21px;padding: 0 85px;line-height: 21px;">
+					为保障您的资金安全，需先同意并授权电子签名，用于签约网上交易的电子合同，以确保您的合法权益
+				</p>
+				<input class="btn_buy2" type="button" value="同意并授权" style="margin:0 auto;" />
+			</div>
+		</div>-->
+      	
+      	
+      	
+		<!--风险评估-->
+		<!--<div class="disclaimer_tip disclaimer_tip2 layui-layer-content" ms-controller="avalon" style="display: none;">
+			<span class="close" style="top:8%;"></span>
+			<div class="title tit" style="text-align: center;border:none;text-indent: 0;top:45px;">
+				<div class="titp" style="">
+					<p>您尚未进行风险承受能力评估</p>
+				</div>
+				<p class="disclaimer_txt dislog"><img src="img/dislogICON.png" alt="弹窗未测评" style="position:relative;left:-20px;" /></p>
+				<input class="btn_buy2" type="button" value="立即测评" style="margin:0 auto;" />
+			</div>
+		</div>-->
+		<!--风险测评温馨提示-->
+		<!--<div class="disclaimer_tip disclaimer_tip2_2 layui-layer-content" ms-controller="avalon" style="display: none;">
+			<span class="close" style="top:8%;"></span>
+			<div class="title tit" style="text-align: center;border:none;text-indent: 0;top:75px;">
+				是否成功开通银行存管账户？
+				<p class="disclaimer_txt dislog" style="margin-left:-5px;">完成风险测评后可以回到本页面继续投资</p>
+				<input class="btn_prol" type="button" value="测评成功" style="margin:50px auto;margin-right:-5px;" />
+				<input class="btn_pror" type="button" value="再试一次" style="margin:0 auto;margin-left:30px;"/>
+			</div>
+		</div>-->
+		
+		<!--存管开户弹框-->
+		<!--<div class="disclaimer_tip disclaimer_tip1 layui-layer-content" ms-controller="avalon" style="display:none!important;position: relative;min-height:360px!important;">
+			<div class="disclaimer_info">
+				<span class="close" style="top:8%;"></span>
+				<img src="img/houhecaifu.png" alt="后河财富logo" />
+				<span style="color:#eb6e28;font-size:25px;margin:5px;position: relative;top:-15px;">×</span>
+				<img src="img/pinan.png" alt="平安银行logo" />
+				<div class="mar_t">
+					<p>开通平安银行资金存管</p>
+					<p>平安银行全程保证资金交易安全</p>
+				</div>
+				<input class="btn_on" type="button" value="立即开通" style="margin:0 auto;" />
+			</div>
+		</div>-->
+		
+		<!--存管开户温馨提示弹框-->
+		<!--<div class="disclaimer_tip disclaimer_tip1_1 layui-layer-content" ms-controller="avalon" style="display: none;">
+			<span class="close" style="top:8%;"></span>
+			<div class="title tit" style="text-align: center;border:none;text-indent: 0;top:75px;">
+				是否成功开通银行存管账户？
+				<p class="disclaimer_txt dislog" style="margin-left:-5px;">完成存管开户后可以回到本页面继续投资</p>
+				<input class="btn_prol" type="button" value="开户成功" style="margin:50px auto;margin-right:-5px;" />
+				<input class="btn_pror" type="button" value="再试一次" style="margin:0 auto;margin-left:30px;"/>
+			</div>
+		</div>-->
+		
+		
+		
+		<!--自动授权-->
+		<!--<div class="disclaimer_tip disclaimer_tip3 layui-layer-content" ms-controller="avalon" style="display:none;">
+			<span class="close" style="top:8%;"></span>
+			<div class="title tit" style="text-align: center;border:none;text-indent: 0;top:75px;">
+				您还未开通存管系统资金操作自动授权，<br />请先开通。
+				<div>
+					<input class="btn_prol btn_kt" type="button" value="开通" style="margin:50px auto;margin-right:-5px;" />
+					<input class="btn_pror" type="button" value="取消" style="margin:0 auto;margin-left:30px;"/>
+				</div>
+			</div>
+		</div>
+		<div class="disclaimer_tip disclaimer_tip3_3 layui-layer-content" ms-controller="avalon" style="display:none;">
+			<span class="close" style="top:8%;"></span>
+			<div class="title tit" style="text-align: center;border:none;text-indent: 0;top:75px;">
+				是否成功开通存管系统资金自动授权？
+				<p class="disclaimer_txt dislog" style="margin-left:-5px;display: none;">提示文案</p>
+				<div>
+					<input class="btn_prol" type="button" value="开通成功" style="margin:70px auto;margin-right:-5px;" />
+					<input class="btn_pror" type="button" value="再试一次" style="margin:0 auto;margin-left:30px;"/>
+				</div>
+			</div>
+		</div>-->
+		<!--告知-->
+		<!--<div class="disclaimer_tip disclaimer_tip5 layui-layer-content" ms-controller="avalon" style="display:none;">
+			<div class="title tit" style="text-align: center;border:none;text-indent: 0;top:75px;">
+				<div class="text_box">
+					<div class="header_top1">用户告知书</div>
+					<div class="text_content">
+						<p style="text-indent:2em;text-align: left;">为积极响应P2P网络借贷风险专项整治整改验收政策、促进平台合规化发展及提升用户资金安全，后河财富（www.honhe.com）与平安银行资金存管系统已正式上线。为方便用户使用后河财富平台，现向各用户作如下告知：</p>
+						<p style="text-indent:2em;text-align: left;">1.原有用户信息及项目数据信息将同步迁移至新系统，在新系统中，项目将直接穿透至投资人与借款人，借款人将通过存管银行直接向投资人还款。</p>
+						<p  style="text-indent:2em;text-align: left;">2.新老用户如要借款或投资，需在后河财富新版网站上登录或注册账号。用户一经确认本告知书视为知悉并同意按所签订《网站服务协议》之权利义务使用新系统，并遵守后河财富发布的各项规则的约束。</p>
+						<p style="text-indent:2em;text-align: left;">3.后河财富旧版系统现还有托管余额需要提现，暂保留运行，但已停止发放新标。新系统上线后，后河财富所有的资金交易均在平安银行内全程流转，实现用户资金与平台资金的完全隔离，避免用户资金被挪用，从而保障投资安全。</p>
+						<p style="text-indent:2em;text-align: left;">请广大投资人及借款人知悉！温馨提示：投资有风险，决策需谨慎！</p>
+						<p style="text-indent:2em;text-align: right;margin-top:50px;margin-right:1em;">深圳市后河网互联网金融服务有限公司</p>
+						<p style="text-indent:2em;text-align: right;margin-right:1em;">2018年4月17日</p>	
+					</div>
+				</div>
+			</div >
+			<div style="position: fixed; top: 570px;left: 180px;">
+				<input class="btn_prol btn_kt" id="btnSendCode" type="button" value="我已知悉并同意存管系统相关协议"  onclick="sendMessage()" style="margin:50px auto;margin-right:-5px;width:250px;margin-top:0px;" />
+			</div>
+		</div>-->
+		
+		<!--投资风险提示-->
+		<div class="disclaimer_tip disclaimer_tip6 layui-layer-content" ms-controller="avalon" style="display: none;">
+			<span class="close" style="top:8%;"></span>
+			<div class="title tit" style="text-align: center;border:none;text-indent: 0;top:40px;">
+				投资风险提示
+				<p class="disclaimer_txt dislog" style="text-align: left;margin-left:54px;">任何通过平台进行的交易并不能避免风险的产生，投资者需自行承担风险。遵循“市场有风险，出借需谨慎”的投资准则，依据<span style="color:#313339;font-size: 14px;font-weight: 600;">您的风险等级评估结果为保守型，我们不建议您投资具有风险的项目，请理性管理个人财富。</span></p>
+				<p class="disclaimer_txt dislog" style="text-align: left;margin-left:54px;">如若您认为您具备一定的风险承受能力并愿意自行承担风险，请重新进行风险测评后，再进行投资交易。</p>
+
+				<input class="btn_prol" type="button" value="重新测评" style="margin:30px auto;margin-right:-5px;margin-bottom: 0px;" />
+				<input class="btn_pror" type="button" value="放弃投资" style="margin:30px auto;margin-left:30px;margin-bottom: 0px;"/>
+			</div>
+		</div>
+		
+		<!--投资流程-->
+		<div class="investment_table">
+			<div class="investment_lc">
+				<p style="font-size:16px;">投资流程</p>
+			</div>
+			<ul class="investment_icon" style="width:100%;">
+				<li class="release" style="width:25%;display: inline;">
+					<div class="investment_list">
+						<div style="float: left;">
+							<img src="img/01.png" alt="项目发布" width="70px" height="78"/>
+						</div>
+					</div>
+					<div style="position:relative;top:-145px;left:135px;display: inline-block;">
+						<p id="invest_num">01</p>
+						<div style="position:relative;top:-5px;background:#fff;width:204px!important;">
+							<p id="invest_tit">项目发布</p>
+							<p id="invest_info">项目发布&nbsp;等待投资</p>
+						</div>
+					</div>
+				</li>
+				<li class="jion" style="width:25%;">
+					<div class="investment_list">
+						<div class="investment_list">
+							<div style="float: left;">
+								<img src="img/02.png" alt="加入项目" width="70px" height="78"/>
+							</div>
+						</div>
+						<div style="position:relative;top:-145px;left:80px;">
+							<p class="invest_num">02</p>
+							<div style="position:relative;top:-5px;background:#fff;">
+								<p class="invest_tit">加入项目</p>
+								<p class="invest_info">成功投资项目</p>
+							</div>
+							
+						</div>
+					</div>
+				</li>
+				<li class="interest" style="width:25%;">
+					<div class="investment_list">
+						<div class="investment_list">
+							<div style="float: left;">
+								<img src="img/03.png" alt="满标计息" width="78px" height="78"/>
+							</div>
+						</div>
+						<div style="position:relative;top:-145px;left:90px;">
+							<p class="invest_num">03</p>
+							<div style="position:relative;top:-5px;background:#fff;">
+								<p class="invest_tit">满标计息</p>
+								<p class="invest_info">满标放款后，次日开始计息</p>
+							</div>
+							
+						</div>
+					</div>
+				</li>
+				<li class="Payment" style="width:25%;">
+					<div class="investment_list">
+						<div class="investment_list">
+							<div style="float: left;">
+								<img src="img/04.png" alt="到期回款" width="70" height="78"/>
+							</div>
+						</div>
+						<div style="position:relative;top:-145px;left:80px;">
+							<p class="invest_num">04</p>
+							<div style="position:relative;top:-5px;background:#fff;">
+								<p class="invest_tit">到期回款</p>
+								<p class="invest_info">项目结束并还款</p>
+							</div>
+							
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		                	              	
+		<!--项目详情-->
+		<div class="layui-tab layui-tab-card" id="min_h">
+			<ul class="layui-tab-title">
+			    <li class="layui-this active-col">项目详情</li>
+			    <li>申购情况</li>
+			    <li>常见问题</li>
+			</ul>
+		    <div class="layui-tab-content" >
+			    <div class="layui-tab-item layui-show">
+			    	<!--<div class="infomation">
+			    		<div class="infomation-tit"><p>客户信息</p></div>
+				    	<div class="infomation-info">
+				    		<p>宋某，男，27岁，身份证号码xxxxxxxxxxxxx，未婚，现住址：广东省深圳市</p>
+				    	</div>
+			    	</div>-->
+			    	
+			    	<div class="infomation">
+			    		<div class="infomation-tit"><p>基本情况</p></div>
+				    	<div class="infomation-info basic">
+				    		<p style="line-height: 30px;">宋某，男，27岁，身份证号码xxxxxxxxxxxxx，未婚，现住址：广东省深圳市，该客户为xx市电视台员工，该单位位于xx路大厦，主要从事影视传媒等业务，客户负责该单位的采访工作,没月收入6000左右，另外，客户也从事些紫砂壶实业和频道采访工作，现需部分资金周转借款,故向我公司借款,</p>
+				    		<p style="line-height: 30px;">二、基本情况： 客户自2001年9月开始在广州市**物业公司任职总经理，客户增城本地人，该客户主要负责物业日常工作，工作时间较长，有代发工</p>
+				    	</div>
+			    	</div>
+			    	<!--<div class="infomation">
+			    		<div class="infomation-tit"><p>借款人信息</p></div>
+				    	<div class="layui-form">
+						  <table class="layui-table">
+						    <colgroup>
+						      <col width="135">
+						      <col width="135">
+						      <col width="135">
+						      <col width="135">
+						      <col width="135">
+						      <col width="135">
+						      <col width="135">
+						      <col width="135">
+						      <col>
+						    </colgroup>
+						    <thead>
+						      <tr>
+						        <th>姓名</th>
+						        <th>性别</th>
+						        <th>婚姻</th>
+						        <th>学历</th>
+						        <th>户籍所在地</th>
+						        <th>公司类别</th>
+						        <th>公司行业</th>
+						        <th>工作月收入</th>
+						      </tr> 
+						    </thead>
+						    <tbody id="td_col">
+						      <tr>
+						        <td>金XX</td>
+						        <td>女</td>
+						        <td>是</td>
+						        <td>大专</td>
+						        <td>珠海市</td>
+						        <td>个体</td>
+						        <td>服务业/个体经营</td>
+						        <td>￥20000以上</td>
+						      </tr>
+						    </tbody>
+						  </table>
+						</div>
+			    	</div>
+			    	<div class="infomation">
+			    		<div class="infomation-tit"><p>抵押车辆信息</p></div>
+				    	<div class="infomation-info">
+				    		<div class="layui-form">
+						  <table class="layui-table">
+						    <colgroup>
+						      <col width="216">
+						      <col width="216">
+						      <col width="216">
+						      <col width="216">
+						      <col width="216">
+						      <col>
+						    </colgroup>
+						    <thead>
+						      <tr>
+						        <th>行驶里程（公里）</th>
+						        <th>出厂日期</th>
+						        <th>上牌日期</th>
+						        <th>车辆估价（元）</th>
+						        <th>车况说明</th>
+						      </tr> 
+						    </thead>
+						    <tbody class="td_col">
+						      <tr>
+						        <td>70424.0</td>
+						        <td>2012-11-05</td>
+						        <td>2013-01-22</td>
+						        <td>￥10000000</td>
+						        <td>车况正常，保养正常</td>
+						      </tr>
+						    </tbody>
+						  </table>
+						</div>
+				    	</div>
+			    	</div>-->
+			    	
+			    	<div class="infomation"style="margin-top:70px;">
+			    		<div class="infomation-tit"><p>平台审核记录</p></div>
+				    	<div class="infomation-info"style="line-height:50px;">
+				    		<div class="infomation_span">
+				    			<span>手机认证<img src="img/iconfont-right.png" alt="" width="18" height="18"/></span>
+					    		<span>身份认证<img src="img/iconfont-right.png" alt="" width="18" height="18"/></span>
+					    		<span>工作证明<img src="img/iconfont-right.png" alt="" width="18" height="18"/></span>
+					    		<span>收入证明<img src="img/iconfont-right.png" alt="" width="18" height="18"/></span>
+					    		<span>购车证明<img src="img/iconfont-right.png" alt="" width="18" height="18"/></span>
+					    		<span>车辆照片<img src="img/iconfont-right.png" alt="" width="18" height="18"/></span>
+					    		<span>居住证明<img src="img/iconfont-right.png" alt="" width="18" height="18"/></span>
+					    		<span>行驶证明<img src="img/iconfont-right.png" alt="" width="18" height="18"/></span>
+				    		</div>
+				    	</div>
+			    	</div>
+			    	
+			    	<div class="infomation">
+			    		<div class="infomation-tit"><p>相关审核材料</p></div>
+			    			<div id="head_hot_goods_wrap">
+								<div id="head_hot_goods_title">
+						            <div id="head_hot_goods_change">
+						                <span title="上一页" id="head_hot_goods_prave"><</span>
+						                <span title="下一页" id="head_hot_goods_next">></span>
+						            </div>
+						        </div>
+								<div id="head_hot_goods_content">
+						            <ul>
+						                <li>
+						                   <a class="fancybox" href="img/Audit_material1.jpg" data-fancybox-group="gallery"><img src="img/Audit_material1.jpg" alt="" /></a>
+						                </li>
+						                <li>
+						                    <a class="fancybox" href="img/Audit_material2.jpg" data-fancybox-group="gallery"><img src="img/Audit_material2.jpg" alt="" /></a>
+						                </li>
+						                <li>
+						                    <a class="fancybox" href="img/Audit_material3.jpg" data-fancybox-group="gallery"><img src="img/Audit_material3.jpg" alt="" /></a>
+						                </li>
+						                <li>
+						                   <a class="fancybox" href="img/Audit_material4.jpg" data-fancybox-group="gallery"><img src="img/Audit_material4.jpg" alt="" /></a>
+						                </li>
+						                <li>
+						                  <a class="fancybox" href="img/Audit_material5.jpg" data-fancybox-group="gallery"><img src="img/Audit_material5.jpg" alt="" /></a>
+						                </li>
+						                <li>
+						                   <a class="fancybox" href="img/Audit_material3.jpg" data-fancybox-group="gallery"><img src="img/Audit_material3.jpg" alt="" /></a>
+						                </li>
+						                <!--<li>
+						                    <a class="fancybox" href="img/Audit_material1.jpg" data-fancybox-group="gallery"><img src="img/Audit_material1.jpg" alt="" /></a>
+						                </li>
+						                <li>
+						                    <a class="fancybox" href="img/Audit_material2.jpg" data-fancybox-group="gallery"><img src="img/Audit_material2.jpg" alt="" /></a>
+						                </li>
+						                <li>
+						                    <a class="fancybox" href="img/Audit_material3.jpg" data-fancybox-group="gallery"><img src="img/Audit_material3.jpg" alt="" /></a>
+						                <li>
+						                    <a class="fancybox" href="img/Audit_material4.jpg" data-fancybox-group="gallery"><img src="img/Audit_material4.jpg" alt="" /></a>
+						                </li>
+						                <li>
+						                   <a class="fancybox" href="img/Audit_material4.jpg" data-fancybox-group="gallery"><img src="img/Audit_material4.jpg" alt="" /></a>
+						                </li>
+						                <li>
+						                    <a class="fancybox" href="img/Audit_material5.jpg" data-fancybox-group="gallery"><img src="img/Audit_material5.jpg" alt="" /></a>
+						                </li>
+						                <li>
+						                   <a class="fancybox" href="img/Audit_material5.jpg" data-fancybox-group="gallery"><img src="img/Audit_material5.jpg" alt="" /></a>
+						                </li>-->
+						                
+						            </ul>
+						         </div>
+							</div>
+			    		
+				    	</div>
+				    	
+			    	</div>
+			    	<!--申购情况说明-->
+		    	    <div class="layui-tab-item " >
+		    	    	<div class="infomation" style="width:1200px;position:relative;right:50px;padding-top:25px;">
+						    	<div class="infomation-info" style="margin-bottom: 50px;">
+						    		<div class="layui-form">
+								  <table class="layui-table">
+								    <colgroup>
+								      <col width="216">
+								      <col width="216">
+								      <col width="216">
+								      <col width="216">
+								      <col width="216">
+								      <col>
+								    </colgroup>
+								    <thead>
+								      <tr>
+								        <th>序列号</th>
+								        <th>投标人</th>
+								        <th>金额（元）</th>
+								        <th>时间</th>
+								        <th>投资方式</th>
+								      </tr> 
+								    </thead>
+								    
+								    <tbody class="td_col" style="display: none;">  
+								      <tr>
+								        <td>1</td>
+								        <td>f***8n</td>
+								        <td>￥100.00</td>
+								        <td>2015-11-30 14:13:13</td>
+								        <td><img src="img/zidon_icon.png" alt="A icon" />&nbsp; 自动</td>
+								      </tr>
+								      <tr>
+								        <td>2</td>
+								        <td>f***8n</td>
+								        <td>￥100.00</td>
+								        <td>2015-11-30 14:13:13</td>
+								        <td><img src="img/pc_icon.png" alt="手机icon" />&nbsp; PC</td>
+								      </tr>
+								      <tr>
+								        <td>3</td>
+								        <td>f***8n</td>
+								        <td>￥100.00</td>
+								        <td>2015-11-30 14:13:13</td>
+								        <td><img src="img/zidon_icon.png" alt="手机icon" />&nbsp; 自动</td>
+								      </tr>
+								      <tr>
+								        <td>4</td>
+								        <td>f***8n</td>
+								        <td>￥36300.00</td>
+								        <td>2015-11-30 14:13:13</td>
+								        <td><img src="img/mobile_icon.png" alt="手机icon" />&nbsp; 移动</td>
+								      </tr>
+								      <tr>
+								        <td>5</td>
+								        <td>f***8n</td>
+								        <td>￥36300.00</td>
+								        <td>2015-11-30 14:13:13</td>
+								        <td><img src="img/pc_icon.png" alt="pc icon" />&nbsp; PC</td>
+								      </tr>
+								      <tr>
+								        <td>6</td>
+								        <td>f***8n</td>
+								        <td>￥36300.00</td>
+								        <td>2015-11-30 14:13:13</td>
+								        <td><img src="img/mobile_icon.png" alt="手机icon" />&nbsp; 移动</td>
+								      </tr>
+								      <tr>
+								        <td>7</td>
+								        <td>f***8n</td>
+								        <td>￥36300.00</td>
+								        <td>2015-11-30 14:13:13</td>
+								        <td><img src="img/pc_icon.png" alt="pc icon" />&nbsp; PC</td>
+								      </tr>
+								      <tr>
+								        <td>8</td>
+								        <td>f***8n</td>
+								        <td>￥36300.00</td>
+								        <td>2015-11-30 14:13:13</td>
+								        <td><img src="img/zidon_icon.png" alt="zidong icon" />&nbsp; 自动</td>
+								      </tr>
+								    </tbody>
+								  </table>
+								</div>
+					    	</div>
+					    	<div class="data_faig" style="height:80px;">数据请求失败</div>
+				    	</div>
+				    	
+				    	
+				    	<!--分页-->
+				    	<div style="width:1200px;height:auto;margin:0 auto;background:#fff;">
+							<div style="width:1200px; margin:40px auto;background:#fff;">
+					      		<table class="layui-hide" id="jinxuan" style="margin-top:20px;"></table>
+					      	</div>
+							<div class="page_box" style="padding-bottom: 30px;">
+								<span class="home_page">首页</span>
+								<span class="page_numb b_blue">1</span>
+								<span class="page_numb">2</span>
+								<span class="page_numb">3</span>
+								<span class="page_numb">4</span>
+								<span class="page_numb">5</span>
+								<span class="next_page">下一页</span>
+								<span class="last_page">末页</span>
+								<span class="all_page">共2791页</span>
+							</div>
+						</div>
+				    	<!--<div id="pages"></div>-->
+		    	    </div>
+		    	    
+		    	    
+		    	    <!--常见问题区块-->
+    				<div class="layui-tab-item">
+    					<div class="infomation">
+				    		<div class="infomation-tit"><p><span>Q</span> &nbsp;如何进行投资？</p></div>
+					    	<div class="infomation-info">
+				    			<!--<span style="color:#9db9ff;">A</span>-->
+				    			<ul>
+				    				
+				    				<li style="text-indent:24px;"><span style="color:#9db9ff;">A&nbsp;</span>1、首先，您需要注册后河财富投资人账号;</li>
+				    				<li>2、然后，请您根据平台指引填写风险测评问卷，完成风险测评；</li>
+				    				<li>3、之后，您可进入【我的账号】→【充值】界面，按照充值指引完成个人账户充值。</li>
+				    				<li>上述操作完成后，您就可以选择适合您的投资项目进行投资了。</li>
+				    			</ul>
+					    	</div>
+				    	</div>
+    					<div class="infomation">
+				    		<div class="infomation-tit"><p><span>Q</span> &nbsp;投资后什么时候开始放款和计息？</p></div>
+					    	<div class="infomation-info">
+					    		<p style="line-height: 50px;"><span>A</span> &nbsp;当您在后河财富投资的项目已满标并且成功放款的次日开始计息。</p>
+					    	</div>
+				    	</div>
+    					<div class="infomation">
+				    		<div class="infomation-tit"><p><span>Q</span> &nbsp;后河财富的起投金额是多少？</p></div>
+					    	<div class="infomation-info">
+					    		<p style="line-height: 50px;"><span>A</span> &nbsp;后河财富的项目起投金额为100元起，且需是10的倍数。</p>
+					    	</div>
+				    	</div>
+    					<div class="infomation" style="margin-bottom: 50px;">
+				    		<div class="infomation-tit"><p><span>Q</span> &nbsp;为什么投资失败了？</p></div>
+					    	<div class="infomation-info">
+					    		<p><span>A</span>&nbsp; 投资失败可能源于以下两种原因：
+					    			<ul>
+						    			<li>1、投资人账户内资金不够，需要充值；</li>
+						    			<li>2、有别的投资人先于您投资从而使此投资项目的进度达到了100%；</li>
+						    			<li>如遇其他问题导致无法投资，请联系客服人员及时为您处理，联系电话400-833-6898。</li>
+						    		</ul>
+					    		</p>
+					    		
+					    	</div>
+				    	</div>
+				    	<div class="infomation" style="margin-bottom: 50px;">
+				    		<div class="infomation-tit"><p><span>Q</span> &nbsp;目前有哪些还款方式？及其计息方式?</p></div>
+					    	<div class="infomation-info">
+					    		<p><span>A</span>&nbsp; 平台目前有四种还款方式：先息后本、等本等息、等额本息、一次性还本付息。</p>
+					    		<ul>
+						    		<li>先息后本：按月付息，到期还本，借款人每月归还的利息=借款本金*年化利率/360*30。即放款成功后，借款人在借款期限内先按期支付利息，借款到期后，按还款约定归还本金。</li>
+						    		<li>等本等息：按月偿还，借款人每月归还的本金=借款本金/借款月数，每月归还的利息=借款本金*年化利率/360*30。即放款成功后，借款人在借款期限内每月按期支付相同的本金和利息。</li>
+									<li>等额本息：按月偿还，借款人每月归还的本金=借款本金*[年化利率/360*30*(1+年利率/360*30)^借款月数]/[（1+年化利率/360*30）^借款月数-1]-上期剩余借款本金*年利率/360*30，<p>每月归还的利息=上期剩余借款本金*年化利率/360*30。即放款成功后，借款人在借款期限内按每月按期支付本金和利息。</p></li>
+									<li>一次性还本付息：到期还本付息，借款人到期应归还的本金=借款本金，到期应归还的利息=借款本金*年化利率/360*30*借款月数。即放款成功后，借款人在借款到期后，按还款约定归<p>还本金和利息。</p></li>
+					    		</ul>
+					    	</div>
+				    	</div>
+				    	<div class="infomation" style="margin-bottom: 50px;">
+				    		<div class="infomation-tit"><p><span>Q</span> &nbsp;常用协议范本？</p></div>
+					    	<div class="infomation-info">
+					    		<p class="compact">
+					    			<span>A</span><a href="借款合同.html">《借款合同》、</a>
+					    			<a href="保证合同.html">《保证合同》。</a>
+					    		</p>
+					    	</div>
+				    	</div>
+				    	
+				    	
+    				</div>
+    				<div id="honhe_Promise">
+			    		<div style="width:1200px;height:1px;background: #e7e6f6;position:relative;left:-10px;"></div>
+			    		<img src="img/cnbaozhang.png" alt="承诺图标"style="margin-left:40px;"/>
+			    		<div class="promise_txt">
+			    			<p class="promise_tit">后河财富网承诺</p>
+			    			<p class="promise_info">
+			    				以上信息全部真实有效，绝无虚假成分。出于对借款人的隐私保护，我们会对部分信息进行屏蔽。投资人拥有查阅借款人信息的权利，仅限于特殊情况。
+			    				后河财富网及其合作机构将始终秉持客观公正的原则，严控风险，最大程度的尽力确保借入者信息的真实性，但不保证审核信息100%无误，借贷者若长期逾期，其个人信息将被公布。
+			    			</p>
+		    		</div>
+			    </div>
+		</div>
+		
+    	</div>
+		<!--页脚-->
+		<div id="foot" style="background:#fff!important;height:340px;width:100%;">
+
+		     <div class="div_center">
+		         <div class="l">
+		            <ul>
+		                <span class="tit">关于后河</span>
+		                <span><a href="#">后河简介</a></span>
+		                <span><a href="#">组织信息</a></span>
+		                <span><a href="#">最新公告</a></span>
+		                <span><a href="#">联系我们</a></span>
+		            </ul>
+		             <ul>
+		                 <span class="tit">信息披露</span>
+		                 <span><a href="#">数据统计</a></span>
+		                 <span><a href="#">运营报告</a></span>
+		                 <span><a href="#">企业资质</a></span>
+		                 <span><a href="#">安全保障</a></span>
+		             </ul>
+		
+		
+		             <ul>
+		                 <span class="tit">帮助中心</span>
+		                 <span><a href="#">注册登录</a></span>
+		                 <span><a href="#">资金存管</a></span>
+		                 <span><a href="#">充值提现</a></span>
+		                 <span><a href="#">收费标准</a></span>
+		                 <!--<span><a href="#">更多>></a></span>-->
+		             </ul>
+		
+		
+		
+		             <p class="bottom-img">
+		                 <a href="http://webscan.360.cn/index/checkwebsite/url/www.honhe.com" name="19fe75e9f6557cdf26a3af658889ab7c" class="logo1" target="_blank"></a> 
+		                 <a href="http://v.pinpaibao.com.cn/authenticate/cert/?site=www.honhe.com&amp;at=business" target="_blank" class="logo2"></a>
+		             </p>
+		
+		             <div class="clear_div"></div>
+		
+		             <p class="foot_1">温馨提示：市场有风险  出借需谨慎</p>
+		             <p class="foot_2">Copyright © 2011-2018 HONHE Corporation All Rights Reserved. 版权所有 ©深圳市后河网互联网金融服务有限公司  粤ICP备13075040号</p>
+		
+		
+		
+		
+		         </div>
+		
+		
+		         <div class="r">
+		              <img src="img/webapp.png">
+		              <p class="phone_num">400-833-6898</p>
+		             <p class="time"> <span>工作日 09:00-21:00</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>周末 09:00-17:30</span> </p>
+		         </div>
+		     </div>
+		
+		
+		</div>
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<!--滚动插件-->
+		<script type="text/javascript" src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+
+		<script src="js/jquery.honhe.js"></script>
+		<!--引入layui插件-->
+		<script src="js/layui.all.js" charset="utf-8"></script>
+		<!--layui依赖模块-->
+		<script src="js/element.js" charset="utf-8"></script>
+		<script src="js/layer.js"></script>
+		
+		<!--弹窗-->
+		<script src="js/zcm.js"></script>
+		<script type="text/javascript" src="js/jquery.pack.js"></script>
+
+		<!--<script src="js/wheel.js"></script>-->
+		<script>
+			 jQuery("#nav,#nav1,#nav2").slide({
+		        type:"menu",// 效果类型，针对菜单/导航而引入的参数（默认slide）
+		        titCell:".nLi", //鼠标触发对象
+		        targetCell:".sub", //titCell里面包含的要显示/消失的对象
+		        effect:"slideDown", //targetCell下拉效果
+		        delayTime:300 , //效果时间
+		        triggerTime:0, //鼠标延迟触发时间（默认150）
+		        returnDefault:true //鼠标移走后返回默认状态，例如默认频道是“预告片”，鼠标移走后会返回“预告片”（默认false）
+		    });
+		    
+		    jQuery(".slideTxtBox").slide({trigger:"click",delayTime:0});
+		    
+		    
+		    //layui选项卡
+		    layui.use('element', function(){
+			  var $ = layui.jquery
+			  ,element = layui.element; //Tab的切换功能，切换事件监听等，需要依赖element模块
+			});
+		    
+		   	// 审核材料banner
+			$("#head_hot_goods_prave").click(function() {
+				$("#head_hot_goods_content").children("ul").animate({
+					left: "0"
+				}, 300)
+			})
+
+			$("#head_hot_goods_next").click(function() {
+				//获取li图片的长度
+				var liLen = $('#head_hot_goods_content ul').children('li').length;
+				if(liLen>6){  //当图片多余6张的时候实行滚动
+					$("#head_hot_goods_content").children("ul").animate({
+						left: "-1110px"
+					}, 300)
+				}
+				
+			})
+			
+			$("#head_hot_goods_prave").hover(function() {
+				$(this).css("color", "#ff6700");
+			}, function() {
+				$(this).css("color", "#BEBEBE");
+			})
+			$("#head_hot_goods_next").hover(function() {
+				$(this).css("color", "#ff6700");
+			}, function() {
+				$(this).css("color", "#BEBEBE");
+			})
+			
+			//投资风险提示
+			$('.btn_buy,.btn_gray').click(function() {
+				layer.open({
+					type: 1,
+					shade: [0.5, '#393D49'],
+					scrollbar: false,
+					closeBtn: 0,
+					title: false,
+					area: ['620px', '360px'],
+					content: $('.disclaimer_tip6'), //这里content是一个DOM，注意：最好该元素要存放在body最外层，否则可能被其它的相对元素所影响
+					success: function(layero, index) {
+						$("html").css("overflow","visible");
+					}
+				});
+			});
+			
+			//点击立即买入弹出开户弹框
+//			$('.btn_buy,.btn_gray').click(function() {
+//				layer.open({
+//					type: 1,
+//					shade: [0.5, '#393D49'],
+//					scrollbar: false,
+//					closeBtn: 0,
+//					title: false,
+//					area: ['620px', '360px'],
+//					content: $('.disclaimer_tip1'), //这里content是一个DOM，注意：最好该元素要存放在body最外层，否则可能被其它的相对元素所影响
+//					success: function(layero, index) {
+//						$("html").css("overflow","visible");
+//					}
+//				});
+//			});
+			//点击立即开通弹出温馨提示
+//			$('.btn_on').click(function() {
+//				layer.open({
+//					type: 1,
+//					shade: [0.5, '#393D49'],
+//					scrollbar: false,
+//					closeBtn: 0,
+//					title: false,
+//					area: ['620px', '360px'],
+//					content: $('.disclaimer_tip1_1'), //这里content是一个DOM，注意：最好该元素要存放在body最外层，否则可能被其它的相对元素所影响
+//					success: function(layero, index) {
+//						$("html").css("overflow","visible");
+//					}
+//				});
+//			});
+			
+			
+			//同意电子签名的弹窗
+//			layer.open({
+//					type: 1,
+//					shade: [0.5, '#393D49'],
+//					scrollbar: false,
+//					closeBtn: 0,
+//					title: false,
+//					area: ['500px', '260px'],
+//					content: $('.agree_accredit'), //这里content是一个DOM，注意：最好该元素要存放在body最外层，否则可能被其它的相对元素所影响
+//					success: function(layero, index) {
+////						$("html").css("overflow","visible");
+//					}
+//				});
+			//自动授权弹窗
+//			$('.btn_buy,.btn_gray').click(function() {
+//				layer.open({
+//					type: 1,
+//					shade: [0.5, '#393D49'],
+//					scrollbar: false,
+//					closeBtn: 0,
+//					title: false,
+//					area: ['620px', '600px'],
+//					content: $('.disclaimer_tip3'), //这里content是一个DOM，注意：最好该元素要存放在body最外层，否则可能被其它的相对元素所影响
+//					success: function(layero, index) {
+//						$("html").css("overflow","visible");
+//					}
+//				});
+//			});
+//			$('.btn_kt').click(function() {
+//				layer.open({
+//					type: 1,
+//					shade: [0.5, '#393D49'],
+//					scrollbar: false,
+//					closeBtn: 0,
+//					title: false,
+//					area: ['620px', '360px'],
+//					content: $('.disclaimer_tip3_3'), //这里content是一个DOM，注意：最好该元素要存放在body最外层，否则可能被其它的相对元素所影响
+//					success: function(layero, index) {
+//						$("html").css("overflow","visible");
+//					}
+//				});
+//			});
+//			告知书
+//			$('.btn_buy,.btn_gray').click(function() {
+//				layer.open({
+//					type: 1,
+//					shade: [0.5, '#393D49'],
+//					scrollbar: false,
+//					closeBtn: 0,
+//					title: false,
+//					area: ['620px', '650px'],
+//					content: $('.disclaimer_tip5'), //这里content是一个DOM，注意：最好该元素要存放在body最外层，否则可能被其它的相对元素所影响
+//					success: function(layero, index) {
+//						$("html").css("overflow","visible");
+//					}
+//				});
+//			});
+			//点击立即买入弹出用户测评弹框
+//			$('.btn_buy,.btn_gray').click(function() {
+//				layer.open({
+//					type: 1,
+//					shade: [0.5, '#393D49'],
+//					scrollbar: false,
+//					closeBtn: 0,
+//					title: false,
+//					area: ['620px', '360px'],
+//					content: $('.disclaimer_tip2'), //这里content是一个DOM，注意：最好该元素要存放在body最外层，否则可能被其它的相对元素所影响
+//					success: function(layero, index) {
+//						$("html").css("overflow","visible");
+//					}
+//				});
+//			});
+			//点击立即开通弹出测评温馨提示
+//			$('.btn_buy2').click(function() {
+//				layer.open({
+//					type: 1,
+//					shade: [0.5, '#393D49'],
+//					scrollbar: false,
+//					closeBtn: 0,
+//					title: false,
+//					area: ['620px', '360px'],
+//					content: $('.disclaimer_tip2_2'), //这里content是一个DOM，注意：最好该元素要存放在body最外层，否则可能被其它的相对元素所影响
+//					success: function(layero, index) {
+//						$("html").css("overflow","visible");
+//					}
+//				});
+//			});
+
+			//关闭弹窗
+			$('.disclaimer_tip .close').click(function() {
+				$(this).css("color", "#3a4762")
+				layer.closeAll();
+				$('.disclaimer_tip').hide()
+			});
+			
+//			点击图片放大
+			$(document).ready(function() {
+				$('.fancybox').fancybox();
+			});
+
+			//分页器
+//			layui.use(['laypage', 'layer'], function(){
+//			  var laypage = layui.laypage\n
+//			  ,layer = layui.layer;
+//			  
+//		  	//完整功能
+//			laypage.render({
+//			    elem: 'pages'
+//			    ,count: 100
+//			    ,layout: ['count', 'prev', 'page', 'next', 'limit', 'skip']
+//			    ,jump: function(obj){
+//			      console.log(obj)
+//			    }
+//		  	});
+//		  	//调用分页
+//		  laypage.render({
+//		    elem: 'pages'
+//		    ,count: data.length
+//		    ,jump: function(obj){
+//		      //模拟渲染
+//		      document.getElementById('biuuu_city_list').innerHTML = function(){
+//		        var arr = []
+//		        ,thisData = data.concat().splice(obj.curr*obj.limit - obj.limit, obj.limit);
+//		        layui.each(thisData, function(index, item){
+//		          arr.push('<li>'+ item +'</li>');
+//		        });
+//		        return arr.join('');
+//		      }();
+//		    }
+//		  });
+		  
+//		});
+		
+//		倒计时
+//		var InterValObj; //timer变量，控制时间 
+//		var count = 20; //间隔函数，1秒执行 
+//		var curCount;//当前剩余秒数 
+//		  
+//		function sendMessage() { 
+//		 　curCount = count; 
+//		　　//设置button效果，开始计时 
+//		   $("#btnSendCode").attr("disabled", "true"); 
+//		   $("#btnSendCode").val(curCount + "秒后可关闭弹框"); 
+//		   InterValObj = window.setInterval(SetRemainTime, 1000); //启动计时器，1秒执行一次 
+//		　　  
+//		  //请求后台发送验证码 TODO 
+//		  
+//		} 
+//		  
+//		//timer处理函数 
+//		function SetRemainTime() { 
+//		      if (curCount == 0) {         
+//		        window.clearInterval(InterValObj);//停止计时器 
+//		        $("#btnSendCode").removeAttr("disabled");//启用按钮 
+////		        $("#btnSendCode").val("重新发送验证码"); 
+//		      } 
+//		      else { 
+//		        curCount--; 
+//		        $("#btnSendCode").val(curCount + "秒后可关闭"); 
+//		      } 
+//		      
+//		    } 
+		</script>
+	</body>
+</html>

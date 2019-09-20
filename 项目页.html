@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+		<title>项目页</title>
+		<link rel="stylesheet" href="css/css.css" />
+		<link rel="stylesheet" href="css/user_recharge.css" />
+		<link rel="stylesheet" href="css/layui.css" />
+		<style>
+			/*项目页还款方式logo*/
+			.hk_method{
+				/*width: 60px;*/
+			    height: 20px;
+			    line-height: 20px;
+			    text-align: center;
+			    font-weight: bold;
+			    display: inline-block;
+			    padding: 0px 5px;
+		     	overflow: hidden; 
+			    border-radius: 10px;
+			    -webkit-border-radius: 10px;
+			    -moz-border-radius: 10px;
+			    -ms-border-radius: 10px;
+			     zoom: 1;
+			}
+			/*等本等息*/
+			.equal_interest{
+				border: 1px solid #3eadf4;
+			    color: #3eadf4;
+			}
+			/*先息后本*/
+			.first_interest{
+			    border: 1px solid #607ee2;
+			    color: #607ee2;
+			}
+			/*等额本息*/
+			.de_interest{
+			    border: 1px solid #e7b10e;
+			    color: #ff5539;
+			}
+			/*一次性还本付息*/
+			.one_interest{
+			    border: 1px solid #ff5539;
+			    color: #ff5539;
+			}
+			#pro_tab .title_table td {width: auto;}/*自适应宽度*/
+			#pro_tab .big_table td:nth-child(3) { text-align: center;}/*还款方式居中显示*/
+		</style>
+	</head>
+		<!-- img标签换成以下相应的div
+			<div class="hk_method equal_interest">等本等息</div>
+			<div class="hk_method first_interest">先息后本</div>
+			<div class="hk_method de_interest">等额本息</div>
+			<div class="hk_method one_interest">一次性还本付息</div>
+		-->
+	<body>
+		<div id="logo_nav" style="height:90px;">
+		    <div class="div_center">
+		                <a class="l" href="#"><img src="img/logo_bg.png"> </a>
+		                <ul id="nav" class="nav clearfix">
+		                    <li class="nLi">
+		                        <h3><a href="index.html">首页</a></h3>
+		                    </li>
+		                    <li class="nLi">
+		                        <h3><a  href="项目页.html" target="_blank">我要投资</a></h3>
+		                    </li>
+		                    <li class="nLi">
+		                        <h3><a href="http://chedai.honhe.com/" target="_blank">我要借款</a></h3>
+		                    </li>
+		                    <li class="nLi ">
+		                        <h3><a href="#" target="_blank">信息披露</a></h3>
+		                        <ul class="sub box-shadow">
+		                            <li><a href="#">安全保障</a></li>
+		                            <li><a href="#">运营披露</a></li>
+		                            <li><a href="#">关于后河</a></li>
+		                            <li><a href="信息披露-公司动态.html">公司动态</a></li>
+		                            <li><a href="信息披露-监管部门.html">监管法规</a></li>
+		                        </ul>
+		                    </li>
+		                    <li class="nLi ">
+		                        <h3><a href="#" target="_blank">我的账户</a></h3>
+		                        <ul class="sub box-shadow">
+		                            <li><a href="#">账户管理</a></li>
+		                            <li><a href="#">交易记录</a></li>
+		                        </ul>
+		                    </li>
+		                </ul>
+		    </div>
+		    <div class="clear_div"></div>
+		</div>
+		
+		<!--中间内容区域-->
+		<div id="data_buy" style="width:1200px;margin:0 auto;" >
+	       <div id="pro_tab">
+				<div class="tab_tit" style="position:relative;top:0px;width:1200px;margin:20px auto;">
+					 <a class="item-xs tab_nav hover" href="#">全部<span>(14)</span></a>
+					 <a class="item-cdb tab_nav" href="#">新手专享<span>(2)</span></a>
+					 <a class="item-netAssets tab_nav" href="#">精选项目<span>(12)</span></a>
+				</div> 
+     		</div>
+		</div>	
+		<div class="container">
+			<!--全部-->
+			<div class="quanbu">
+				<div class="pro_con bor_dashe_b" style="width:1200px;height:200px;margin:-20px auto;position: relative;">
+				     <table class="title_table float_l" border="0" width="560"  >
+				         <tr id="transfer-sy">
+				            <td class="tit" nowrap="nowrap">历史年化收益率</td> 
+				            <td><span class="inline_bt" data-value="0">全部</span></td> 
+				            <td><span data-value="1">11.4%以下</span></td> 
+				            <td><span data-value="2">11.4~12%</span></td> 
+				            <td><span data-value="3">12~18%</span></td> 
+				            <td><span data-value="4">18%以上</span></td>
+				         </tr>
+				         
+				         <tr id="transfer-qx">
+				            <td class="tit">投资期限</td> 
+				            <td><span class="inline_bt" data-value="0">全部</span></td> 
+				            <td><span data-value="1">1~3个月</span></td> 
+				            <td><span data-value="2">4~6个月</span></td> 
+				            <td><span data-value="3">7~12个月</span></td> 
+				            <td><span data-value="4">12个月以上</span></td>
+				         </tr>
+				         
+				         <tr id="transfer-repayType">
+				            <td class="tit">还款方式</td> 
+				            <td><span class="inline_bt" data-value="0">全部</span></td> 
+				            <td><span data-value="1">先息后本</span></td> 
+				            <td><span data-value="2">等本等息</span></td> 
+				            <!--<td><span data-value="3">约定本金</span></td>--> 
+				            <td>&nbsp;</td>
+				         </tr>
+				         
+				     <!--为 ECharts 准备一个具备大小（宽高）的 DOM-->
+			      		<div id="main" style="min-width: 500px;height:200px;overflow:hidden;position:absolute;top:0px;right:-80px;margin-left: 30px;">	</div>
+				     </table>
+				     <!--侧边-->
+				     <!--<div class="subhead_box ">
+	                	<div class="subhead_content ">
+	                		<div class="y_circle"></div>
+	                		<div class="road_money">代收本金(元)50055500<span>.00</span>
+	                	</div>
+	                	<div class="subhead_content ">
+	                		<div class="g_circle"></div>
+	                		<div class="road_money">代收收益(元)50055500<span>.00</span>
+	                	</div>
+	                	<div class="subhead_content ">
+	                		<div class="c_circle"></div>
+	                		<div class="road_money">冻结金额(元)50055500<span>.00</span>
+	                	</div>
+	                	<div class="subhead_content ">
+	                		<div class="b_circle"></div>
+	                		<div class="road_money">可用余额(元)50055500<span>.00</span>
+	                	</div>
+	                </div>-->
+			      
+	      			<div id="xianmu_num" style="">
+			      		<span>65752</span><br />
+			      		<span>项目数</span>
+			      	</div>
+			      
+			      	
+			      	<div class="clear0"></div>
+			      	
+			      	<!--数据列表-->
+				</div>
+				
+				<div style="width:1200px;height:auto;margin:0 auto;background:#fff;">
+					<div style="width:1200px; margin:40px auto;background:#fff;">
+			      		<table class="layui-hide" id="test" style="margin-top:20px;"></table>
+			      	</div>
+					<div class="page_box" style="padding-bottom: 30px;">
+						<span class="home_page">首页</span>
+						<span class="page_numb b_blue">1</span>
+						<span class="page_numb">2</span>
+						<span class="page_numb">3</span>
+						<span class="page_numb">4</span>
+						<span class="page_numb">5</span>
+						<span class="next_page">下一页</span>
+						<span class="last_page">末页</span>
+						<span class="all_page">共2791页</span>
+					</div>
+				</div>
+			</div>
+			
+			<!--新手专享-->
+			<div class="xinshou">
+				<div class="pro_con bor_dashe_b" style="width:1200px;height:200px;margin:-20px auto;position: relative;">
+				     <table class="title_table float_l" border="0" width="560"  >
+				         <tr id="transfer-sy">
+				            <td class="tit" nowrap="nowrap">历史年化收益率</td> 
+				            <td><span class="inline_bt" data-value="0">全部</span></td> 
+				            <td><span data-value="1">11.4%以下</span></td> 
+				            <td><span data-value="2">11.4~12%</span></td> 
+				            <td><span data-value="3">12~18%</span></td> 
+				            <td><span data-value="4">18%以上</span></td>
+				         </tr>
+				         
+				         <tr id="transfer-qx">
+				            <td class="tit">投资期限</td> 
+				            <td><span class="inline_bt" data-value="0">全部</span></td> 
+				            <td><span data-value="1">1~3个月</span></td> 
+				            <td><span data-value="2">4~6个月</span></td> 
+				            <td><span data-value="3">7~12个月</span></td> 
+				            <td><span data-value="4">12个月以上</span></td>
+				         </tr>
+				         
+				         <tr id="transfer-repayType">
+				            <td class="tit">还款方式</td> 
+				            <td><span class="inline_bt" data-value="0">全部</span></td> 
+				            <td><span data-value="1">先息后本</span></td> 
+				            <td><span data-value="2">等本等息</span></td> 
+				            <!--<td><span data-value="3">约定本金</span></td>--> 
+				            <td>&nbsp;</td>
+				         </tr>
+				     </table>
+				     
+				     <!--为 ECharts 准备一个具备大小（宽高）的 DOM-->
+			      	<div id="main1" style="width: 500px;height:200px;float:right;position:absolute;top:0px;right:-80px;margin-left: 30px;"></div>
+			      	<div id="xianmu_num" style="">
+			      		<span>65752</span><br />
+			      		<span>项目数</span>
+			      	</div>
+			      	<div class="clear0"></div>
+			      	
+				</div>
+		      	<!--数据列表-->
+				
+				<div style="width:1200px;height:auto;margin:0 auto;background:#fff;">
+					<div style="width:1200px; margin:40px auto;background:#fff;">
+			      		<table class="layui-hide" id="xinshou" style="margin-top:20px;"></table>
+			      	</div>
+					<div class="page_box" style="padding-bottom: 30px;">
+						<span class="home_page">首页</span>
+						<span class="page_numb b_blue">1</span>
+						<span class="page_numb">2</span>
+						<span class="page_numb">3</span>
+						<span class="page_numb">4</span>
+						<span class="page_numb">5</span>
+						<span class="next_page">下一页</span>
+						<span class="last_page">末页</span>
+						<span class="all_page">共2791页</span>
+					</div>
+				</div>
+			</div>
+			
+			<!--精选项目-->
+			<div class="jinxuan">
+				<div class="pro_con bor_dashe_b" style="width:1200px;height:200px;margin:-20px auto;position: relative;">
+				     <table class="title_table float_l" border="0" width="560"  >
+				         <tr id="transfer-sy">
+				            <td class="tit" nowrap="nowrap">历史年化收益率</td> 
+				            <td><span class="inline_bt" data-value="0">全部</span></td> 
+				            <td><span data-value="1">11.4%以下</span></td> 
+				            <td><span data-value="2">11.4~12%</span></td> 
+				            <td><span data-value="3">12~18%</span></td> 
+				            <td><span data-value="4">18%以上</span></td>
+				         </tr>
+				         
+				         <tr id="transfer-qx">
+				            <td class="tit">投资期限</td> 
+				            <td><span class="inline_bt" data-value="0">全部</span></td> 
+				            <td><span data-value="1">1~3个月</span></td> 
+				            <td><span data-value="2">4~6个月</span></td> 
+				            <td><span data-value="3">7~12个月</span></td> 
+				            <td><span data-value="4">12个月以上</span></td>
+				         </tr>
+				         
+				         <tr id="transfer-repayType">
+				            <td class="tit">还款方式</td> 
+				            <td><span class="inline_bt" data-value="0">全部</span></td> 
+				            <td><span data-value="1">先息后本</span></td> 
+				            <td><span data-value="2">等本等息</span></td> 
+				            <!--<td><span data-value="3">约定本金</span></td>--> 
+				            <td>&nbsp;</td>
+				         </tr>
+				     </table>
+				     
+				     <!--为 ECharts 准备一个具备大小（宽高）的 DOM-->
+			      	<div id="main2" style="width: 500px;height:200px;float:right;position:absolute;top:0px;right:-80px;margin-left: 30px;"></div>
+			      	<div id="xianmu_num" style="">
+			      		<span>65752</span><br />
+			      		<span>项目数</span>
+			      	</div>
+			      	<div class="clear0"></div>
+			      	
+			      	<!--数据列表-->
+				</div>
+				
+				<div style="width:1200px;height:auto;margin:0 auto;background:#fff;">
+					<div style="width:1200px; margin:40px auto;background:#fff;">
+			      		<table class="layui-hide" id="jinxuan" style="margin-top:20px;"></table>
+			      	</div>
+					<div class="page_box" style="text-align:center;padding-bottom: 30px;">
+						<span class="home_page">首页</span>
+						<span class="page_numb b_blue">1</span>
+						<span class="page_numb">2</span>
+						<span class="page_numb">3</span>
+						<span class="page_numb">4</span>
+						<span class="page_numb">5</span>
+						<span class="next_page">下一页</span>
+						<span class="last_page">末页</span>
+						<span class="all_page">共2791页</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<!--页脚-->
+		<div id="foot" style="height:340px;width:100%;">
+		     <div class="div_center">
+		         <div class="l">
+		            <ul>
+		                <span class="tit">关于后河</span>
+		                <span><a href="#">后河简介</a></span>
+		                <span><a href="#">组织信息</a></span>
+		                <span><a href="#">最新公告</a></span>
+		                <span><a href="#">联系我们</a></span>
+		            </ul>
+		             <ul>
+		                 <span class="tit">信息披露</span>
+		                 <span><a href="#">数据统计</a></span>
+		                 <span><a href="#">运营报告</a></span>
+		                 <span><a href="#">企业资质</a></span>
+		                 <span><a href="#">安全保障</a></span>
+		             </ul>
+		
+		
+		             <ul>
+		                 <span class="tit">帮助中心</span>
+		                 <span><a href="#">注册登录</a></span>
+		                 <span><a href="#">资金存管</a></span>
+		                 <span><a href="#">充值提现</a></span>
+		                 <span><a href="#">收费标准</a></span>
+		                 <!--<span><a href="#">更多>></a></span>-->
+		             </ul>
+		             <p class="bottom-img">
+		                 <a href="http://webscan.360.cn/index/checkwebsite/url/www.honhe.com" name="19fe75e9f6557cdf26a3af658889ab7c" class="logo1" target="_blank"></a> 
+		                 <a href="http://v.pinpaibao.com.cn/authenticate/cert/?site=www.honhe.com&amp;at=business" target="_blank" class="logo2"></a>
+		                 <!--<a href="https://seal.wosign.com/details/www.honhe.com" target="_blank" class="logo3"></a>-->
+		                 <!--<a href="http://szcert.ebs.org.cn/e8369191-dc98-4072-ad44-e02027ae725f" target="_blank" class="logo4"></a>-->
+		                 <!--<a href="https://search.szfw.org/cert/l/CX20140928005203005271" id="___szfw_logo___" target="_blank" class="logo5"></a>-->
+		               <!--<script type="text/javascript">(function(){document.getElementById('___szfw_logo___').oncontextmenu = function(){return false;}})();</script>-->
+		             </p>
+		             <div class="clear_div"></div>
+		             <p class="foot_1">温馨提示：市场有风险  出借需谨慎</p>
+		             <p class="foot_2">Copyright © 2011-2018 HONHE Corporation All Rights Reserved. 版权所有 ©深圳市后河网互联网金融服务有限公司  粤ICP备13075040号</p>
+		         </div>
+		
+		
+		         <div class="r">
+		              <img src="img/webapp.png">
+		              <p class="phone_num">400-833-6898</p>
+		             <p class="time"> <span>工作日 09:00-21:00</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>周末 09:00-17:30</span> </p>
+		         </div>
+		     </div>
+		</div>		
+
+		
+		
+		
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<!--引入Echars图表插件-->
+		<script src="js/layui.all.js"></script>
+		<script src="js/table.js"></script>
+		<script src="js/echarts.js"></script>
+		<script src="js/jquery.honhe.js"></script>
+		<script src="js/layer.js"></script>
+		<script>
+			//导航
+		    jQuery("#nav").slide({
+		        type:"menu",// 效果类型，针对菜单/导航而引入的参数（默认slide）
+		        titCell:".nLi", //鼠标触发对象
+		        targetCell:".sub", //titCell里面包含的要显示/消失的对象
+		        effect:"slideDown", //targetCell下拉效果
+		        delayTime:300 , //效果时间
+		        triggerTime:0, //鼠标延迟触发时间（默认150）
+		        returnDefault:true //鼠标移走后返回默认状态，例如默认频道是“预告片”，鼠标移走后会返回“预告片”（默认false）
+		    });
+		    
+		  	//选项卡
+		 	$("#pro_tab .tab_tit a").click(function(){
+			 	$(this).addClass("hover").siblings().removeClass("hover"); //切换选中的按钮高亮状态
+			 	var index=$(this).index(); //获取被按下按钮的索引值，需要注意index是从0开始的
+				$(".container>div").eq(index).show().siblings().hide(); //在按钮选中时在下面显示相应的内容，同时隐藏不需要的框架内容
+			});
+		    
+		     // 基于准备好的dom，初始化echarts实例
+	        var myChart = echarts.init(document.getElementById('main'));
+	        var myChart1 = echarts.init(document.getElementById('main1'));
+	        var myChart2 = echarts.init(document.getElementById('main2'));
+	
+	        // 指定图表的配置项和数据
+	        var option = {
+			    tooltip: {
+			        trigger: 'item',
+			        formatter: "{a} <br/>{b}: {c} ({d}%)"
+			    },
+			    color:['#1561ff', '#0096ff','#ff2d37','#eb6e28'] ,
+			    legend: {
+			        orient: 'vertical',
+			        x: 'left',
+			        y: 'center',
+			        //data:['投标中  562','还款中  310','已完成  1548']
+			        data:['投标中  562','还款中  310','已流标  137','已完成  1548']
+			    },
+			    series: [
+			        {
+			            name:'项目详情',
+			            type:'pie',
+			            radius: ['50%', '80%'],
+			            avoidLabelOverlap: false,
+			            label: {
+			                normal: {
+			                    show: false,
+			                    position: 'center'
+			                },
+			                emphasis: {
+			                    show: false,
+			                    textStyle: {
+			                        fontSize: '10',
+			                        fontWeight: 'bold'
+			                    }
+			                }
+			            },
+			            labelLine: {
+			                normal: {
+			                    show: false
+			                }
+			            },
+			            data:[
+			                {value:562, name:'投标中  562'},
+			                {value:310, name:'还款中  310'},
+			                {value:137, name:'已流标  137'},
+			                {value:1548, name:'已完成  1548'}
+			            ]
+			        }
+			    ]
+			};
+	        // 指定图表的配置项和数据
+	        var option1 = {
+			    tooltip: {
+			        trigger: 'item',
+			        formatter: "{a} <br/>{b}: {c} ({d}%)"
+			    },
+//			    color:['#1561ff', '#0096ff','#eb6e28'] ,
+			    color:['#1561ff', '#0096ff','#ff2d37','#eb6e28'] ,
+			    legend: {
+			        orient: 'vertical',
+			        x: 'left',
+			        y: 'center',
+//			        data:['投标中  562','还款中  310','已完成  1548']
+					data:['投标中  562','还款中  310','已流标  137','已完成  1548']
+			    },
+			    series: [
+			        {
+			        	name:'项目详情',
+			            type:'pie',
+			            radius: ['50%', '80%'],
+			            avoidLabelOverlap: false,
+			            label: {
+			                normal: {
+			                    show: false,
+			                    position: 'center'
+			                },
+			                emphasis: {
+			                    show: false,
+			                    textStyle: {
+			                        fontSize: '10',
+			                        fontWeight: 'bold'
+			                    }
+			                }
+			            },
+			            labelLine: {
+			                normal: {
+			                    show: false
+			                }
+			            },
+			            data:[
+			                {value:562, name:'投标中  562'},
+			                {value:310, name:'还款中  310'},
+			                {value:137, name:'已流标  137'},
+			                {value:1548, name:'已完成  1548'}
+			            ]
+			        }
+			    ]
+			};
+	        // 指定图表的配置项和数据
+	        var option2 = {
+			    tooltip: {
+			        trigger: 'item',
+			        formatter: "{a} <br/>{b}: {c} ({d}%)"
+			    },
+			    color:['#1561ff', '#0096ff','#ff2d37','#eb6e28'] ,
+			    legend: {
+			        orient: 'vertical',
+			        x: 'left',
+			        y: 'center',
+			        data:['投标中  562','还款中  310','已流标  137','已完成  1548']
+			    },
+			    series: [
+			        {
+			            name:'项目详情',
+			            type:'pie',
+			            radius: ['50%', '80%'],
+			            avoidLabelOverlap: false,
+			            label: {
+			                normal: {
+			                    show: false,
+			                    position: 'center'
+			                },
+			                emphasis: {
+			                    show: false,
+			                    textStyle: {
+			                        fontSize: '10',
+			                        fontWeight: 'bold'
+			                    }
+			                }
+			            },
+			            labelLine: {
+			                normal: {
+			                    show: false
+			                }
+			            },
+			            data:[
+			                {value:562, name:'投标中  562'},
+			                {value:310, name:'还款中  310'},
+			                {value:137, name:'已流标  137'},
+			                {value:1548, name:'已完成  1548'}
+			            ]
+			        }
+			    ]
+			};
+	
+	        // 使用刚指定的配置项和数据显示图表。
+	        myChart.setOption(option);
+	        myChart1.setOption(option1);
+	        myChart2.setOption(option2);
+	        
+	        
+			//全部数据表格
+	        layui.use('table', function(){
+			  var table = layui.table;
+			  
+			  table.render({
+			    elem: '#test'	//挂载点
+			    ,url:'./js/all.json'  //数据接口
+//	    		, page: true	//分页
+//				, height: 500  //数据渲染高度
+			    ,cellMinWidth: 100 //全局定义常规单元格的最小宽度，layui 2.2.1 新增
+			    ,cols: [[  //设置表头
+			      {field:'projects', title: '投资项目'}
+			      ,{field:'earnings', title: '历史年化收益', sort: true, align: 'center'} //width 支持：数字、百分比和不填写。你还可以通过 minWidth 参数局部定义当前单元格的最小宽度，layui 2.2.1 新增
+			      ,{field:'comemomey', title: '还款方式',align: 'center'}
+			      ,{field:'time', title: '期限', sort: true, align: 'center'}
+			      ,{field:'money', title: '可投金额', sort: true, align: 'center'}
+			      ,{field:'invest', title: '操作', align: 'center'}
+			    ]]
+			  });
+			  
+			  //  新手专享数据列表
+			  table.render({
+			    elem: '#xinshou'	//挂载点
+			    ,url:'./js/novice.json'  //数据接口
+//	    		, page: true	//分页
+//				, height: 500  //数据渲染高度
+			    ,cellMinWidth: 100 //全局定义常规单元格的最小宽度，layui 2.2.1 新增
+			    ,cols: [[  //设置表头
+			      {field:'projects', title: '投资项目'}
+			      ,{field:'earnings', title: '历史年化收益', sort: true, align: 'center'} //width 支持：数字、百分比和不填写。你还可以通过 minWidth 参数局部定义当前单元格的最小宽度，layui 2.2.1 新增
+			      ,{field:'comemomey', title: '还款方式',align: 'center'}
+			      ,{field:'time', title: '期限', sort: true, align: 'center'}
+			      ,{field:'money', title: '可投金额', sort: true, align: 'center'}
+			      ,{field:'invest', title: '操作', align: 'center'}
+			    ]]
+			  });
+			  //精选项目数据列表
+			  table.render({
+			    elem: '#jinxuan'	//挂载点
+			    ,url:'./js/select.json'  //数据接口
+//	    		, page: true	//分页
+//				, height: 500  //数据渲染高度
+			    ,cellMinWidth: 100 //全局定义常规单元格的最小宽度，layui 2.2.1 新增
+			    ,cols: [[  //设置表头
+			      {field:'projects', title: '投资项目'}
+			      ,{field:'earnings', title: '历史年化收益', sort: true, align: 'center'} //width 支持：数字、百分比和不填写。你还可以通过 minWidth 参数局部定义当前单元格的最小宽度，layui 2.2.1 新增
+			      ,{field:'comemomey', title: '还款方式',align: 'center'}
+			      ,{field:'time', title: '期限', sort: true, align: 'center'}
+			      ,{field:'money', title: '可投金额', sort: true, align: 'center'}
+			      ,{field:'invest', title: '操作', align: 'center'}
+			    ]]
+			  });
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,54 @@
+
+
+    
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="后河财富">
+	<meta name="description" content="专注汽车金融，安全、透明、灵活的P2P网贷平台">
+	<title>后河财富 - 404</title>
+	<!--标题img-->
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
+	<link rel="stylesheet" type="text/css" href="css/404publie.css">
+	<link rel="stylesheet" type="text/css" href="css/error.css">
+</head>
+
+<body>
+	<div id="error">
+		<div class="inner">
+			<a href="/" class="logo"><img src="img/logo_bg.png" alt=""></a>
+			<h1 class="error-code" style=""><span>404</span></h1>
+			<h2 class="error-infor">哎呀...你访问的页面不存在</h2>
+			<p class="error-tip">页面将在 <span class="error-timeout"></span> 秒钟自动跳转到首页</p>
+			<p class="error-btn"><a href="../new_honhe/index.html" class="btn-deeporange">立即返回首页</a></p>
+		</div>
+		<div class="error-copyright">
+			<p>Copyright © 2011-2017 HONHE Corporation All Rights Reserved.</p>
+			<p>深圳市后河网互联网金融服务有限公司</p>
+			<p>粤ICP备13075040号-4</p>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/backstret.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$('#error').backstretch('img/download.jpg');
+		var count = 10,turnURL= 'index.html'; //十秒后跳转路径
+		$('.error-timeout').html(count);
+		$('body').height($(window).height());
+		setInterval(errorTimeout, 1000);
+		function errorTimeout() {
+			count == 0 ? window.location.href = turnURL : count--;
+			$('.error-timeout').html(count);
+		}
+
+		$(window).resize(function() {
+			$('body').height($(window).height());
+			$('#error').backstretch('resize');
+		});
+	});
+</script>
+</html>

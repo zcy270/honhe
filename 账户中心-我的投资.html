@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>我的投资</title>
+		<link type="text/css" rel="stylesheet" href="css/css.css">
+		<!--我的css-->
+		<link rel="stylesheet" type="text/css" href="css/zcm.css" />
+		<link rel="stylesheet" type="text/css" href="css/calendar.css" />
+		<link rel="stylesheet" type="text/css" href="css/my_investment.css" />
+		<style>
+			.item_list_box .item_list .returned_money {
+				width: 75px;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<!--以下是公共头部-->
+		<!--以下是公共头部-->
+		<!--以下是公共头部-->
+		<!--以下是公共头部-->
+
+		<!--<div id="home_top_little_nav">
+			<div class="div_center">
+				<div class="l">客服热线 400-833-6898</div>
+
+				<ul class="r">
+					<li>
+						<a href="#">免费注册</a>
+					</li>
+					<li>
+						<a href="#">登录</a>
+					</li>
+					<li>
+						<a href="#">帮助中心</a>
+					</li>
+					<li>
+						<a href="#">关于我们</a>
+					</li>
+				</ul>
+			</div>
+		</div>-->
+
+		<div id="logo_nav">
+			<div class="div_center">
+				<a class="l" href="#"><img src="img/logo_bg.png"> </a>
+
+				<ul id="nav" class="nav clearfix">
+					<li class="nLi">
+						<h3><a href="#" target="_blank">首页</a></h3>
+					</li>
+					<li class="nLi">
+						<h3><a href="#" target="_blank">我要投资</a></h3>
+						<ul class="sub">
+							<li>
+								<a href="#">新闻首页</a>
+							</li>
+							<li>
+								<a href="#">新闻人物</a>
+							</li>
+							<li>
+								<a href="#">新闻电视</a>
+							</li>
+							<li>
+								<a href="#">新闻图片</a>
+							</li>
+							<li>
+								<a href="#">新闻视频</a>
+							</li>
+							<li>
+								<a href="# ">新闻专题</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nLi">
+						<h3><a href="#" target="_blank">我要借款</a></h3>
+						<ul class="sub">
+							<li>
+								<a href="#">新闻首页</a>
+							</li>
+							<li>
+								<a href="#">新闻人物</a>
+							</li>
+							<li>
+								<a href="#">新闻电视</a>
+							</li>
+							<li>
+								<a href="#">新闻图片</a>
+							</li>
+							<li>
+								<a href="#">新闻视频</a>
+							</li>
+							<li>
+								<a href="# ">新闻专题</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nLi ">
+						<h3><a href="#" target="_blank">信息披露</a></h3>
+						<ul class="sub">
+							<li>
+								<a href="#">新闻首页</a>
+							</li>
+							<li>
+								<a href="#">新闻人物</a>
+							</li>
+							<li>
+								<a href="#">新闻电视</a>
+							</li>
+							<li>
+								<a href="#">新闻图片</a>
+							</li>
+							<li>
+								<a href="#">新闻视频</a>
+							</li>
+							<li>
+								<a href="# ">新闻专题</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nLi">
+						<h3><a  href="#" target="_blank">我的账户</a></h3>
+						<ul class="sub">
+							<li>
+								<a href="#">新闻首页</a>
+							</li>
+							<li>
+								<a href="#">新闻人物</a>
+							</li>
+							<li>
+								<a href="#">新闻电视</a>
+							</li>
+							<li>
+								<a href="#">新闻图片</a>
+							</li>
+							<li>
+								<a href="#">新闻视频</a>
+							</li>
+							<li>
+								<a href="# ">新闻专题</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="clear_div"></div>
+		</div>
+
+		<!--以上是公共头部-->
+		<!--以上是公共头部-->
+		<!--以上是公共头部-->
+		<!--以上是公共头部-->
+		<div class="main_box w1200">
+			<div class="main_l float_l">
+				<div class="main_l_top">
+					<img src="img/portrait_03.png" />
+					<p class="user_name">HONHE</p>
+					<ul class="user_icon ">
+						<li>
+							<a class="icon1 public_img hover"></a>
+						</li>
+						<li>
+							<a class="icon2 public_img hover"></a>
+						</li>
+						<li>
+							<a class="icon3 public_img "></a>
+						</li>
+						<li>
+							<a class="icon4 public_img "></a>
+						</li>
+						<li>
+							<a class="icon5 public_img "></a>
+						</li>
+					</ul>
+					<div id="safe_load">
+						<div class="inner_load"></div>
+					</div>
+
+					<p class="safe_txt">安全等级 <span>高</span></p>
+				</div>
+				<div class="item_box">
+					<div class="item_header cli">资金管理<i class="arrows_btom "></i></div>
+					<div class="item_content_box" style="display: none;">
+						<div class="account ">账户概览</div>
+						<div class="money_draw">交易记录</div>
+						<div class="money_record">回款记录</div>
+					</div>
+				</div>
+				<div class="item_box">
+					<div class="item_header cli">投资管理<i class="arrows_btom rotate90"></i></div>
+					<div class="item_content_box" style="display: block;">
+						<div class="account hover">我的投资</div>
+						<div class="draw_money ">自动投资</div>
+					</div>
+				</div>
+				<div class="item_box">
+					<div class="item_header cli">我的账户<i class="arrows_btom "></i></div>
+					<div class="item_content_box" style="display: none;">
+						<div class="account">个人信息</div>
+						<div class="draw_money ">安全中心</div>
+						<div class="money_record">消息中心</div>
+					</div>
+				</div>
+
+			</div>
+
+			<!--右边的内容框-->
+			<div class="main_r float_r ">
+				<div class="safety_header ">
+					<p>我的投资</p>
+				</div>
+				<div class="money_content">
+					<div class="money_lef">
+						<p class="total_revenue">25,605,560.00</p>
+						<p class="total_txt">历史总收益(元)</p>
+					</div>
+					<div class="money_rig">
+						<p class="total_revenue">25,605,560.00</p>
+						<p class="total_txt">历史总投资(元)</p>
+					</div>
+				</div>
+				<div style="height: 15px;width: 964px;background: #eaedf2;"></div>
+				
+				<!--<div class="none_box" style="width: 964px;min-height: 664px;display: none;">
+					<div class="page_header">
+						<div class="page">持有中</div>
+						<div class="page hover">投标中</div>
+						<div class="page">已结清</div>
+					</div>
+					<div class="choice_box" ">
+						<img src="img/none_icon.png" style="margin-top: 140px; margin-bottom: 20px;"/>
+						<p style="color: #c2c7d3;font-size: 20px;">暂无交易明细</p>
+					</div>
+				</div>-->
+				
+				
+				
+				<div class="content_box" style="display: block;">
+					<div class="page_header">
+						<div class="page">持有中</div>
+						<div class="page hover">投标中</div>
+						<div class="page">已结清</div>
+					</div>
+					
+					
+					<!--没有的-->
+					<div class="my_list_box" style="width: 964px;min-height: 664px;text-align: center;display: none;">
+							<img src="img/none_icon.png" style="margin-top: 140px;margin-bottom: 20px;" />
+							<p style="color: #c2c7d3;font-size: 20px;">暂无交易明细</p>
+					</div>
+					
+					<!--有的-->
+					<div class="my_list_box" style="display: block;">
+						<div class="choice_box">
+							<div class="choice_slet1">排序</div>
+							<a class="choice_slet2 hover" href="#">按期限<i class="jt_icon "></i></a>
+							<a class="choice_slet3" href="#">按时间<i class="jt_icon"></i></a>
+							<div class="time_box">
+								<!--<a class="time_txt"><span class="tttext">投资日期</span><span class="sx_day"></span><div class="slet_down">
+									<span id="">投资日期</span>
+									<span id="">回款日期</span>
+								</div></a>-->
+								<span style="height: 30px;line-height: 32px;float: left;color: #8c93a2;font-size: 14px;">投资起止日期：</span>
+								<div id="demo">
+									<input type="text" id="dt" placeholder="开始日期">
+									<div id="dd"></div>
+								</div>
+								<div class="heng">-</div>
+								<div id="demo1">
+									<input type="text" id="dt1" placeholder="结束日期">
+									<div id="dd1"></div>
+								</div>
+								<span class="sub_btn" style="width: 50px;height: 30px;line-height: 30px;text-align: center;">查询</span>
+							</div>
+						</div>
+						<div class="item_nav">
+							<div class="item_name">项目名称</div>
+							<div class="item_capital">投入本金(元)</div>
+							<div class="annualized_returns">历史年化收益(%)</div>
+							<div class="returned_money">回款方式</div>
+							<div class="add_day">日期</div>
+							<div class="settle_day">结清日期</div>
+							<div class="actual_income">实际收益(元)</div>
+							<div class="operation">操作</div>
+						</div>
+						<ul class="item_list_box">
+							<div class="list_box" style="text-align: center;display: inline-block;">
+								<img src="img/none_icon.png" style="margin-top: 140px;margin-bottom: 20px;" />
+								<p style="color: #c2c7d3;font-size: 20px; margin-bottom: 187px;">暂无交易明细</p>
+							</div>
+							
+							<div class="list_box" style="display: inline-block;">
+								<li class="item_list">
+									<div class="item_name"><a>资金周转16万-汽车质押</a></div>
+									<div class="item_capital">
+										<p class="principal">8,88.00</p>
+										<div class="cash_coupon">含代金券<span>132221.55</span></div>
+									</div>
+									<div class="annualized_returns">10.8+1.6</div>
+									
+									<div class="returned_money">到期还本付息</div>
+									<div class="add_day">2017.05.04</div>
+									<div class="settle_day">2017.05.04</div>
+									<div class="actual_income">
+										<p class="gross_interest">总利息 4.39</p>
+										<p class="income_net">纯收益 4.39</p>
+									</div>
+									<div class="operation">
+										<a class="particulars">明细<i class="xl"></i></a>
+										<span class="xl" >
+											<div class="dang"></div>
+											<div class="xl_list">
+												<p class="list_1">借款合同</p>
+												<p class="list_1">查看保全信息</p>
+												<p class="list_1">查看保全信息</p>
+											</div>
+										</span>
+									</div>
+								</li>
+								<ul class="particulars_box">
+									<div class="particulars_header">
+										<div class="day_num">期数</div>
+										<div class="return_day">回款日期</div>
+										<div class="receivable">应收本息</div>
+										<div class="receivable_money">应收本金</div>
+										<div class="receivable_interest">应收利息</div>
+										<div class="service_charge">服务费</div>
+										<div class="practical_collect">实际应收</div>
+										<div class="status">状态</div>
+									</div>
+									<li class="particulars_list">
+										<div class="day_num">1</div>
+										<div class="return_day">2017-12-27</div>
+										<div class="receivable">0.96</div>
+										<div class="receivable_money">0.00</div>
+										<div class="receivable_interest">0.96</div>
+										<div class="service_charge">0.10</div>
+										<div class="practical_collect">0.86</div>
+										<div class="status">等待回款</div>
+									</li>
+									<li class="particulars_list">
+										<div class="day_num">1</div>
+										<div class="return_day">2017-12-27</div>
+										<div class="receivable">0.96</div>
+										<div class="receivable_money">0.00</div>
+										<div class="receivable_interest">0.96</div>
+										<div class="service_charge">0.10</div>
+										<div class="practical_collect">0.86</div>
+										<div class="status">等待回款</div>
+									</li>
+								</ul>
+							</div>
+							<div class="list_box">
+								<li class="item_list">
+									<div class="item_name">资金周转16万-汽车质押</div>
+									<div class="item_capital">
+										<div class="principal">8,888,888.00</div>
+										<div class="cash_coupon">含代金券<span>131.55</span></div>
+									</div>
+									<div class="annualized_returns">10.8+1.6</div>
+									
+									<div class="returned_money">先息后本</div>
+									<div class="add_day">2017.05.04</div>
+									<div class="settle_day">2017.05.04</div>
+									<div class="actual_income">
+										<p class="gross_interest">总利息 4.39</p>
+										<p class="income_net">纯收益 4.39</p>
+									</div>
+									<div class="operation">
+										<a class="particulars">明细<i class="xl"></i></a>
+										<span class="xl" >
+											<div class="dang"></div>
+											<div class="xl_list">
+												<p class="list_1">借款合同</p>
+												<p class="list_1">查看保全信息</p>
+												<p class="list_1">查看保全信息</p>
+											</div>
+										</span>
+									</div>
+								</li>
+								<ul class="particulars_box">
+									<div class="particulars_header">
+										<div class="day_num">期数</div>
+										<div class="return_day">回款日期</div>
+										<div class="receivable">应收本息</div>
+										<div class="receivable_money">应收本金</div>
+										<div class="receivable_interest">应收利息</div>
+										<div class="service_charge">服务费</div>
+										<div class="practical_collect">实际应收</div>
+										<div class="status">状态</div>
+									</div>
+									<li class="particulars_list">
+										<div class="day_num">1</div>
+										<div class="return_day">2017-12-27</div>
+										<div class="receivable">0.96</div>
+										<div class="receivable_money">0.00</div>
+										<div class="receivable_interest">0.96</div>
+										<div class="service_charge">0.10</div>
+										<div class="practical_collect">0.86</div>
+										<div class="status">等待回款</div>
+									</li>
+									<li class="particulars_list">
+										<div class="day_num">1</div>
+										<div class="return_day">2017-12-27</div>
+										<div class="receivable">0.96</div>
+										<div class="receivable_money">0.00</div>
+										<div class="receivable_interest">0.96</div>
+										<div class="service_charge">0.10</div>
+										<div class="practical_collect">0.86</div>
+										<div class="status">等待回款</div>
+									</li>
+								</ul>
+							</div>
+							<div class="list_box">
+								<li class="item_list">
+									<div class="item_name">资金周转16万-汽车质押</div>
+									<div class="item_capital">
+										<div class="principal">8,888,888.00</div>
+										<div class="cash_coupon">含代金券<span>131.55</span></div>
+									</div>
+									<div class="annualized_returns">10.8+1.6</div>
+									
+									<div class="returned_money">先息后本</div>
+									<div class="add_day">2017.05.04</div>
+									<div class="settle_day">2017.05.04</div>
+									<div class="actual_income">
+										<p class="gross_interest">总利息 4.39</p>
+										<p class="income_net">纯收益 4.39</p>
+									</div>
+									<div class="operation">
+										<a class="particulars">明细<i class="xl"></i></a>
+										<span class="xl" >
+											<div class="dang"></div>
+											<div class="xl_list">
+												<p class="list_1">借款合同</p>
+												<p class="list_1">查看保全信息</p>
+												<p class="list_1">查看保全信息</p>
+											</div>
+										</span>
+									</div>
+								</li>
+								<ul class="particulars_box">
+									<div class="particulars_header">
+										<div class="day_num">期数</div>
+										<div class="return_day">回款日期</div>
+										<div class="receivable">应收本息</div>
+										<div class="receivable_money">应收本金</div>
+										<div class="receivable_interest">应收利息</div>
+										<div class="service_charge">服务费</div>
+										<div class="practical_collect">实际应收</div>
+										<div class="status">状态</div>
+									</div>
+									<li class="particulars_list">
+										<div class="day_num">1</div>
+										<div class="return_day">2017-12-27</div>
+										<div class="receivable">0.96</div>
+										<div class="receivable_money">0.00</div>
+										<div class="receivable_interest">0.96</div>
+										<div class="service_charge">0.10</div>
+										<div class="practical_collect">0.86</div>
+										<div class="status">等待回款</div>
+									</li>
+									<li class="particulars_list">
+										<div class="day_num">1</div>
+										<div class="return_day">2017-12-27</div>
+										<div class="receivable">0.96</div>
+										<div class="receivable_money">0.00</div>
+										<div class="receivable_interest">0.96</div>
+										<div class="service_charge">0.10</div>
+										<div class="practical_collect">0.86</div>
+										<div class="status">等待回款</div>
+									</li>
+								</ul>
+							</div>
+							
+							
+						<div class="page_box">
+							<span class="home_page">首页</span>
+							<span class="page_numb">1</span>
+							<span class="page_numb">2</span>
+							<span class="page_numb">3</span>
+							<span class="page_numb b_blue">4</span>
+							<span class="page_numb">5</span>
+							<span class="next_page">下一页</span>
+							<span class="last_page">末页</span>
+							<span class="all_page">共2791页</span>
+						</div>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<!--以下是底部公共部分-->
+		<!--以下是底部公共部分-->
+		<!--以下是底部公共部分-->
+		<div class="clear_div"></div>
+
+		<div id="foot" style="background:#fff;height:340px;width:100%;">
+		     <div class="div_center">
+		         <div class="l">
+		            <ul>
+		                <span class="tit">关于后河</span>
+		                <span><a href="#">后河简介</a></span>
+		                <span><a href="#">组织信息</a></span>
+		                <span><a href="#">最新公告</a></span>
+		                <span><a href="#">联系我们</a></span>
+		            </ul>
+		             <ul>
+		                 <span class="tit">信息披露</span>
+		                 <span><a href="#">数据统计</a></span>
+		                 <span><a href="#">运营报告</a></span>
+		                 <span><a href="#">企业资质</a></span>
+		                 <span><a href="#">安全保障</a></span>
+		             </ul>
+		
+		
+		             <ul>
+		                 <span class="tit">帮助中心</span>
+		                 <span><a href="#">注册登录</a></span>
+		                 <span><a href="#">资金存管</a></span>
+		                 <span><a href="#">充值提现</a></span>
+		                 <span><a href="#">收费标准</a></span>
+		                 <!--<span><a href="#">更多>></a></span>-->
+		             </ul>
+		
+		
+		
+		             <p class="bottom-img">
+		                 <a href="https://seal.wosign.com/details/www.honhe.com" target="_blank" class="logo1"></a>
+		                 <a href="http://szcert.ebs.org.cn/e8369191-dc98-4072-ad44-e02027ae725f" target="_blank" class="logo2"></a>
+		             </p>
+		
+		             <div class="clear_div"></div>
+		
+		             <p class="foot_1">温馨提示：市场有风险  出借需谨慎</p>
+		             <p class="foot_2">Copyright © 2011-2018 HONHE Corporation All Rights Reserved. 版权所有 ©深圳市后河网互联网金融服务有限公司  粤ICP备13075040号</p>
+		
+		
+		
+		
+		         </div>
+				
+		
+		         <div class="r">
+		              <img src="img/webapp.png">
+		              <p class="phone_num">400-833-6898</p>
+		             <p class="time"> <span>工作日 09:00-21:00</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>周末 09:00-17:30</span> </p>
+		         </div>
+		     </div>
+		</div>
+
+		<!--以上是底部公共部分-->
+		<!--以上是底部公共部分-->
+		<!--以上是底部公共部分-->
+
+	</body>
+	<script src="js/jquery-1.11.3.min.js"></script>
+
+	<script src="js/jquery.honhe.js"></script>
+	<!--首页的 导航 选项卡 轮播图需引入-->
+	<script src="js/zcm.js"></script>
+	<script src="src/calendar.js"></script>
+	<script>
+		//导航
+		jQuery("#nav").slide({
+			type: "menu", // 效果类型，针对菜单/导航而引入的参数（默认slide）
+			titCell: ".nLi", //鼠标触发对象
+			targetCell: ".sub", //titCell里面包含的要显示/消失的对象
+			effect: "slideDown", //targetCell下拉效果
+			delayTime: 300, //效果时间
+			triggerTime: 0, //鼠标延迟触发时间（默认150）
+			returnDefault: true //鼠标移走后返回默认状态，例如默认频道是“预告片”，鼠标移走后会返回“预告片”（默认false）
+		});
+
+		//日历控件
+		$('#dd').calendar({
+			trigger: '#dt',
+			zIndex: 999,
+			format: 'yyyy-mm-dd',
+		});
+		$('#dd1').calendar({
+			trigger: '#dt1',
+			zIndex: 999,
+			format: 'yyyy-mm-dd',
+		});
+
+		//点击详细展开
+		$(".particulars").on("click", function() {
+			$(this).children(".xl").toggleClass("hover")
+			if($(this).parent().parent().next(".particulars_box").css("display") == "none") {
+				$(this).parent().parent().next(".particulars_box").show(300);
+			} else {
+				$(this).parent().parent().next(".particulars_box").hide(300);
+			}
+			//	    	$(".particulars_box").hide()
+			//	    	$(this).parent().siblings(".particulars_box").show();
+
+		})
+		
+		//点击下拉
+		$(".time_txt").on("click",function(){
+			$(this).children(".sx_day").toggleClass("hover");
+			$(".slet_down").toggleClass("show");
+			
+		})
+		$(".slet_down span").on("click",function(){
+			$(".time_txt").children(".tttext").text($(this).text())
+		})
+		
+		//		$(window).scroll(function(){
+		//			console.log($('#foot').offset().top-$(document).scrollTop())
+		//			if($('#foot').offset().top-$(document).scrollTop()<=950){
+		//				console.log(1)
+		//			}
+		//		})
+		
+		$(".days").on("click","li",function(){
+			console.log($(this).text())
+		})
+		
+		//排序
+		$(".choice_box>a").click(function(){
+			if($(this).hasClass("hover")){
+				$(this).removeClass("hover").addClass("inversion");
+			}else if($(this).hasClass("inversion")){
+				$(this).removeClass("inversion").addClass("hover");
+			}else{
+				$(this).addClass("hover").siblings().removeClass("hover").removeClass("inversion");
+			}
+		})
+		
+		
+		
+	</script>
+
+</html>

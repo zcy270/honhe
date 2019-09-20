@@ -1,0 +1,44 @@
+/*合同页*/
+			.text_box{
+				height: 866px;
+				width: 1140px;
+				margin: 30px auto;
+				padding: 50px 0px 0px 60px;
+				background-color: #fff;
+			}
+			.text_content{
+				width: 1018px;
+			    height: 620px;
+			    border: solid 1px #eaedf2;
+			    overflow: scroll;
+			    overflow-x: hidden;
+			    padding: 30px;
+			}
+			.text_box .header_top1 {
+			    color: #3A4762;
+			    font-size: 20px;
+			    margin-bottom: 40px;
+			}
+			.text_content p{
+				font-size:14px ;
+				line-height: 40px;
+				letter-spacing: 0px;
+				color: #8c93a2;
+			}
+			.text_box .header_top1{
+				color: #18284b;
+				font-size: 28px;
+			}
+			#help_number {
+				margin: 0 auto;
+			    margin-bottom: 20px;
+			    padding: 40px;
+			    width: 1120px;
+			    background: #fff;
+			}
+			#help_number .float_r p{ text-align:right;}
+			#help_number p{ line-height:26px;}
+			.clear0 {
+			    height: 0px;
+			    clear: both;
+			}

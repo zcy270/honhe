@@ -1,0 +1,11 @@
+#error {width: 100%; height: 100%; position: relative;}
+#error .inner {padding-top: 35px;}
+.logo {display: block; margin: 0 auto; width: 392px;}
+.error-code {font-size: 120px; text-align: center; padding-top: 100px;}
+/*.error-code>span{display: none;}*/
+.error-infor {font-size: 24px; text-align: center; padding-top: 30px; font-weight: bold;}
+.error-tip {font-size: 14px; text-align: center; padding-top: 30px;}
+.error-tip .error-timeout {color: #ff8a00;}
+.error-btn {text-align: center; padding-top: 50px;}
+.error-btn .btn-deeporange {padding: 14px 25px; font-size: 14px; margin: 0 auto; border-radius: 8px;}
+.error-copyright {position: absolute; bottom: 50px; width: 100%; text-align: center; line-height: 24px; color: #ffffff;}

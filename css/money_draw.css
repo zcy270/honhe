@@ -1,0 +1,167 @@
+.overview_box{
+	height: 110px;
+	padding:35px 0px 0px 74px;
+}
+.all_recharge{
+	width: 280px;
+	height: 100px;
+	float: left;
+}
+.all_recharge_numb{
+	font-family: AvantGuardRegularSWFTE;
+	text-align: center;
+	font-size: 32px;
+	height: 50px;
+}
+.all_recharge_tip{
+	height: 20px;
+	font-size: 12px;
+	line-height: 20px;
+	text-align: center;
+	color: #8c93a2;
+}
+.all_deal{
+	width: 280px;
+	height: 100px;
+	float: left;
+}
+.all_deal_numb{
+	font-family: AvantGuardRegularSWFTE;
+	text-align: center;
+	font-size: 32px;
+	height: 50px;
+}
+.all_deal_tip{
+	height: 20px;
+	font-size: 12px;
+	line-height: 20px;
+	text-align: center;
+	color: #8c93a2;
+}
+.kkk{
+	height: 15px;
+	width: 964px;
+	background: #eaedf2;
+}
+.draw_content_box{
+	width: 964px;
+}
+.list_heder_box{
+	width: 964px;
+	height: 64px;
+	margin-bottom: 30px;
+    background-color: #f7faff;
+}
+.list_heder{
+	width: 166px;
+	height: 61px;
+	line-height: 64px;
+	text-align: center;
+	font-size: 16px;
+	float: left;
+	background-color: #f7faff;
+	color: #8c93a2;
+}
+.list_heder.layui-this{
+	border-top: 3px solid #eb6e28;
+	color:#eb6e28;
+	height: 61px;
+	background-color: #fff;
+}
+.draw_list_box{
+	width: 964px;
+}
+.list_nav{
+	width: 964px;
+	height: 40px;
+	background-color: #f9f9f9;
+}
+.draw_list_box1 .list_nav div{
+	width: 20%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	float: left;
+	color: #8c93a2;
+}
+.draw_list_box2 .list_nav div{
+	width: 25%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	float: left;
+	color: #8c93a2;
+}
+.draw_list_box3 .list_nav div{
+	width: 14%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	float: left;
+	color: #8c93a2;
+}
+
+.draw_list_box3 .list_details .list_balance1{
+	width: 30%;
+}
+.list_details{
+	height: 50px;
+}
+.list_details div{
+	width: 192px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	float: left;
+	color: #8c93a2;
+}
+.draw_list_box3 .list_details div{
+	width: 14%;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	float: left;
+}
+.draw_list_box2 .list_details div{
+	width: 25%;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	float: left;
+}
+.draw_list_box1 .list_details div{
+	width: 20%;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	float: left;
+}
+.list_details:nth-of-type(even){
+	background-color: #f7faff;
+} 
+.list_details .list_sum_red{
+	color: #ee3030;
+}
+.list_details .list_sum_green{
+	color: #25d3b0;
+}
+.list_details:last-child{
+	margin-bottom: 30px;
+}
+
+
+.layui-tab-title li {
+    padding: 0px!important;
+    font-size: 16px!important;
+    color: #3a4762;
+    line-height: 65px;
+    border-top: 3px solid #f7faff;
+    cursor: pointer;
+}
+.layui-tab {
+    margin:0;
+    text-align: left!important;
+}
+.layui-tab-content {
+    padding: 0px;
+}

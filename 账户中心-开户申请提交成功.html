@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+		<title>开通存管账户</title>
+
+		<link type="text/css" rel="stylesheet" href="css/css.css">
+		<style>
+			select {
+				border: solid 1px #000;
+				appearance: none;
+				-moz-appearance: none;
+				-webkit-appearance: none;
+				background: url("img/selet_xl.png") no-repeat scroll 315px center transparent;
+				padding-right: 14px;
+			}
+			
+			select::-ms-expand {
+				display: none;
+			}
+			select:focus{
+				border: solid 1px #607ee2;
+			}
+			html {
+				background: #002fd1 url("img/account_bg.jpg") no-repeat center;
+				background-size: 100% 100%;
+			}
+			
+			#body_inner {
+				background: #002fd1 url("img/account_bg.jpg") no-repeat center;
+				height: 1040px;
+			}
+			
+			.layui-layer-page .layui-layer-content {
+				overflow: inherit;
+			}
+			
+			.input {
+				display: inline-block;
+			}
+			
+			.input1:last-child {
+				border-right: 1px solid #999;
+			}
+			
+			.input1 {
+				border-top: 1px solid #999;
+				border-bottom: 1px solid #999;
+				border-left: 1px solid #999;
+				width: 46px;
+				height: 46px;
+				outline: none;
+				font-family: inherit;
+				font-size: 28px;
+				font-weight: inherit;
+				text-align: center;
+				line-height: 45px;
+				color: #c2c2c2;
+				background: rgba(255, 255, 255, 0);
+			}
+			.stars_txt{
+			    font-size: 25px;
+			    font-weight: bold;
+			    text-align: center;
+			    margin-bottom: 30px;
+			}
+			.success_img img{
+				margin-bottom: 15px;
+			}
+			.stars_tip{
+				width: 400px;
+			    margin-left: -50px;
+			    font-size: 18px;
+			    line-height: 24px;
+			    margin-bottom: 30px;
+			    text-align: center;
+			}
+			.stars_tip a{
+				font-size: 16px;
+			    line-height: 24px;
+				color: #607ee2;			    
+			}
+		</style>
+
+	</head>
+
+	<body>
+
+		<div id="body_inner">
+
+			<div id="active_account">
+				<div class="div_center">
+					<div class="l">客服热线 400-833-6898</div>
+					<div class="r">
+						<a href="#">帮助中心</a>
+					</div>
+				</div>
+			</div>
+
+			<div id="logo_account" class="div_center">
+				<img src="img/logo_bg2.png">
+				<div id="account_main">
+
+					<div id="account_main_tab" class="slideTxtBox">
+						<div class="bd" style="margin-left: 20px;">
+							<ul style="padding-bottom: 50px;">
+								<div class="active_success">
+									<div class="success_img" style="background: none;">
+										<img src="img/success_icon.png">
+										<!--失败的图片-->
+										<!--<img src="img/fail.png">-->
+										<p class="stars_txt">开户申请提交成功</p>
+										<p class="stars_tip">银行处理中，稍后将自动更新开户结果，查询状态请至<a href="javascript:void(0);">资金存管账户</a>。</p>
+										<a class="active_start_bt">账户中心</a>
+										<a class="public_bt2">回到首页</a>
+									</div>
+
+								</div>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div id="foot" class="login_reg">
+
+			<div class="div_center">
+				<div class="l">
+
+					<p class="bottom-img">
+						<a href="https://seal.wosign.com/details/www.honhe.com" target="_blank" class="logo3"></a>
+						<a href="http://szcert.ebs.org.cn/e8369191-dc98-4072-ad44-e02027ae725f" target="_blank" class="logo4"></a>
+					</p>
+
+					<div class="clear_div"></div>
+
+					<p class="foot_2">Copyright © 2011-2018 HONHE Corporation All Rights Reserved. 版权所有 ©深圳市后河网互联网金融服务有限公司 粤ICP备13075040号</p>
+
+				</div>
+
+				<div class="r">
+					<p class="phone_num">400-833-6898</p>
+					<p class="time"> <span>工作日 09:00-21:00</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>周末 09:00-17:30</span> </p>
+				</div>
+			</div>
+
+		</div>
+
+
+
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/jquery.honhe.js"></script>
+		<script>
+
+
+			//新手切换
+			jQuery("#account_main_tab").slide({
+				trigger: "click",
+				delayTime: 0
+			});
+			
+			
+//			$(".stars_tip").attr("title",$(".stars_tip").text())
+			
+		</script>
+
+	</body>
+
+</html>
